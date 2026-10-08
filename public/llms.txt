@@ -1,0 +1,21 @@
+# {{BRAND_NAME}}: ELAFLEX GasGuard GG20 LPG nozzle
+
+> Independent US reseller of the ELAFLEX GasGuard GG20 long-reach 1¾" ACME propane nozzle (GG20, GG20H, GG20DN). Full technical reference sourced from ELAFLEX documentation.
+
+## Product
+- [GG20 product page and quote](https://{{DOMAIN}}/)
+- [Full knowledge base, plain text](https://{{DOMAIN}}/knowledge/gg20-kb.md)
+
+## Guides
+- [GG20 vs GG20H vs GG20DN: Which GasGuard Nozzle to Buy](https://{{DOMAIN}}/guides/gg20-vs-gg20h-vs-gg20dn.html): How the three GasGuard GG20 nozzles differ: single, hybrid and dual nose pieces, flow, lever force, release volume and who each one is for.
+- [GasGuard GG20 Specifications: Complete Technical Data](https://{{DOMAIN}}/guides/gg20-specifications.html): Every published spec for the ELAFLEX GasGuard GG20: reach, flow, pressure, temperature, materials, seals, weight, strainer and standards, in metric and US units.
+- [GG20 Part Numbers Decoded: Nose Pieces, Inlets and Option Codes](https://{{DOMAIN}}/guides/gg20-part-numbers-and-options.html): How to read a GasGuard GG20 part number: GG20/GG20H/GG20DN, .2 and .3 inlets, and the J, S, L, G and B option codes, plus how distributors label them.
+- [Installing a GG20: Hose, Thread Sealing, Safety Break and Boot](https://{{DOMAIN}}/guides/gg20-installation-and-hose-assembly.html): Installation guidance for the GasGuard GG20 from the ELAFLEX manual: thread sealing (no PTFE tape), leak testing, recommended hose, ARK 19 safety break and NB-GG boot.
+- [How to Fill Forklift Cylinders and RVs with a GasGuard GG20](https://{{DOMAIN}}/guides/how-to-fill-forklift-cylinders-and-rvs-with-gg20.html): Step-by-step GG20 operating procedure from the ELAFLEX manual, applied to forklift motor fuel cylinders and recessed RV fill valves, with PPE and stop conditions.
+- [GG20 Inspection and Maintenance Schedule: Daily, 6 to 12 Months, 24 Months](https://{{DOMAIN}}/guides/gg20-inspection-and-maintenance.html): The ELAFLEX inspection schedule for GasGuard GG20 nozzles: daily visual checks, the 6 to 12 month inspection list, and the 24-month seal kit replacement.
+- [GG20 Repair and Pressure Testing: What the Service Manual Covers](https://{{DOMAIN}}/guides/gg20-repair-and-testing.html): Overview of the GasGuard GG20 repair and maintenance manual: assemblies, tools, lubricants, rejection criteria, static and dynamic test procedures and test pressures.
+- [GG20 Troubleshooting: Leaks, Hard Connections, No Flow, Stiff Lever](https://{{DOMAIN}}/guides/gg20-troubleshooting.html): Symptoms, likely causes and actions for common GasGuard GG20 problems, based on the ELAFLEX operating and repair manuals.
+- [GG20 Safety, Codes and Compliance: UL 125, NFPA 58, Latches and Rule 1177](https://{{DOMAIN}}/guides/gg20-safety-codes-and-compliance.html): What the GasGuard GG20's UL 125 listing covers, why the latch option matters, how the GG20 compares to the Rule 1177 low-emission limit, and LPG hazards to train for.
+- [GasGuard Family Compared: GG1, GG20, GG30, GG40 and ZVG 2](https://{{DOMAIN}}/guides/gasguard-family-gg1-gg20-gg30-gg40.html): Which ELAFLEX LPG nozzle fits which fill point: GG1 and GG20 (1¾" ACME), GG30 (bayonet), GG40 (K15 quick connect) and ZVG 2 EURO UL, with key specs.
+- [Replacing a GasGuard LG20 with a GG20](https://{{DOMAIN}}/guides/lg20-to-gg20-replacement.html): The GasGuard GG20 range supersedes the LG20. What to check before ordering the replacement: nose piece, inlet size, latch and magnet.
+- [LPG Nozzle Glossary: Terms Used in GG20 Documentation](https://{{DOMAIN}}/guides/gg20-glossary.html): Plain definitions of the terms in GasGuard GG20 specs and manuals: ACME, nose piece, release volume, reach, swivel, reed switch, safety break, AHJ, UL 125, K15.
