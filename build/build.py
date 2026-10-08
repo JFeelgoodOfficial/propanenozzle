@@ -7,7 +7,7 @@ from content import ARTICLES, SRC, UPDATED
 
 ROOT = os.path.join(os.path.dirname(__file__), "..", "public")
 FN = os.path.join(os.path.dirname(__file__), "..", "functions")
-D = "{{DOMAIN}}"; B = "{{BRAND_NAME}}"; PD = "{{PHONE_DISPLAY}}"; P164 = "{{PHONE_E164}}"; EM = "{{EMAIL}}"
+D = "propanenozzle.com"; B = "Propane Nozzle"; PD = "555-666-7777"; P164 = "+15556667777"; EM = "sales@propanenozzle.com"
 
 def strip(h):
     h = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", h, flags=re.S)

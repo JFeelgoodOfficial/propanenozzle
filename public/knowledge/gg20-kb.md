@@ -1,10 +1,10 @@
 # ELAFLEX GasGuard GG20 knowledge base
-Seller: {{BRAND_NAME}} (independent reseller, not affiliated with ELAFLEX). Updated 2026-10-07.
-Quotes: https://{{DOMAIN}}/#quote · Phone {{PHONE_DISPLAY}} · Email {{EMAIL}}
+Seller: Propane Nozzle (independent reseller, not affiliated with ELAFLEX). Updated 2026-10-07.
+Quotes: https://propanenozzle.com/#quote · Phone 555-666-7777 · Email sales@propanenozzle.com
 
 
 # GG20 vs GG20H vs GG20DN: Which GasGuard Nozzle to Buy
-URL: https://{{DOMAIN}}/guides/gg20-vs-gg20h-vs-gg20dn.html
+URL: https://propanenozzle.com/guides/gg20-vs-gg20h-vs-gg20dn.html
 
 Summary: All three GG20 nozzles share the same body, 160 mm reach and 1¾" ACME coupling. The nose piece is the only difference. GG20 (single nose) flows the most, 63 L/min, and costs least; it suits trained operators. GG20H (hybrid nose) cuts lever force at 60 L/min for operators who fill all day. GG20DN (patented dual nose) seals even when the nozzle isn't fully tightened, so it is the one to use where the public or untrained staff fill.
 
@@ -56,7 +56,7 @@ Sources: GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https
 
 
 # GasGuard GG20 Specifications: Complete Technical Data
-URL: https://{{DOMAIN}}/guides/gg20-specifications.html
+URL: https://propanenozzle.com/guides/gg20-specifications.html
 
 Summary: The GasGuard GG20 is a 1¾" ACME LPG nozzle with a 160 mm (6.3 in) connector nut. Max working pressure 25 bar (362 psi), burst pressure above 100 bar (1450 psi), temperature range −40 °C to +110 °C (−40 °F to 230 °F), weight about 2.0 kg (4.4 lb). Flow is 63 L/min for the GG20 and 60 L/min for the GG20H and GG20DN at 12 bar. It is UL listed to UL 125 and built to AS/NZS 1596, AS/NZS 1425 and EN 12806 coupling dimensions.
 
@@ -128,7 +128,7 @@ Sources: GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https
 
 
 # GG20 Part Numbers Decoded: Nose Pieces, Inlets and Option Codes
-URL: https://{{DOMAIN}}/guides/gg20-part-numbers-and-options.html
+URL: https://propanenozzle.com/guides/gg20-part-numbers-and-options.html
 
 Summary: A GasGuard 1¾" ACME part number is built from nozzle style (GG1 or GG20), nose piece (E, H or DN), then options: J magnet, S strainer, L hold-open latch, followed by inlet size. In the ELAFLEX catalogue the GG20 types are GG20.2 / GG20.3, GG20H.2 / GG20H.3 and GG20DN.2 / GG20DN.3, where .2 is ½" NPT female and .3 is ¾" NPT female. Extra suffixes add J (magnet), L (latch), G (splashguard) or B (hard-anodized connector with brass ACME insert). Distributors don't all write these codes the same way, so confirm nose piece, latch and inlet in words before ordering.
 
@@ -218,7 +218,7 @@ Sources: GasGuard Information 6.15: part number breakdown (ELAFLEX) <https://ela
 
 
 # Installing a GG20: Hose, Thread Sealing, Safety Break and Boot
-URL: https://{{DOMAIN}}/guides/gg20-installation-and-hose-assembly.html
+URL: https://propanenozzle.com/guides/gg20-installation-and-hose-assembly.html
 
 Summary: The GG20 ships ready to use and must be installed by competent personnel under local codes. ELAFLEX says not to use PTFE tape on the threads, because it doesn't conduct static well and can shed particles; use a non-permanent liquid thread sealant, tighten with spanners, then leak test under pressure with a foaming agent and run an operational test. ELAFLEX recommends its LPG 16 S hose, an ARK 19 Mod.2 safety break and the NB-GG nozzle boot. Fill point adaptors are not recommended.
 
@@ -274,7 +274,7 @@ Sources: Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 
 
 
 # How to Fill Forklift Cylinders and RVs with a GasGuard GG20
-URL: https://{{DOMAIN}}/guides/how-to-fill-forklift-cylinders-and-rvs-with-gg20.html
+URL: https://propanenozzle.com/guides/how-to-fill-forklift-cylinders-and-rvs-with-gg20.html
 
 Summary: To use a GG20: shut off the engine, check the fill point and nozzle seals are clean and undamaged, put on gloves and safety glasses, align the nozzle with the fill valve, screw the connector nut clockwise until firm, pull the lever to fill, and release it to stop. When finished, release the lever, unscrew the nut counter-clockwise keeping hands clear of the small gas release, and return the nozzle to its boot. Stop immediately if gas escapes continuously. The nozzle does not control fill level; follow the filling procedure for the container.
 
@@ -332,7 +332,7 @@ Sources: Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 
 
 
 # GG20 Inspection and Maintenance Schedule: Daily, 6 to 12 Months, 24 Months
-URL: https://{{DOMAIN}}/guides/gg20-inspection-and-maintenance.html
+URL: https://propanenozzle.com/guides/gg20-inspection-and-maintenance.html
 
 Summary: ELAFLEX recommends three levels of care for GG1 and GG20 nozzles: a daily visual check by trained personnel (coupling clean and undamaged, swivel turns, nose piece O-ring intact), a full inspection every 6 to 12 months (seals, connector nut and pawl, swivel grub screw, valve movement, leak test with soapy water on a blanked 1¾" ACME adaptor), and a complete seal kit replacement every 24 months. The GG20 series seal kit is listed as GG3.
 
@@ -384,7 +384,7 @@ Sources: Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 
 
 
 # GG20 Repair and Pressure Testing: What the Service Manual Covers
-URL: https://{{DOMAIN}}/guides/gg20-repair-and-testing.html
+URL: https://propanenozzle.com/guides/gg20-repair-and-testing.html
 
 Summary: The GG20 repair manual is written for authorized distributors, OEMs and service centres. It breaks the nozzle into the GG27 connector, GG5 lever, LG24 valve, LG2 inlet swivel and body assemblies, specifies three lubricants and Loctite 263, and requires a static test at 12 to 18 bar (174 to 260 psi) under water with a 27 N·m (20 ft·lb) bending load on the swivel, then a dynamic flow test with propane. Nitrogen or compressed air can substitute for LPG in testing. Repairs should be done by a qualified service shop.
 
@@ -451,7 +451,7 @@ Sources: GG20 Repair & Maintenance Manual (ELAFLEX PACIFIC / L.G. Equipment) <ht
 
 
 # GG20 Troubleshooting: Leaks, Hard Connections, No Flow, Stiff Lever
-URL: https://{{DOMAIN}}/guides/gg20-troubleshooting.html
+URL: https://propanenozzle.com/guides/gg20-troubleshooting.html
 
 Summary: A small gas release on disconnect is normal (1.7 to 1.9 cm³). A continuous leak is not: release the lever, hit the emergency stop, clear the area and take the nozzle out of service. If the nozzle won't thread on smoothly, disconnect and retry; never force it, and check for a damaged or worn fill point. Low or no flow usually means the coupling isn't fully engaged, a clogged strainer, or a dispenser issue. A pump that won't start on a reed-switch dispenser points to a missing J magnet.
 
@@ -484,7 +484,7 @@ Sources: Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 
 
 
 # GG20 Safety, Codes and Compliance: UL 125, NFPA 58, Latches and Rule 1177
-URL: https://{{DOMAIN}}/guides/gg20-safety-codes-and-compliance.html
+URL: https://propanenozzle.com/guides/gg20-safety-codes-and-compliance.html
 
 Summary: The GG20, GG20H and GG20DN are UL listed to UL 125, and ELAFLEX states the GG1/GG20 series meet NFPA 58 among other standards. The optional hold-open latch is not covered by the UL listing and is not allowed everywhere. Release on disconnect is 1.7 to 1.9 cm³, under the 4 cm³ limit that defines a low-emission connector in South Coast AQMD Rule 1177. Your authority having jurisdiction has the final word on any installation.
 
@@ -530,7 +530,7 @@ Sources: GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https
 
 
 # GasGuard Family Compared: GG1, GG20, GG30, GG40 and ZVG 2
-URL: https://{{DOMAIN}}/guides/gasguard-family-gg1-gg20-gg30-gg40.html
+URL: https://propanenozzle.com/guides/gasguard-family-gg1-gg20-gg30-gg40.html
 
 Summary: Pick the nozzle by the fill valve. 1¾" ACME: GG1 (125 mm reach) for normal fill points, GG20 (160 mm) for recessed ones like forklift cylinders and RVs. Bayonet (EN 12806): GG30. K15 / Euro quick connect used on new US vehicles: GG40, or the ZVG 2 EURO UL. The ACME nozzles share nose piece options (single, hybrid, dual) and ratings.
 
@@ -561,7 +561,7 @@ Sources: ELAFLEX catalogue pages 567-574, rev. 11.2022 <https://elaflex.it/dokum
 
 
 # Replacing a GasGuard LG20 with a GG20
-URL: https://{{DOMAIN}}/guides/lg20-to-gg20-replacement.html
+URL: https://propanenozzle.com/guides/lg20-to-gg20-replacement.html
 
 Summary: ELAFLEX states the GG20, GG20H and GG20DN supersede the GasGuard LG20 range. To order the right replacement, match four things from the old nozzle: the nose piece (single, hybrid or dual), the inlet thread (½" or ¾" NPT female), whether it had a latch, and whether your dispenser needs a magnet for a reed switch. Current GG20s have the strainer fitted as standard.
 
@@ -592,7 +592,7 @@ Sources: GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https
 
 
 # LPG Nozzle Glossary: Terms Used in GG20 Documentation
-URL: https://{{DOMAIN}}/guides/gg20-glossary.html
+URL: https://propanenozzle.com/guides/gg20-glossary.html
 
 Summary: Short definitions of the terms used across GasGuard GG20 documentation, from 1¾" ACME and nozzle reach to release volume, nose piece types, reed switches, safety breaks and UL 125.
 

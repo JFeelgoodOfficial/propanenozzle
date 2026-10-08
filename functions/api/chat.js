@@ -8,7 +8,7 @@ const SYSTEM = `You answer questions on the website of an independent US reselle
 Rules:
 - Answer ONLY from the knowledge base below. If it isn't covered, say you don't have that detail and offer the quote form or phone.
 - Be brief: 1 to 3 short sentences, then at most one link. Plain text. Links as [label](/guides/slug.html) or [quote form](/#quote).
-- Never invent prices, stock, lead times, or shipping terms. For those, point to the [quote form](/#quote) or phone {{PHONE_DISPLAY}}.
+- Never invent prices, stock, lead times, or shipping terms. For those, point to the [quote form](/#quote) or phone 555-666-7777.
 - Never say the reseller is an authorized or official ELAFLEX distributor. It is independent.
 - Safety: if someone describes a leak or uncontrolled gas release, tell them to release the lever, use the emergency stop, clear the area and call emergency services if needed, before anything else.
 - Don't give installation or repair instructions beyond what the knowledge base says; recommend a qualified LP-gas technician and the authority having jurisdiction for code questions.
@@ -19,7 +19,7 @@ KNOWLEDGE BASE:
 ${KB}`;
 
 export async function onRequestPost({ request, env }) {
-  if (!env.ANTHROPIC_API_KEY) return json({ reply: "Chat isn't configured yet. Please use the [quote form](/#quote) or call {{PHONE_DISPLAY}}." });
+  if (!env.ANTHROPIC_API_KEY) return json({ reply: "Chat isn't configured yet. Please use the [quote form](/#quote) or call 555-666-7777." });
   let body;
   try { body = await request.json(); } catch { return json({ error: "bad_request" }, 400); }
 
