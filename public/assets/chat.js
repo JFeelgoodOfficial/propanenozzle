@@ -50,7 +50,7 @@
       body: JSON.stringify({ messages: history.slice(-8), page: location.pathname }) })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
       .then(function (d) { render(pending, d.reply); history.push({ role: "assistant", content: d.reply }); track("chat_answer"); })
-      .catch(function () { render(pending, "I can't answer right now. Call {{PHONE_DISPLAY}}, email {{EMAIL}}, or use the [quote form](/#quote)."); })
+      .catch(function () { render(pending, "I can't answer right now. Call 555-666-7777, email sales@propanenozzle.com, or use the [quote form](/#quote)."); })
       .finally(function () { busy = false; });
   }
   function say(who, text) { var m = el("div", "gc-m gc-" + who); render(m, text); log.appendChild(m); log.scrollTop = log.scrollHeight; return m; }
