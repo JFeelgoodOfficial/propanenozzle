@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fill in your business details everywhere at once.
-Usage:  python3 scripts/configure.py --brand "Acme Propane Supply" --domain gg20nozzle.com \
-          --phone "(512) 555-0100" --email sales@gg20nozzle.com \
+Usage:  python3 scripts/configure.py --brand "Propane Nozzle" --domain propanenozzle.com \
+          --phone "(512) 555-0100" --email sales@propanenozzle.com \
           --transfer-name "Jordan" --hours "Mon-Fri 8am-5pm Central"
 Re-run the build afterwards if you edit build/content.py: python3 build/build.py"""
 import argparse, os, re
