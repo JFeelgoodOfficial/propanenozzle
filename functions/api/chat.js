@@ -1,9 +1,9 @@
-// POST /api/chat : brief, grounded answers about the GG20. Env: ANTHROPIC_API_KEY (optional CHAT_MODEL).
+// POST /api/chat : brief, grounded answers about the GG20. Env: GROQ_API_KEY (optional CHAT_MODEL).
 // Leads mentioned in chat (an email address) are also saved to Firestore "chat_leads" when Firebase env is set.
-import { KB } from "../_lib/kb.js";
+import { relevantKB } from "../_lib/retrieve.js";
 import { addDoc, notify, json } from "../_lib/firestore.js";
 
-const SYSTEM = `You answer questions on the website of an independent US reseller of the ELAFLEX GasGuard GG20 LPG nozzle.
+const rules = `You answer questions on the website of an independent US reseller of the ELAFLEX GasGuard GG20 LPG nozzle.
 
 Rules:
 - Answer ONLY from the knowledge base below. If it isn't covered, say you don't have that detail and offer the quote form or phone.
@@ -15,34 +15,41 @@ Rules:
 - Off-topic questions: politely say you only cover the GG20 and related GasGuard products.
 - If the visitor wants to buy or gives contact details, thank them and point to the [quote form](/#quote).
 
-KNOWLEDGE BASE:
-${KB}`;
+KNOWLEDGE BASE (excerpts):
+`;
 
 export async function onRequestPost({ request, env }) {
-  if (!env.ANTHROPIC_API_KEY) return json({ reply: "Chat isn't configured yet. Please use the [quote form](/#quote) or call 555-666-7777." });
+  if (!env.GROQ_API_KEY) return json({ reply: "Chat isn't configured yet. Please use the [quote form](/#quote) or call 555-666-7777." });
   let body;
   try { body = await request.json(); } catch { return json({ error: "bad_request" }, 400); }
 
   const messages = (Array.isArray(body.messages) ? body.messages : [])
-    .slice(-8)
+    .slice(-6)
     .filter((m) => (m.role === "user" || m.role === "assistant") && typeof m.content === "string")
-    .map((m) => ({ role: m.role, content: m.content.slice(0, 1000) }));
+    .map((m) => ({ role: m.role, content: m.content.slice(0, 800) }));
   while (messages.length && messages[0].role !== "user") messages.shift();
   if (!messages.length || messages[messages.length - 1].role !== "user") return json({ error: "no_question" }, 400);
 
-  const r = await fetch("https://api.anthropic.com/v1/messages", {
+  // Retrieve on the last two user turns so follow-ups ("what about the DN?") keep their context.
+  const query = messages.filter((m) => m.role === "user").slice(-2).map((m) => m.content).join(" ");
+  const model = env.CHAT_MODEL || "openai/gpt-oss-20b";
+  // Reasoning options only exist on reasoning models; other Groq models reject them.
+  const reasoning = /gpt-oss/.test(model) ? { reasoning_effort: "low", include_reasoning: false } : {};
+  const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
-    headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
+    headers: { authorization: `Bearer ${env.GROQ_API_KEY}`, "content-type": "application/json" },
     body: JSON.stringify({
-      model: env.CHAT_MODEL || "claude-haiku-4-5-20251001",
-      max_tokens: 300,
-      system: [{ type: "text", text: SYSTEM, cache_control: { type: "ephemeral" } }],
-      messages,
+      model,
+      max_completion_tokens: 500, // includes the model's hidden reasoning
+      ...reasoning,
+      temperature: 0.2,
+      messages: [{ role: "system", content: rules + relevantKB(query) }, ...messages],
     }),
   });
-  if (!r.ok) { console.error("anthropic", r.status, await r.text()); return json({ error: "upstream" }, 502); }
+  if (r.status === 429 || r.status === 413) return json({ reply: "The chat is busy right now. Please try again in a minute, call 555-666-7777, or use the [quote form](/#quote)." });
+  if (!r.ok) { console.error("groq", r.status, await r.text()); return json({ error: "upstream" }, 502); }
   const out = await r.json();
-  const reply = (out.content || []).filter((c) => c.type === "text").map((c) => c.text).join("").trim()
+  const reply = (out.choices?.[0]?.message?.content || "").trim()
     || "I don't have that detail. Please use the [quote form](/#quote).";
 
   // Capture an email if the visitor typed one

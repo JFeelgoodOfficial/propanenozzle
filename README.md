@@ -46,7 +46,7 @@ Don't use Vercel's free Hobby plan; its terms prohibit commercial sites.
 | FIREBASE_PROJECT_ID | from step 4 |
 | FIREBASE_CLIENT_EMAIL | from the service-account JSON |
 | FIREBASE_PRIVATE_KEY | the `private_key` value from the JSON, pasted as-is |
-| ANTHROPIC_API_KEY | from console.anthropic.com, for the chat |
+| GROQ_API_KEY | from console.groq.com → API Keys, for the chat (free, no card) |
 | CALL_WEBHOOK_TOKEN | any long random string; reuse it in the Retell webhook URL |
 | NOTIFY_WEBHOOK_URL | optional: a Slack or Discord incoming-webhook URL, so every new lead pings your phone |
 
@@ -70,11 +70,11 @@ You don't need Cloud Functions, so you never need the paid Blaze plan.
 
 ## 5. Chat
 
-1. The chat uses Claude Haiku through the Anthropic API.
-2. The whole knowledge base goes in as cached context, and answers are capped at 300 tokens, so each question costs very little.
-3. Before launch, set a monthly spend limit in the Anthropic Console. If the chat is attacked by bots, that limit is your ceiling.
-4. Add a Cloudflare rate-limiting rule on `/api/chat` if your plan includes one.
-5. If `ANTHROPIC_API_KEY` isn't set, the chat politely points people to the quote form instead.
+1. The chat uses `openai/gpt-oss-20b` on Groq's free plan. Set `CHAT_MODEL` to use a different Groq model.
+2. Each question sends only the knowledge-base sections that match it (about 1,500 tokens, picked by `functions/_lib/retrieve.js`), not the whole 10,000-token knowledge base. That keeps requests under the free plan's tokens-per-minute cap.
+3. The free plan's limits, not money, are the ceiling. Check the current numbers at console.groq.com/docs/rate-limits. When a limit is hit, the chat tells the visitor to try again in a minute or use the phone or quote form.
+4. Add a Cloudflare rate-limiting rule on `/api/chat` if your plan includes one, so bots can't use up the daily allowance.
+5. If `GROQ_API_KEY` isn't set, the chat politely points people to the quote form instead.
 
 ## 6. Phone number and AI receptionist
 
