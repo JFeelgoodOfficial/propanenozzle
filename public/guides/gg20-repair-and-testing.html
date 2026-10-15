@@ -16,6 +16,8 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#14213a">
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="/assets/theme.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
@@ -24,12 +26,12 @@
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="/">Propane Nozzle</a>
-  <nav class="site" aria-label="Site"><a href="/">GG20 nozzle</a><a href="/guides/">Guides</a><a href="/#faq">FAQ</a><a class="btn btn-primary" href="/#quote">Get a quote</a></nav>
+  <nav class="site" aria-label="Site"><a href="/">GG20 nozzle</a><a href="/guides/">Guides</a><a href="/#faq">FAQ</a><button type="button" class="theme-toggle" data-theme-toggle aria-label="Theme: Auto (follows your device)."></button><a class="btn btn-primary" href="/#quote">Get a quote</a></nav>
 </div></header>
 <main class="wrap article">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">GG20 nozzle</a> / <a href="/guides/">Guides</a> / Repair &amp; testing</nav>
 <h1>GG20 Repair and Pressure Testing: What the Service Manual Covers</h1>
-<p class="meta">Updated 2026-10-07 · Sourced from ELAFLEX documentation</p>
+<p class="meta">Updated 2026-10-07 · Sourced from manufacturer documentation</p>
 <div class="answer"><strong>Short answer:</strong> The GG20 repair manual is written for authorized distributors, OEMs and service centres. It breaks the nozzle into the GG27 connector, GG5 lever, LG24 valve, LG2 inlet swivel and body assemblies, specifies three lubricants and Loctite 263, and requires a static test at 12 to 18 bar (174 to 260 psi) under water with a 27 N·m (20 ft·lb) bending load on the swivel, then a dynamic flow test with propane. Nitrogen or compressed air can substitute for LPG in testing. Repairs should be done by a qualified service shop.</div>
 
 <p class="note">This is an overview so you know what a proper repair involves. It is not a substitute for the manual or for a trained technician. ELAFLEX states it cannot be held responsible for the performance of repaired nozzles.</p>

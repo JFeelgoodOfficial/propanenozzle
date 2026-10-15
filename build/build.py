@@ -37,6 +37,8 @@ HEAD = """<!doctype html>
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#14213a">
+<script>try{{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}}catch(e){{}}</script>
+<script src="/assets/theme.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css">
@@ -45,7 +47,7 @@ HEAD = """<!doctype html>
 <body>
 <header class="site"><div class="wrap">
   <a class="brand" href="/">{B}</a>
-  <nav class="site" aria-label="Site"><a href="/">GG20 nozzle</a><a href="/guides/">Guides</a><a href="/#faq">FAQ</a><a class="btn btn-primary" href="/#quote">Get a quote</a></nav>
+  <nav class="site" aria-label="Site"><a href="/">GG20 nozzle</a><a href="/guides/">Guides</a><a href="/#faq">FAQ</a><button type="button" class="theme-toggle" data-theme-toggle aria-label="Theme: Auto (follows your device)."></button><a class="btn btn-primary" href="/#quote">Get a quote</a></nav>
 </div></header>
 """
 FOOT = """
@@ -75,7 +77,7 @@ def page(a, idx):
     out += f"""<main class="wrap article">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">GG20 nozzle</a> / <a href="/guides/">Guides</a> / {html.escape(a['nav'])}</nav>
 <h1>{html.escape(a['title'])}</h1>
-<p class="meta">Updated {UPDATED} · Sourced from ELAFLEX documentation</p>
+<p class="meta">Updated {UPDATED} · Sourced from manufacturer documentation</p>
 <div class="answer"><strong>Short answer:</strong> {html.escape(a['summary'])}</div>
 {a['body']}
 """
