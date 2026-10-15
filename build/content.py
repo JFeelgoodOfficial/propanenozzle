@@ -166,7 +166,7 @@ body="""
 <tr><td>Magnet assembly</td><td>GGJ</td></tr>
 <tr><td>Seal kit for GG20 series</td><td>GG3</td></tr>
 </tbody></table>
-<p>These numbers come from the GG20 repair and maintenance manual. Availability of individual spares in the US varies; ask before you plan a repair around one.</p>
+<p>These numbers come from the GG20 repair and maintenance manual. Propane Nozzle quotes complete GG20 nozzles only, not individual spares; ask your LP-gas service company about parts availability before you plan a repair around one.</p>
 """,
 faqs=[("What does .3 mean in GG20.3?","A ¾\" NPT female inlet swivel. A .2 suffix means ½\" NPT female."),
       ("What does the L suffix mean on a GasGuard nozzle?","A hold-open latch. ELAFLEX notes the latch is not covered by the UL listing and isn't permitted everywhere.")],

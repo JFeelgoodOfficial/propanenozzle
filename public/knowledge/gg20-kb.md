@@ -206,7 +206,7 @@ Codes drift between catalogues. Examples seen in US distributor listings: "GG20S
 
  | Seal kit for GG20 series | GG3
 
-These numbers come from the GG20 repair and maintenance manual. Availability of individual spares in the US varies; ask before you plan a repair around one.
+These numbers come from the GG20 repair and maintenance manual. Propane Nozzle quotes complete GG20 nozzles only, not individual spares; ask your LP-gas service company about parts availability before you plan a repair around one.
 
 Q: What does .3 mean in GG20.3?
 A: A ¾" NPT female inlet swivel. A .2 suffix means ½" NPT female.
