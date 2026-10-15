@@ -104,6 +104,8 @@ def kb():
     parts = [f"# ELAFLEX GasGuard GG20 knowledge base\nSeller: {B} (independent reseller, not affiliated with ELAFLEX). Updated {UPDATED}.\nQuotes: https://{D}/#quote · Phone {PD} · Email {EM}\n"]
     for a in ARTICLES:
         parts.append(f"\n# {a['title']}\nURL: https://{D}/guides/{a['slug']}.html\n\nSummary: {a['summary']}\n\n{strip(a['body'])}\n")
+        if a["faqs"]:
+            parts.append("## Quick answers\n")
         for q,t in a["faqs"]:
             parts.append(f"Q: {q}\nA: {t}\n")
         parts.append("Sources: " + "; ".join(f"{SRC[s][0]} <{SRC[s][1]}>" for s in a["sources"]) + "\n")

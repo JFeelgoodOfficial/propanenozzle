@@ -18,6 +18,7 @@ SRC = {
  "rrc": ("Autogas dispensers, Railroad Commission of Texas", "https://rrc.texas.gov/media/5z3b3fux/autogas_dispensers.pdf"),
  "p4150": ("P4-150 Dual Product Dispenser (Parafour)", "https://parafour.com/p4-150-dual-product-dispenser/"),
  "p4150l": ("Parafour P4-150-L listing (GasEquipment.com)", "https://www.gasequipment.com/catalog/shop/Parafour/mfr-1O4?a=1"),
+ "infomat": ("Information Material: GasGuard product range (ELAFLEX PACIFIC)", "https://elaflex.com.au/information-material/gasguard-product-range"),
  "p4disp": ("Dispensers (Parafour)", "https://parafour.com/dispensers/"),
  "p4100": ("P4-100 Single Hose Autogas Dispenser (Parafour)", "https://parafour.com/p4-100-single-hose-autogas-dispenser/"),
  "p4200": ("P4-200 Dual Hose Dispenser (Parafour)", "https://parafour.com/p4-200-dual-hose-dispenser/"),
@@ -64,6 +65,7 @@ body="""
 <p>The same three nose pieces exist on the shorter GG1 series as GG1E, GG1EH and GG1DN, with a 125 mm connector. Choose GG20 only when the fill valve is recessed. See <a href="/guides/gasguard-family-gg1-gg20-gg30-gg40.html">the GasGuard family compared</a>.</p>
 """,
 faqs=[("Which GG20 version has the highest flow?","The GG20 with the single nose piece, rated 63 L/min at 12 bar. The GG20H and GG20DN are rated 60 L/min."),
+      ("How much lever force does the GG20H or GG20DN need?","ELAFLEX says the hybrid and dual nose pieces reduce the force needed to hold the lever open compared with the single-nose GG20, but the documents we cite don't give a figure in newtons or pounds."),
       ("Which GG20 is safest for self-service?","The GG20DN. Its patented dual nose piece seals even if the nozzle isn't fully tightened, and ELAFLEX designates it for public and untrained users.")],
 sources=["info215","cat","info615"],
 ),
@@ -173,7 +175,8 @@ body="""
 </tbody></table>
 <p>These numbers come from the GG20 repair and maintenance manual. Propane Nozzle quotes complete GG20 nozzles only, not individual spares; ask your LP-gas service company about parts availability before you plan a repair around one.</p>
 """,
-faqs=[("What does .3 mean in GG20.3?","A ¾\" NPT female inlet swivel. A .2 suffix means ½\" NPT female."),
+faqs=[("Can I get a GG20H or GG20DN with a latch, magnet or splashguard?","Yes. The option codes apply to all three nose pieces: J magnet, L hold-open latch, G splashguard and B brass ACME insert can be added to a GG20, GG20H or GG20DN, with either the .2 or .3 inlet. The latch isn't covered by the UL listing, so check with your authority having jurisdiction first."),
+      ("What does .3 mean in GG20.3?","A ¾\" NPT female inlet swivel. A .2 suffix means ½\" NPT female."),
       ("What does the L suffix mean on a GasGuard nozzle?","A hold-open latch. ELAFLEX notes the latch is not covered by the UL listing and isn't permitted everywhere.")],
 sources=["info615","cat","info215","rm"],
 ),
@@ -333,6 +336,10 @@ body="""
 </ul>
 <p>The manual says age, wear and abuse can make repair uneconomic, and replacing whole assemblies or the nozzle may be the better choice.</p>
 
+<h2>Nose pieces on the GG20, GG20H and GG20DN</h2>
+<p>The nose piece is the only part that differs between the three versions, so it's the part to get right on a repair. The repair manual names the <strong>GG6 nose piece</strong> as part of the GG27 connector assembly; that is the single nose piece used on the standard GG20. The manual we cite doesn't list part numbers for the hybrid (GG20H) or dual (GG20DN) nose pieces. ELAFLEX PACIFIC publishes a separate "Replacement Nose Piece" document and a "Nose Piece O-ring information sheet" on its GasGuard information page.</p>
+<p>When you source a nose piece or seal kit for a GG20H or GG20DN, give the full model code from the nozzle (for example GG20DN.3) and its serial number, and confirm the part is for that nose piece type. Fitting the nose piece needs the special nose piece assembly tool listed above, and the white nose piece O-ring is one of the parts the 24-month seal kit replaces.</p>
+
 <h2>Static test (before fitting connector and lever)</h2>
 <ol>
 <li>Connect to a supply hose with an upstream isolating valve.</li>
@@ -352,8 +359,9 @@ body="""
 </ol>
 <p>If LPG isn't available, the manual allows bottled nitrogen at an 1800 kPa regulator setting, or compressed air.</p>
 """,
-faqs=[("At what pressure is a repaired GG20 tested?","The static test in the repair manual uses 1200 to 1800 kPa (12 to 18 bar, 174 to 260 psi) under water, with a 27 N·m bending load on the swivel.")],
-sources=["rm"],
+faqs=[("What is the part number for a GG20H or GG20DN nose piece?","The GG20 repair manual names only the GG6 nose piece, the single nose piece on the standard GG20. Part numbers for the hybrid and dual nose pieces aren't in that manual; ELAFLEX PACIFIC publishes a separate replacement nose piece document. Quote the full model code (such as GG20DN.3) and serial number when sourcing one."),
+      ("At what pressure is a repaired GG20 tested?","The static test in the repair manual uses 1200 to 1800 kPa (12 to 18 bar, 174 to 260 psi) under water, with a 27 N·m bending load on the swivel.")],
+sources=["rm","infomat","manual"],
 ),
 
 dict(

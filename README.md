@@ -71,7 +71,7 @@ You don't need Cloud Functions, so you never need the paid Blaze plan.
 ## 5. Chat
 
 1. The chat uses `openai/gpt-oss-20b` on Groq's free plan. Set `CHAT_MODEL` to use a different Groq model.
-2. Each question sends only the knowledge-base sections that match it (about 1,500 tokens, picked by `functions/_lib/retrieve.js`), not the whole 10,000-token knowledge base. That keeps requests under the free plan's tokens-per-minute cap.
+2. Each question sends only the knowledge-base sections that match it (about 1,500 tokens, picked by `functions/_lib/retrieve.js`), not the whole 10,000-token knowledge base. That keeps requests under the free plan's tokens-per-minute cap. After editing `build/content.py` or `retrieve.js`, run `node scripts/test-retrieval.mjs` to check that 32 common questions still reach the right section.
 3. The free plan's limits, not money, are the ceiling. Check the current numbers at console.groq.com/docs/rate-limits. When a limit is hit, the chat tells the visitor to try again in a minute or use the phone or quote form.
 4. Add a Cloudflare rate-limiting rule on `/api/chat` if your plan includes one, so bots can't use up the daily allowance.
 5. If `GROQ_API_KEY` isn't set, the chat politely points people to the quote form instead.
