@@ -16,7 +16,7 @@ python3 scripts/configure.py --brand "Your Company" --domain yourdomain.com \
   --transfer-name "Your Name" --hours "Mon-Fri 8am-5pm Central"
 ```
 
-Then add your own GG20 photo as `public/gg20.jpg` (1200x630 works for link previews), and swap the schematic in the hero of `public/index.html` for it.
+The hero uses `public/gg20.webp` (the ELAFLEX GG20 drawing). To use your own photo instead, replace that file and update the `width`/`height` on the hero `<img>` in `public/index.html`.
 
 ## 2. Domain and email
 
