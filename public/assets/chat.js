@@ -7,9 +7,9 @@
   .gc-panel{position:fixed;right:16px;bottom:76px;z-index:41;width:min(380px,calc(100vw - 32px));height:min(540px,calc(100vh - 110px));background:var(--surface,#fff);color:var(--ink,#15191f);border:1px solid var(--line,#dcd9d2);border-radius:14px;box-shadow:0 18px 50px rgba(0,0,0,.22);display:none;flex-direction:column;overflow:hidden;font:15px/1.5 "IBM Plex Sans",system-ui,sans-serif}
   @media (max-width:720px){.gc-panel{bottom:130px;height:calc(100vh - 160px)}}
   .gc-panel.open{display:flex}
-  .gc-head{background:#14213a;color:#f3f1ec;padding:12px 14px;display:flex;justify-content:space-between;align-items:center}
-  .gc-head small{display:block;color:#b7bfcc;font-size:12px}
-  .gc-x{background:none;border:0;color:#f3f1ec;font-size:22px;cursor:pointer;line-height:1}
+  .gc-head{background:var(--gc-head-bg,#14213a);color:var(--gc-head-ink,#f3f1ec);padding:12px 14px;display:flex;justify-content:space-between;align-items:center}
+  .gc-head small{display:block;color:var(--gc-head-muted,#b7bfcc);font-size:12px}
+  .gc-x{background:none;border:0;color:var(--gc-head-ink,#f3f1ec);font-size:22px;cursor:pointer;line-height:1}
   .gc-log{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
   .gc-m{max-width:88%;padding:9px 12px;border-radius:12px;white-space:pre-wrap;word-wrap:break-word}
   .gc-u{align-self:flex-end;background:#e8650f;color:#fff;border-bottom-right-radius:4px}
