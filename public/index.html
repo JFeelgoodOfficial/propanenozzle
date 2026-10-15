@@ -22,7 +22,8 @@
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#14213a">
+<meta name="theme-color" content="#d6ebf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14213a" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <script src="/assets/theme.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,21 +102,23 @@
 
 <style>
 :root{
-  --bg:#f6f5f2; --surface:#ffffff; --ink:#15191f; --muted:#5b6370; --line:#dcd9d2;
-  --navy:#14213a; --navy-2:#1d2f52; --orange:#e8650f; --orange-ink:#b84c06; --ok:#1f7a4d;
-  --on-navy:#f3f1ec; --on-navy-muted:#b7bfcc; --chip:#eeece6;
+  --bg:#eef6fb; --surface:#ffffff; --ink:#10283b; --muted:#4b6476; --line:#cfe1ec;
+  --navy:#d6ebf8; --navy-2:#d9f2e3; --orange:#e8650f; --orange-ink:#b84c06; --ok:#1f7a4d;
+  --on-navy:#10283b; --on-navy-muted:#3f5b6d; --on-navy-strong:#0b2233; --chip:#e2f3e9;
+  --hairline:rgba(16,40,59,.14); --panel:rgba(255,255,255,.6); --facts-cell:rgba(255,255,255,.7);
+  --cta-bg:linear-gradient(135deg,#d6ebf8,#d9f2e3); --gc-head-bg:linear-gradient(135deg,#d6ebf8,#d9f2e3); --gc-head-ink:#10283b; --gc-head-muted:#3f5b6d;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
     --bg:#0f1218; --surface:#171c25; --ink:#e9e7e2; --muted:#9aa3b2; --line:#2a313d;
     --navy:#0a1120; --navy-2:#13203a; --orange:#f07a2a; --orange-ink:#ff9a55; --ok:#4cc38a;
-    --on-navy:#f3f1ec; --on-navy-muted:#9aa6ba; --chip:#202733;
+    --on-navy:#f3f1ec; --on-navy-muted:#9aa6ba; --chip:#202733; --on-navy-strong:#ffffff; --hairline:rgba(255,255,255,.12); --panel:rgba(255,255,255,.04); --facts-cell:rgba(10,17,32,.55); --cta-bg:var(--navy); --gc-head-bg:#14213a; --gc-head-ink:#f3f1ec; --gc-head-muted:#b7bfcc;
   }
 }
 :root[data-theme="dark"]{
   --bg:#0f1218; --surface:#171c25; --ink:#e9e7e2; --muted:#9aa3b2; --line:#2a313d;
   --navy:#0a1120; --navy-2:#13203a; --orange:#f07a2a; --orange-ink:#ff9a55; --ok:#4cc38a;
-  --on-navy:#f3f1ec; --on-navy-muted:#9aa6ba; --chip:#202733;
+  --on-navy:#f3f1ec; --on-navy-muted:#9aa6ba; --chip:#202733; --on-navy-strong:#ffffff; --hairline:rgba(255,255,255,.12); --panel:rgba(255,255,255,.04); --facts-cell:rgba(10,17,32,.55); --cta-bg:var(--navy); --gc-head-bg:#14213a; --gc-head-ink:#f3f1ec; --gc-head-muted:#b7bfcc;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -159,12 +162,12 @@ nav.site .btn{margin-left:22px;padding:9px 16px;color:#fff}
 .hero h1 em{font-style:normal;color:var(--orange)}
 .hero .lede{font-size:1.15rem;color:var(--on-navy-muted);max-width:56ch}
 .hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 30px}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.12);border-radius:8px;overflow:hidden}
-.facts div{background:rgba(10,17,32,.55);padding:14px 12px}
-.facts b{display:block;font:600 1.25rem/1.1 "IBM Plex Mono",monospace;color:#fff}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--hairline);border-radius:8px;overflow:hidden}
+.facts div{background:var(--facts-cell);padding:14px 12px}
+.facts b{display:block;font:600 1.25rem/1.1 "IBM Plex Mono",monospace;color:var(--on-navy-strong)}
 .facts small{color:var(--on-navy-muted);font-size:.78rem}
 @media (max-width:560px){.facts{grid-template-columns:repeat(2,1fr)}}
-.figure{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:20px}
+.figure{background:var(--panel);border:1px solid var(--hairline);border-radius:12px;padding:20px}
 .figure img.product{display:block;width:100%;height:auto;background:#fff;border-radius:8px}
 .figure figcaption{font-size:.8rem;color:var(--on-navy-muted);margin-top:10px}
 
@@ -205,7 +208,7 @@ legend{font-weight:600;margin-bottom:10px}
 .opt input:checked + span{border-color:var(--orange);box-shadow:0 0 0 3px color-mix(in srgb,var(--orange) 22%,transparent)}
 .opt input:focus-visible + span{outline:2px solid var(--orange);outline-offset:2px}
 .result{background:var(--navy);color:var(--on-navy);border-radius:12px;padding:24px;position:sticky;top:84px}
-.result .pn{font:600 2rem/1.1 "IBM Plex Mono",monospace;color:#fff;margin:6px 0 4px;word-break:break-all}
+.result .pn{font:600 2rem/1.1 "IBM Plex Mono",monospace;color:var(--on-navy-strong);margin:6px 0 4px;word-break:break-all}
 .result ul{padding-left:18px;color:var(--on-navy-muted);font-size:.92rem}
 .warn{background:color-mix(in srgb,var(--orange) 14%,transparent);border:1px solid color-mix(in srgb,var(--orange) 50%,transparent);color:var(--on-navy);border-radius:8px;padding:10px 12px;font-size:.85rem;margin-top:10px;display:none}
 .result .btn{width:100%;justify-content:center;margin-top:16px}
@@ -222,7 +225,7 @@ details > div{padding:0 20px 18px;color:var(--muted)}
 .quote{background:var(--navy);color:var(--on-navy)}
 .quote .split{align-items:start}
 .quote p{color:var(--on-navy-muted)}
-.contact-lines a{color:#fff;font-weight:600;text-decoration:none}
+.contact-lines a{color:var(--on-navy-strong);font-weight:600;text-decoration:none}
 form.q{background:var(--surface);color:var(--ink);border-radius:12px;padding:24px}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media (max-width:560px){.row{grid-template-columns:1fr}}
@@ -458,7 +461,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <a href="/guides/gg20-inspection-and-maintenance.html">Inspection schedule<small>Daily, 6 to 12 months, 24-month seal kit</small></a>
       <a href="/guides/gg20-safety-codes-and-compliance.html">Safety and codes<small>UL 125, latch, Rule 1177, K15</small></a>
     </div>
-    <p style="margin-top:14px"><a href="/guides/">All 12 guides →</a></p>
+    <p style="margin-top:14px"><a href="/guides/">All guides →</a></p>
   </div>
 </section>
 
