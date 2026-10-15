@@ -46,8 +46,13 @@ Reach (160 mm connector nut), the 1¾" ACME coupling, the 25 bar (362 psi) press
 
 The same three nose pieces exist on the shorter GG1 series as GG1E, GG1EH and GG1DN, with a 125 mm connector. Choose GG20 only when the fill valve is recessed. See the GasGuard family compared.
 
+## Quick answers
+
 Q: Which GG20 version has the highest flow?
 A: The GG20 with the single nose piece, rated 63 L/min at 12 bar. The GG20H and GG20DN are rated 60 L/min.
+
+Q: How much lever force does the GG20H or GG20DN need?
+A: ELAFLEX says the hybrid and dual nose pieces reduce the force needed to hold the lever open compared with the single-nose GG20, but the documents we cite don't give a figure in newtons or pounds.
 
 Q: Which GG20 is safest for self-service?
 A: The GG20DN. Its patented dual nose piece seals even if the nozzle isn't fully tightened, and ELAFLEX designates it for public and untrained users.
@@ -117,6 +122,8 @@ Two small conflicts in ELAFLEX's own documents: the operating manual prints the 
 ## Pressure drop
 
 ELAFLEX publishes a pressure drop curve for the GG20 family, measured at the National Measurement Institute in Sydney using common adapters without check valves. ELAFLEX warns that real vehicle connections and adapters vary and can change the result, so treat rated flow as a lab figure. The curve is on catalogue page 570.
+
+## Quick answers
 
 Q: What is the maximum pressure of the GG20?
 A: 25 bar (362 psi) working pressure; burst pressure is above 100 bar (1450 psi).
@@ -206,7 +213,12 @@ Codes drift between catalogues. Examples seen in US distributor listings: "GG20S
 
  | Seal kit for GG20 series | GG3
 
-These numbers come from the GG20 repair and maintenance manual. Availability of individual spares in the US varies; ask before you plan a repair around one.
+These numbers come from the GG20 repair and maintenance manual. Propane Nozzle quotes complete GG20 nozzles only, not individual spares; ask your LP-gas service company about parts availability before you plan a repair around one.
+
+## Quick answers
+
+Q: Can I get a GG20H or GG20DN with a latch, magnet or splashguard?
+A: Yes. The option codes apply to all three nose pieces: J magnet, L hold-open latch, G splashguard and B brass ACME insert can be added to a GG20, GG20H or GG20DN, with either the .2 or .3 inlet. The latch isn't covered by the UL listing, so check with your authority having jurisdiction first.
 
 Q: What does .3 mean in GG20.3?
 A: A ¾" NPT female inlet swivel. A .2 suffix means ½" NPT female.
@@ -263,6 +275,8 @@ If your dispenser starts the pump with a reed switch at the back of the nozzle b
 ## Avoid fill point adaptors
 
 ELAFLEX does not recommend adaptors between nozzle and fill point. They increase the volume of gas released on disconnect and can damage worn receptacles. Removing the need for an adaptor on recessed valves is the main reason the GG20 exists.
+
+## Quick answers
 
 Q: Can I use PTFE tape on a GG20 inlet thread?
 A: No. ELAFLEX says not to, because PTFE tape conducts static poorly and can shed particles. Use a non-permanent liquid thread sealant.
@@ -322,6 +336,8 @@ RV fill valves are often behind an access door or skirting. Same procedure. Note
 
 - A problem repeats: take the nozzle out of service and have trained personnel inspect it. See troubleshooting.
 
+## Quick answers
+
 Q: Is a small hiss of gas normal when disconnecting a GG20?
 A: Yes. ELAFLEX states a small release on uncoupling is normal: 1.9 cm³ for the GG20 and 1.7 cm³ for the GG20H and GG20DN. A continuous release is not normal.
 
@@ -374,6 +390,8 @@ A simple record per nozzle (serial number, date, who checked, result) makes the 
 
 The ELAFLEX PACIFIC manual gives a 12-month warranty from date of supply against defective materials and manufacture. It excludes normal wear and improper use, and approvals and warranty are void if non-original parts are used or the nozzle is modified.
 
+## Quick answers
+
 Q: How often should a GG20 seal kit be replaced?
 A: Every 24 months, per ELAFLEX PACIFIC. The seal kit for the GG20 series is listed as GG3.
 
@@ -418,6 +436,12 @@ This is an overview so you know what a proper repair involves. It is not a subst
 
 The manual says age, wear and abuse can make repair uneconomic, and replacing whole assemblies or the nozzle may be the better choice.
 
+## Nose pieces on the GG20, GG20H and GG20DN
+
+The nose piece is the only part that differs between the three versions, so it's the part to get right on a repair. The repair manual names the GG6 nose piece as part of the GG27 connector assembly; that is the single nose piece used on the standard GG20. The manual we cite doesn't list part numbers for the hybrid (GG20H) or dual (GG20DN) nose pieces. ELAFLEX PACIFIC publishes a separate "Replacement Nose Piece" document and a "Nose Piece O-ring information sheet" on its GasGuard information page.
+
+When you source a nose piece or seal kit for a GG20H or GG20DN, give the full model code from the nozzle (for example GG20DN.3) and its serial number, and confirm the part is for that nose piece type. Fitting the nose piece needs the special nose piece assembly tool listed above, and the white nose piece O-ring is one of the parts the 24-month seal kit replaces.
+
 ## Static test (before fitting connector and lever)
 
 - Connect to a supply hose with an upstream isolating valve.
@@ -444,10 +468,15 @@ The manual says age, wear and abuse can make repair uneconomic, and replacing wh
 
 If LPG isn't available, the manual allows bottled nitrogen at an 1800 kPa regulator setting, or compressed air.
 
+## Quick answers
+
+Q: What is the part number for a GG20H or GG20DN nose piece?
+A: The GG20 repair manual names only the GG6 nose piece, the single nose piece on the standard GG20. Part numbers for the hybrid and dual nose pieces aren't in that manual; ELAFLEX PACIFIC publishes a separate replacement nose piece document. Quote the full model code (such as GG20DN.3) and serial number when sourcing one.
+
 Q: At what pressure is a repaired GG20 tested?
 A: The static test in the repair manual uses 1200 to 1800 kPa (12 to 18 bar, 174 to 260 psi) under water, with a 27 N·m bending load on the swivel.
 
-Sources: GG20 Repair & Maintenance Manual (ELAFLEX PACIFIC / L.G. Equipment) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GG20-RM.pdf>
+Sources: GG20 Repair & Maintenance Manual (ELAFLEX PACIFIC / L.G. Equipment) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GG20-RM.pdf>; Information Material: GasGuard product range (ELAFLEX PACIFIC) <https://elaflex.com.au/information-material/gasguard-product-range>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>
 
 
 # GG20 Troubleshooting: Leaks, Hard Connections, No Flow, Stiff Lever
@@ -476,6 +505,8 @@ Summary: A small gas release on disconnect is normal (1.7 to 1.9 cm³). A contin
  | Connector nut won't turn freely | Dirt, worn pawl or spring | Clean; have the pawl and spring checked at inspection.
 
 Rows on "flow lower than usual" and "lever hard to hold" combine ELAFLEX's component descriptions with common service practice; they are not listed word for word in the manual. Everything involving a leak follows the manual's stop-and-isolate instruction.
+
+## Quick answers
 
 Q: My GG20 leaks continuously, what should I do?
 A: Release the lever, press the dispenser emergency stop, clear the area, and take the nozzle out of service for inspection by trained personnel.
@@ -520,6 +551,8 @@ Butane-Propane News reports that NFPA 58 adopted the K15 "Euro" push-to-connect 
 
 If there is an uncontrolled release, stop the transfer, use the emergency stop, move people away and call emergency services if needed.
 
+## Quick answers
+
 Q: Is the GG20 a low-emission connector?
 A: Its release on disconnect is 1.7 to 1.9 cm³, below the 4 cm³ limit that South Coast AQMD Rule 1177 uses to define a low-emission connector.
 
@@ -532,7 +565,7 @@ Sources: GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https
 # Will a GG20 Work With My Dispenser? Compatibility Checklist
 URL: https://propanenozzle.com/guides/gg20-dispenser-compatibility.html
 
-Summary: A GG20 fits any LPG dispenser whose hose ends in a ½" or ¾" NPT male thread and runs within the nozzle's 25 bar (362 psi) rating, as long as the thing being filled has a 1¾" ACME fill valve. Parafour designs its P4-150 dual-product dispenser for the GG20 on the autogas hose. Check three things: the fill valve style, the hose-end thread, and whether the dispenser starts its pump from a reed switch in the nozzle boot (then order the J magnet option).
+Summary: A GG20 fits any LPG dispenser whose hose ends in a ½" or ¾" NPT male thread and runs within the nozzle's 25 bar (362 psi) rating, as long as the thing being filled has a 1¾" ACME fill valve. Parafour designs its P4-100, P4-150 and P4-200 dispensers for the GG20. Check three things: the fill valve style, the hose-end thread, and whether the dispenser starts its pump from a reed switch in the nozzle boot (then order the J magnet option).
 
 ## The three things that decide fit
 
@@ -548,11 +581,9 @@ The GG20 is rated for 25 bar (362 psi) working pressure and LPG only (propane, b
 
 ## Dispensers known to ship for the GG20
 
-Parafour P4-150 dual product dispenser
+Parafour
 
-Parafour describes the P4-150 as a single-meter, dual-hose dispenser designed for the GasGuard GG20 autogas nozzle on one hose and various cylinder fill nozzles on the other. A selector switch picks the hose, and it can price the two products separately, so one unit serves both autogas vehicles and cylinder or forklift fills. Parafour builds it to UL 495/1238 and NFPA 58/30A and lists Liqua-Tech LPM102, Neptune 4DMD and Liquid Controls MA4 meters as options. A distributor listing for the P4-150-L notes it ships without hose kits, so confirm with your seller whether the GG20 and its hose are included or ordered separately.
-
-In short: yes, a GG20 works with a P4-150, on the autogas hose. Order the inlet that matches the hose kit, and ask Parafour or your distributor whether your unit uses a reed switch boot before choosing the magnet option.
+Parafour describes three of its dispensers as built for the GasGuard GG20: the P4-100 (one autogas hose), the P4-150 (one autogas hose plus a cylinder hose) and the P4-200 (two autogas hoses). It also lists a single-hose P4-075 without a published nozzle spec. Each guide covers which GG20 to order for that unit.
 
 Gilbarco-based autogas dispensers
 
@@ -566,6 +597,8 @@ If your dispenser isn't named here, check the three items above against its manu
 
 Forklift cylinders with 1¾" ACME fill valves are exactly what the GG20's long reach is for, so on a dual-hose unit like the P4-150 the GG20 can serve both jobs. Follow the cylinder-filling sequence in how to fill forklift cylinders and RVs.
 
+## Quick answers
+
 Q: Will a GG20 work with a Parafour P4-150?
 A: Yes. Parafour designs the P4-150 for the GasGuard GG20 on its autogas hose. Match the GG20 inlet (½" or ¾" NPT) to the hose kit, and ask whether the boot uses a reed switch, which needs the J magnet option.
 
@@ -575,7 +608,212 @@ A: If the hose ends in ½" or ¾" NPT, the system stays within 25 bar (362 psi),
 Q: Do I need an adaptor to use a GG20 on my dispenser?
 A: No, and ELAFLEX advises against adaptors at the fill point. Choose the inlet size that matches your hose end instead.
 
-Sources: P4-150 Dual Product Dispenser (Parafour) <https://parafour.com/p4-150-dual-product-dispenser/>; Parafour P4-150-L listing (GasEquipment.com) <https://www.gasequipment.com/catalog/shop/Parafour/mfr-1O4?a=1>; Propane Fuel Information Event (Houston-Galveston Clean Cities, 2016) <https://houston-cleancities.org/wp-content/uploads/2016/08/Propane-Fuel-Information-Event_combined.pdf>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>; ELAFLEX catalogue pages 567-574, rev. 11.2022 <https://elaflex.it/dokumente/download/Catalogue/CatPage567_574.pdf>; The ins and outs of autogas dispensers (Butane-Propane News) <https://bpnews.com/equipment/ins-outs-autogas-dispensers>
+Sources: Dispensers (Parafour) <https://parafour.com/dispensers/>; P4-100 Single Hose Autogas Dispenser (Parafour) <https://parafour.com/p4-100-single-hose-autogas-dispenser/>; P4-150 Dual Product Dispenser (Parafour) <https://parafour.com/p4-150-dual-product-dispenser/>; P4-200 Dual Hose Dispenser (Parafour) <https://parafour.com/p4-200-dual-hose-dispenser/>; Propane Fuel Information Event (Houston-Galveston Clean Cities, 2016) <https://houston-cleancities.org/wp-content/uploads/2016/08/Propane-Fuel-Information-Event_combined.pdf>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>; ELAFLEX catalogue pages 567-574, rev. 11.2022 <https://elaflex.it/dokumente/download/Catalogue/CatPage567_574.pdf>; The ins and outs of autogas dispensers (Butane-Propane News) <https://bpnews.com/equipment/ins-outs-autogas-dispensers>
+
+
+# GG20 on the Parafour P4-075 Dispenser
+URL: https://propanenozzle.com/guides/gg20-parafour-p4-075.html
+
+Summary: Parafour lists the P4-075 as a single-hose autogas dispenser (its site menu also calls it a slim-line fleet dispenser). Parafour hasn't published which nozzle it ships for, so check the unit before ordering: if the vehicles you fill have 1¾" ACME fill valves and the hose ends in ½" or ¾" NPT, a GG20 fits. Vehicles with K15 quick-connect fill valves need a GG40 instead.
+
+## What Parafour publishes
+
+Parafour's dispenser lineup lists the P4-075 as a single-hose autogas dispenser, and its site navigation also calls it the P4-075 slim-line fleet dispenser. Parafour states that all of its dispensers are ETL listed to UL 495, 1203, 1238 and 913 and NTEP certified under NCWM Handbook 44. We couldn't find a published spec sheet that names the P4-075's nozzle, hose size or meter, unlike the P4-100, P4-150 and P4-200, which Parafour describes as built for the GasGuard GG20.
+
+## Checking whether a GG20 fits your P4-075
+
+- Look at the vehicles' fill valves. 1¾" ACME: the GG20 fits, and its 160 mm reach handles recessed valves. K15 / Euro quick connect, which newer US autogas vehicles use: you need a GG40 or ZVG 2 EURO UL instead.
+
+- Look at the hose end. The GG20 swivel comes in ½" NPT (.2) or ¾" NPT (.3).
+
+- Check the nozzle boot. If lifting the nozzle starts the pump through a reed switch, order the J magnet option.
+
+If the dispenser already has a nozzle on it, the part number on the nozzle body tells you what was fitted. Send it to us through the quote form and we'll match it.
+
+## Ordering the right GG20
+
+ | | Choice | What to pick
+
+ | Nose piece | GG20 (single) for trained attendants, GG20H (hybrid) for operators filling all day, GG20DN (dual) where the public or untrained staff fill. See GG20 vs GG20H vs GG20DN.
+
+ | Inlet | .2 for a ½" NPT hose end, .3 for ¾" NPT. Check the end of the hose kit fitted to your dispenser.
+
+ | Magnet (J) | Only if the nozzle boot uses a reed switch to start the pump. Ask your dispenser supplier.
+
+ | Latch (L) | ELAFLEX notes the hold-open latch is not covered by the UL listing and isn't allowed everywhere. Check with your authority having jurisdiction before ordering one.
+
+Parafour details on this page come from Parafour's product pages and distributor listings. Specs change; confirm the current configuration with Parafour or your distributor before you order.
+
+## Quick answers
+
+Q: Does the Parafour P4-075 use a GG20?
+A: Parafour hasn't published the P4-075's nozzle. It's a single-hose autogas dispenser, so a GG20 fits if your vehicles have 1¾" ACME fill valves and the hose ends in ½" or ¾" NPT. K15 vehicles need a GG40.
+
+Sources: Dispensers (Parafour) <https://parafour.com/dispensers/>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>; The ins and outs of autogas dispensers (Butane-Propane News) <https://bpnews.com/equipment/ins-outs-autogas-dispensers>
+
+
+# GG20 on the Parafour P4-100 Single Hose Autogas Dispenser
+URL: https://propanenozzle.com/guides/gg20-parafour-p4-100.html
+
+Summary: Yes, the GG20 is the nozzle the P4-100 is designed for. Parafour describes the P4-100 as a single-hose autogas dispenser built for the GasGuard GG20 nozzle. Pick the nose piece for who will be filling (GG20, GG20H or GG20DN), match the inlet to the hose end (½" or ¾" NPT), and add the J magnet only if the boot uses a reed switch.
+
+## What Parafour publishes
+
+Parafour describes the P4-100 as a single-hose autogas dispenser designed for the GasGuard GG20 nozzle. Its listed features include:
+
+- Meter options: Liqua-Tech LPM102, Neptune 4DMD or Liquid Controls MA4.
+
+- Electronic calibration and automatic temperature compensation as standard.
+
+- Optional receipt printer and fuel management upgrades.
+
+- NTEP certified for installation with NTEP-approved meters and fuel management systems.
+
+- Designed and built to UL 495 / 1238 and NFPA 58 / 30A.
+
+Distributors list it as the P4-100-L, described as the basic UL-listed single-hose model.
+
+## Where the P4-100 fits
+
+One hose means one product: autogas vehicles with 1¾" ACME fill valves. If you also fill forklift or exchange cylinders from the same unit, look at the P4-150, which adds a cylinder hose on the same meter. For two autogas lanes, see the P4-200.
+
+## Ordering the right GG20
+
+ | | Choice | What to pick
+
+ | Nose piece | GG20 (single) for trained attendants, GG20H (hybrid) for operators filling all day, GG20DN (dual) where the public or untrained staff fill. See GG20 vs GG20H vs GG20DN.
+
+ | Inlet | .2 for a ½" NPT hose end, .3 for ¾" NPT. Check the end of the hose kit fitted to your dispenser.
+
+ | Magnet (J) | Only if the nozzle boot uses a reed switch to start the pump. Ask your dispenser supplier.
+
+ | Latch (L) | ELAFLEX notes the hold-open latch is not covered by the UL listing and isn't allowed everywhere. Check with your authority having jurisdiction before ordering one.
+
+## Hose kits are a separate purchase
+
+Distributor listings for Parafour's -L dispensers show them shipping without hoses or a nozzle kit. One retailer lists a Parafour autogas hose and nozzle kit (HK-0021) with a pull-away and lanyard, an 18" × ¾" LP whip, a ¾" × 12' delivery hose and a GG20L nozzle (the L is the hold-open latch option). Your dispenser supplier or LP-gas installer supplies and assembles the hose; Propane Nozzle quotes the GG20 nozzle itself.
+
+Parafour details on this page come from Parafour's product pages and distributor listings. Specs change; confirm the current configuration with Parafour or your distributor before you order.
+
+## Quick answers
+
+Q: Does the Parafour P4-100 use a GG20 nozzle?
+A: Yes. Parafour designs the P4-100 single-hose autogas dispenser for the GasGuard GG20.
+
+Q: Which GG20 should I put on a P4-100?
+A: GG20 for trained attendants, GG20H to reduce lever force, GG20DN for public or untrained users. Choose .2 or .3 to match a ½" or ¾" NPT hose end, and add J only for a reed-switch boot.
+
+Sources: P4-100 Single Hose Autogas Dispenser (Parafour) <https://parafour.com/p4-100-single-hose-autogas-dispenser/>; Dispensers (Parafour) <https://parafour.com/dispensers/>; Parafour P4-150-L listing (GasEquipment.com) <https://www.gasequipment.com/catalog/shop/Parafour/mfr-1O4?a=1>; Hose & Nozzle Kit, Autogas, for Parafour dispensers, HK-0021 (Chimney Cricket listing) <https://chimneycricket.com/products/hose-nozzle-kit-autogas-for-parafour-dispensers-includes-pull-away-w-lanyard-18-x-3-4-lp-whip-3-4-x-12-lp-delivery-hose-gg20l-nozzle-parafour-hk-0021-ha0021>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; GasGuard Information 6.15: part number breakdown (ELAFLEX) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_6.15.pdf>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>
+
+
+# GG20 on the Parafour P4-150 Dual Product Dispenser
+URL: https://propanenozzle.com/guides/gg20-parafour-p4-150.html
+
+Summary: Yes. Parafour designs the P4-150 single-meter, dual-hose dispenser for the GasGuard GG20 on its autogas hose, with a separate cylinder fill nozzle on the other hose. A selector switch picks the hose and the two products can be priced separately. The GG20's 160 mm reach is also built for forklift cylinders with recessed 1¾" ACME valves.
+
+## What Parafour publishes
+
+Parafour calls the P4-150 its most flexible dispenser for propane resellers: one meter, two hoses, one for autogas vehicles and one for cylinder and RV filling. Its listed features include:
+
+- Designed for the GasGuard GG20 autogas nozzle and various cylinder fill nozzles.
+
+- Selector switch between the two hoses, with dual product pricing.
+
+- Meter options: Liqua-Tech LPM102, Neptune 4DMD or Liquid Controls MA4.
+
+- Electronic totalizer and pre-wiring for card readers; can be upgraded to Parafour's ParaFUEL POS.
+
+- Optional automatic cylinder filling for safety and overfill prevention, which Parafour says can't be combined with ParaFUEL POS.
+
+- Skid, island or remote mounting, and can be placed within 5 ft of other product dispensers under NFPA 58's low-emission dispenser provisions.
+
+- Designed and built to UL 495 / 1238 and NFPA 58 / 30A; NTEP certified.
+
+## Which hose gets the GG20
+
+The autogas hose. That's the hose Parafour designs around the GG20, for vehicles with 1¾" ACME fill valves. The cylinder hose takes whatever cylinder fill nozzle your operation uses. If your cylinders have deep-set 1¾" ACME valves, the GG20 handles those too; see filling forklift cylinders and RVs.
+
+## Ordering the right GG20
+
+ | | Choice | What to pick
+
+ | Nose piece | GG20 (single) for trained attendants, GG20H (hybrid) for operators filling all day, GG20DN (dual) where the public or untrained staff fill. See GG20 vs GG20H vs GG20DN.
+
+ | Inlet | .2 for a ½" NPT hose end, .3 for ¾" NPT. Check the end of the hose kit fitted to your dispenser.
+
+ | Magnet (J) | Only if the nozzle boot uses a reed switch to start the pump. Ask your dispenser supplier.
+
+ | Latch (L) | ELAFLEX notes the hold-open latch is not covered by the UL listing and isn't allowed everywhere. Check with your authority having jurisdiction before ordering one.
+
+## Hose kits are a separate purchase
+
+Distributor listings for Parafour's -L dispensers show them shipping without hoses or a nozzle kit. One retailer lists a Parafour autogas hose and nozzle kit (HK-0021) with a pull-away and lanyard, an 18" × ¾" LP whip, a ¾" × 12' delivery hose and a GG20L nozzle (the L is the hold-open latch option). Your dispenser supplier or LP-gas installer supplies and assembles the hose; Propane Nozzle quotes the GG20 nozzle itself.
+
+Parafour details on this page come from Parafour's product pages and distributor listings. Specs change; confirm the current configuration with Parafour or your distributor before you order.
+
+## Quick answers
+
+Q: Will a GG20 work with a Parafour P4-150?
+A: Yes. Parafour designs the P4-150 for the GasGuard GG20 on its autogas hose. Match the GG20 inlet (½" or ¾" NPT) to the hose end, and add the J magnet only for a reed-switch boot.
+
+Q: Can the P4-150 fill cylinders and vehicles?
+A: Yes. It has one meter and two hoses, autogas and cylinder, with a selector switch and separate pricing for each product.
+
+Sources: P4-150 Dual Product Dispenser (Parafour) <https://parafour.com/p4-150-dual-product-dispenser/>; Dispensers (Parafour) <https://parafour.com/dispensers/>; Parafour P4-150-L listing (GasEquipment.com) <https://www.gasequipment.com/catalog/shop/Parafour/mfr-1O4?a=1>; Hose & Nozzle Kit, Autogas, for Parafour dispensers, HK-0021 (Chimney Cricket listing) <https://chimneycricket.com/products/hose-nozzle-kit-autogas-for-parafour-dispensers-includes-pull-away-w-lanyard-18-x-3-4-lp-whip-3-4-x-12-lp-delivery-hose-gg20l-nozzle-parafour-hk-0021-ha0021>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; GasGuard Information 6.15: part number breakdown (ELAFLEX) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_6.15.pdf>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>
+
+
+# GG20 on the Parafour P4-200 Dual Hose Autogas Dispenser
+URL: https://propanenozzle.com/guides/gg20-parafour-p4-200.html
+
+Summary: Yes. Parafour describes the P4-200 as a dual-hose autogas dispenser designed for the GasGuard GG20 nozzle, so you need two GG20 nozzles, one per hose. It's laid out for two fueling lanes. Match the nose piece to who fills each lane: GG20DN where the public fills, GG20 or GG20H where trained staff fill.
+
+## What Parafour publishes
+
+Parafour describes the P4-200 as a dual-hose autogas dispenser designed for the GasGuard GG20 nozzle, with lane orientation. Its listed features include:
+
+- Meter options: Liqua-Tech LPM102, Neptune 4DMD or Liquid Controls MA4.
+
+- Electronic totalizer, automatic electronic temperature compensation and solenoid flow control.
+
+- Optional receipt printers and a fuel management upgrade.
+
+- Skid mounting on most distributor-built or locally produced skids, island mounting, or remote mounting.
+
+- NTEP certified; designed and built to UL 495 / 1238 and NFPA 58 / 30A.
+
+A distributor listing for the P4-200-L shows it shipping without hoses or a nozzle kit.
+
+## Two hoses, two nozzles
+
+Each hose needs its own GG20, and they don't have to match. If one lane serves the public and the other serves your own fleet, put a GG20DN on the public side and a GG20 or GG20H on the fleet side. Order the inlet size for each hose's end thread.
+
+## Ordering the right GG20
+
+ | | Choice | What to pick
+
+ | Nose piece | GG20 (single) for trained attendants, GG20H (hybrid) for operators filling all day, GG20DN (dual) where the public or untrained staff fill. See GG20 vs GG20H vs GG20DN.
+
+ | Inlet | .2 for a ½" NPT hose end, .3 for ¾" NPT. Check the end of the hose kit fitted to your dispenser.
+
+ | Magnet (J) | Only if the nozzle boot uses a reed switch to start the pump. Ask your dispenser supplier.
+
+ | Latch (L) | ELAFLEX notes the hold-open latch is not covered by the UL listing and isn't allowed everywhere. Check with your authority having jurisdiction before ordering one.
+
+## Hose kits are a separate purchase
+
+Distributor listings for Parafour's -L dispensers show them shipping without hoses or a nozzle kit. One retailer lists a Parafour autogas hose and nozzle kit (HK-0021) with a pull-away and lanyard, an 18" × ¾" LP whip, a ¾" × 12' delivery hose and a GG20L nozzle (the L is the hold-open latch option). Your dispenser supplier or LP-gas installer supplies and assembles the hose; Propane Nozzle quotes the GG20 nozzle itself.
+
+Parafour details on this page come from Parafour's product pages and distributor listings. Specs change; confirm the current configuration with Parafour or your distributor before you order.
+
+## Quick answers
+
+Q: Does the Parafour P4-200 use the GG20?
+A: Yes. Parafour designs the P4-200 dual-hose autogas dispenser for the GasGuard GG20, one nozzle per hose.
+
+Q: Do both hoses on a P4-200 need the same GG20?
+A: No. Pick the nose piece per lane: GG20DN where the public fills, GG20 or GG20H where trained staff fill.
+
+Sources: P4-200 Dual Hose Dispenser (Parafour) <https://parafour.com/p4-200-dual-hose-dispenser/>; Dispensers (Parafour) <https://parafour.com/dispensers/>; P4-200-L listing (GasEquipment.com) <https://www.gasequipment.com/buy/product/p4-200-l/36994>; Hose & Nozzle Kit, Autogas, for Parafour dispensers, HK-0021 (Chimney Cricket listing) <https://chimneycricket.com/products/hose-nozzle-kit-autogas-for-parafour-dispensers-includes-pull-away-w-lanyard-18-x-3-4-lp-whip-3-4-x-12-lp-delivery-hose-gg20l-nozzle-parafour-hk-0021-ha0021>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; GasGuard Information 6.15: part number breakdown (ELAFLEX) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_6.15.pdf>; Installation and Operating Manual, GG1 & GG20 series (ELAFLEX PACIFIC, 5/2016) <https://elaflex.com.au/dokumente/subsidiaries/au/Manuals/GasGuard_Manual_GG1_GG20_Installation_Operation_EN.pdf>
 
 
 # GasGuard Family Compared: GG1, GG20, GG30, GG40 and ZVG 2
@@ -602,6 +840,8 @@ Same function, same nose pieces, same ratings. The GG20 adds 35 mm to the connec
 ## Where the others fit
 
 The GG30 serves bayonet fill points and has a 4-slot front and redesigned nose piece; ELAFLEX states it reduces released gas on closure by 23% versus its predecessor. The GG40 was designed for the US and Canadian K15 quick-connect systems and fits the same NB-GG boot. The ZVG 2 EURO UL is ELAFLEX's push-on nozzle; latched versions are covered by UL 125 and UL 567.
+
+## Quick answers
 
 Q: What is the difference between GasGuard GG1 and GG20?
 A: Connector reach: 125 mm on the GG1 versus 160 mm on the GG20. Everything else, including flow and nose piece options, is the same.
@@ -633,6 +873,8 @@ ELAFLEX describes the GG20 design as having improved operational performance and
  | Boot | NB-GG holds GasGuard nozzles
 
 Send a photo of the old nozzle's label with your quote request and we'll match it.
+
+## Quick answers
 
 Q: What replaced the GasGuard LG20?
 A: The GG20 range: GG20, GG20H and GG20DN.
