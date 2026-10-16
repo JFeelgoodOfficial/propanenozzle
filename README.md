@@ -1,8 +1,10 @@
-# GG20 site: setup and deployment
+# Propane Nozzle site: setup and deployment
+
+Products: the ELAFLEX GasGuard **GG40** K15 quick-connect nozzle and matching autogas hose kits are sold; the **GG20** ACME nozzle is kept as reference only (`/gg20/` and its guides). GG40 figures ELAFLEX hasn't published are marked `TBD` in `build/content.py`; `build/build.py` refuses to build while any remain unless you set `ALLOW_TBD=1`.
 
 This folder is the whole business front end:
 
-- **`public/`**: the website. Product page, 12 guides, a knowledge base file, `llms.txt`, sitemap and robots.txt.
+- **`public/`**: the website. GG40 product page (`/`), GG20 reference page (`/gg20/`), the guides, a knowledge base file, `llms.txt`, sitemap and robots.txt.
 - **`functions/`**: the server side. `/api/lead` (quote form), `/api/chat` (product Q&A) and `/api/call-webhook` (phone agent). All three save to Firestore.
 - **`receptionist/`**: setup steps and the prompt for the Retell AI phone agent.
 - **`build/content.py`**: the single source for every guide, the chat's knowledge and the phone agent's knowledge. Edit it, then run `python3 build/build.py`.
@@ -16,7 +18,7 @@ python3 scripts/configure.py --brand "Your Company" --domain yourdomain.com \
   --transfer-name "Your Name" --hours "Mon-Fri 8am-5pm Central"
 ```
 
-The hero uses `public/gg20.webp` (the ELAFLEX GG20 drawing). To use your own photo instead, replace that file and update the `width`/`height` on the hero `<img>` in `public/index.html`.
+Product photos (`public/gg40.webp`, `public/img/gg40-*.webp`, `public/img/ark19-pull-away.webp`) are cropped from the ELAFLEX PACIFIC GG40 brochure, which is also served at `/docs/ELAFLEX_Pacific_GG40.pdf`. The GG20 reference page uses `public/gg20.webp`. To swap a photo, replace the file and update the `width`/`height` on its `<img>`.
 
 ## 2. Domain and email
 

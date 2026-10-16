@@ -1,12 +1,23 @@
-# Propane Nozzle: ELAFLEX GasGuard GG20 LPG nozzle
+# Propane Nozzle: ELAFLEX GasGuard GG40 K15 propane nozzle and hose kits
 
-> Independent US reseller of the ELAFLEX GasGuard GG20 long-reach 1¾" ACME propane nozzle (GG20, GG20H, GG20DN). Full technical reference sourced from ELAFLEX documentation.
+> Independent US reseller of the ELAFLEX GasGuard GG40 quick-connect (K15) propane nozzle and matching autogas hose kits. Also hosts the complete GG20 1¾" ACME nozzle reference (no longer sold). Sourced from ELAFLEX documentation.
 
-## Product
-- [GG20 product page and quote](https://propanenozzle.com/)
-- [Full knowledge base, plain text](https://propanenozzle.com/knowledge/gg20-kb.md)
+## Products
+- [GG40 nozzle and hose kits: product page and quote](https://propanenozzle.com/)
+- [GG20 reference page](https://propanenozzle.com/gg20/)
+- [Full knowledge base, plain text](https://propanenozzle.com/knowledge/gasguard-kb.md)
 
-## Guides
+## GG40 and hose-kit guides
+- [ELAFLEX GasGuard GG40: the K15 Quick-Connect Propane Nozzle](https://propanenozzle.com/guides/gg40-k15-quick-connect-nozzle.html): What the GasGuard GG40 is, how K15 quick-connect propane filling works, who it is for, and the figures ELAFLEX publishes: up to 17 GPM, under 1 cm³ release, UL approved.
+- [GG40 vs GG20: K15 Quick Connect vs 1¾" ACME, Which Nozzle Your Vehicles Need](https://propanenozzle.com/guides/gg40-vs-gg20-acme-vs-k15.html): K15 push-on (GG40) or 1¾" ACME thread (GG20)? The NFPA 58 rule for 2020-and-later vehicles, what each nozzle fits, and how the two compare on flow, release and lever effort.
+- [GG40 Part Numbers and Options: Latched, Unlatched and Inlet](https://propanenozzle.com/guides/gg40-part-numbers-and-options.html): How GasGuard GG40 nozzles are coded: latched (L) and unlatched versions, strainer (S), inlet thread, and what to confirm in words on every quote.
+- [Installing a GG40: Hose Kit, ARK 19.3 Pull-Away, Thread Sealing and Boot](https://propanenozzle.com/guides/gg40-installation-hose-and-boot.html): Fitting a GasGuard GG40 to a dispenser: the ELAFLEX LPG 16 S hose, ARK 19.3 pull-away, thread sealing without PTFE tape, leak testing, and the NB-GG boot.
+- [Will a GG40 Work With My Dispenser? K15 Hose Kits on Parafour and Others](https://propanenozzle.com/guides/gg40-dispenser-compatibility.html): How to tell whether a GasGuard GG40 fits your propane dispenser: hose-end thread, pull-away, boot and reed switch, with notes on Parafour P4 dispensers.
+- [GG40 Safety, Codes and Compliance: NFPA 58, K15 and UL](https://propanenozzle.com/guides/gg40-safety-codes-and-compliance.html): What NFPA 58 requires for K15 refueling, the GG40's UL approval, the latch question, PPE, emissions claims and who has the final say on an installation.
+- [Autogas Hose Kits for the GG40: Hose, Pull-Away and Whip](https://propanenozzle.com/guides/autogas-hose-kits.html): What is in an autogas hose kit for the GasGuard GG40: ELAFLEX LPG 16 S hose, ARK 19.3 pull-away, whip, lengths and threads, and the UL and CSA listings behind them.
+- [GG40 Maintenance, Repair and Warranty](https://propanenozzle.com/guides/gg40-maintenance-and-warranty.html): What ELAFLEX publishes about keeping a GasGuard GG40 in service: low maintenance, simple repair, the 18-month warranty, boot storage and when to call the manufacturer.
+
+## GG20 reference guides
 - [GG20 vs GG20H vs GG20DN: Which GasGuard Nozzle to Buy](https://propanenozzle.com/guides/gg20-vs-gg20h-vs-gg20dn.html): How the three GasGuard GG20 nozzles differ: single, hybrid and dual nose pieces, flow, lever force, release volume and who each one is for.
 - [GasGuard GG20 Specifications: Complete Technical Data](https://propanenozzle.com/guides/gg20-specifications.html): Every published spec for the ELAFLEX GasGuard GG20: reach, flow, pressure, temperature, materials, seals, weight, strainer and standards, in metric and US units.
 - [GG20 Part Numbers Decoded: Nose Pieces, Inlets and Option Codes](https://propanenozzle.com/guides/gg20-part-numbers-and-options.html): How to read a GasGuard GG20 part number: GG20/GG20H/GG20DN, .2 and .3 inlets, and the J, S, L, G and B option codes, plus how distributors label them.

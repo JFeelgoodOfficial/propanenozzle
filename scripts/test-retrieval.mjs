@@ -35,7 +35,24 @@ const CASES = {
   "will a gg20 work with a p4-200": "GG20 on the Parafour P4-200",
   "p4-075": "P4-075",
   "does it work with my parafour dispenser": "Parafour",
-  "hi": "GG20 vs GG20H",
+  // GG40 and hose kits
+  "what is the GG40": "K15 quick connect",
+  "GG40 vs GG20": "GG40 vs GG20",
+  "does my 2021 school bus have a K15 valve": "1 January 2020",
+  "is the GG40 UL listed": "latched and unlatched",
+  "GG40 flow rate": "17 GPM",
+  "latched or unlatched GG40": "Pick latched where",
+  "what does GG40SL mean": "GG40SL",
+  "whats in a hose kit": "Autogas Hose Kits",
+  "are the hose kits UL listed": "UL 21",
+  "what hose length do I need": "12' delivery",
+  "what is an ARK 19 pull-away": "200 to 500 N",
+  "can I use a GG40 on an ACME tank with an adapter": "Adapters",
+  "does the GG40 fit my nozzle boot": "NB-GG",
+  "GG40 warranty": "18 month",
+  "do you still sell the GG20": "no longer sell",
+  "can I use teflon tape on a GG40": "PTFE",
+  "hi": "GG40",
 };
 
 let failed = 0;
