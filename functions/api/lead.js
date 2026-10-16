@@ -1,7 +1,7 @@
 // POST /api/lead : quote form submissions -> Firestore "leads"
 import { addDoc, notify, json } from "../_lib/firestore.js";
 
-const FIELDS = ["name", "company", "email", "phone", "configuration", "quantity", "application", "message",
+const FIELDS = ["name", "company", "email", "phone", "product", "configuration", "hose_length", "quantity", "application", "message",
   "utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid", "page"];
 
 export async function onRequestPost({ request, env }) {
@@ -24,7 +24,7 @@ export async function onRequestPost({ request, env }) {
 
   try {
     const id = await addDoc(env, "leads", lead);
-    await notify(env, `New GG20 quote request: ${lead.name} (${lead.company || "no company"}) ${lead.email} · ${lead.configuration} x${lead.quantity} · ${lead.application}`);
+    await notify(env, `New quote request: ${lead.name} (${lead.company || "no company"}) ${lead.email} · ${lead.product || ""} ${lead.configuration} x${lead.quantity}${lead.hose_length ? " · hose: " + lead.hose_length : ""} · ${lead.application}`);
     return json({ ok: true, id });
   } catch (e) {
     console.error(e);

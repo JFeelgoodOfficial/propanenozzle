@@ -36,7 +36,7 @@ const idf = (t) => Math.log(1 + (N - DF.get(t) + 0.5) / (DF.get(t) + 0.5));
 const bm25 = (d, t) => { const f = d.tf.get(t) || 0; return f ? idf(t) * (f * (K1 + 1)) / (f + K1 * (1 - B + B * d.len / AVG)) : 0; };
 
 /** Returns the KB header plus the best-matching sections, in KB order, within `budget` characters. */
-export function relevantKB(query, budget = 6000) {
+export function relevantKB(query, budget = 7000) {
   const q = [...new Set(words(query))].filter((t) => DF.has(t));
   const scored = DOCS.map((d, i) => ({
     i, d,

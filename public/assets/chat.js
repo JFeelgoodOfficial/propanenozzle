@@ -1,6 +1,6 @@
-/* GG20 product Q&A widget. Talks to /api/chat. No cookies, no storage; history lives only in this page view. */
+/* GasGuard GG40 product Q&A widget. Talks to /api/chat. No cookies, no storage; history lives only in this page view. */
 (function () {
-  if (window.__gg20chat) return; window.__gg20chat = true;
+  if (window.__ggchat) return; window.__ggchat = true;
   var css = `
   .gc-btn{position:fixed;right:16px;bottom:16px;z-index:40;background:#e8650f;color:#fff;border:0;border-radius:999px;padding:12px 18px;font:600 15px/1 "IBM Plex Sans",system-ui,sans-serif;box-shadow:0 6px 20px rgba(0,0,0,.18);cursor:pointer}
   @media (max-width:720px){.gc-btn{bottom:76px}}
@@ -23,17 +23,17 @@
   .gc-foot{font-size:11px;color:var(--muted,#5b6370);padding:0 12px 8px}`;
   var st = document.createElement("style"); st.textContent = css; document.head.appendChild(st);
 
-  var btn = el("button", "gc-btn", "Ask about the GG20");
+  var btn = el("button", "gc-btn", "Ask about the GG40");
   btn.setAttribute("aria-expanded", "false");
-  var panel = el("div", "gc-panel"); panel.setAttribute("role", "dialog"); panel.setAttribute("aria-label", "GG20 product questions");
-  panel.innerHTML = '<div class="gc-head"><div><strong>GG20 questions</strong><small>Answers from ELAFLEX documentation</small></div><button class="gc-x" aria-label="Close">×</button></div><div class="gc-log" aria-live="polite"></div><form class="gc-form"><input maxlength="500" placeholder="e.g. Will it fit a forklift cylinder?" aria-label="Your question" required><button type="submit">Send</button></form><div class="gc-foot">Automated answers can be wrong. For safety-critical decisions, check the ELAFLEX manual or call us.</div>';
+  var panel = el("div", "gc-panel"); panel.setAttribute("role", "dialog"); panel.setAttribute("aria-label", "GG40 product questions");
+  panel.innerHTML = '<div class="gc-head"><div><strong>GG40 questions</strong><small>Answers from ELAFLEX documentation</small></div><button class="gc-x" aria-label="Close">×</button></div><div class="gc-log" aria-live="polite"></div><form class="gc-form"><input maxlength="500" placeholder="e.g. Does my 2021 bus take a GG40?" aria-label="Your question" required><button type="submit">Send</button></form><div class="gc-foot">Automated answers can be wrong. For safety-critical decisions, check the ELAFLEX manual or call us.</div>';
   document.body.appendChild(btn); document.body.appendChild(panel);
   var log = panel.querySelector(".gc-log"), form = panel.querySelector("form"), input = form.querySelector("input");
   var history = [], busy = false;
 
-  say("a", "Hi. Ask anything about the ELAFLEX GasGuard GG20: which version to pick, specs, fitting, maintenance or ordering.");
+  say("a", "Hi. Ask anything about the ELAFLEX GasGuard GG40 K15 nozzle and hose kits: latched or unlatched, specs, the NFPA 58 K15 rule, fitting, or ordering. GG20 questions welcome too; we keep its guides as reference.");
   var sug = el("div", "gc-sug");
-  ["GG20 vs GG20DN?", "Will it reach a forklift cylinder valve?", "Is the latch UL listed?", "How do I order?"].forEach(function (q) {
+  ["GG40 vs GG20?", "Does my vehicle have a K15 valve?", "What's in a hose kit?", "How do I order?"].forEach(function (q) {
     var b = el("button", "", q); b.type = "button"; b.onclick = function () { sug.remove(); ask(q); }; sug.appendChild(b);
   });
   log.appendChild(sug);
