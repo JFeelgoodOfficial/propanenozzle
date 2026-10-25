@@ -28,6 +28,7 @@ export async function onRequestPost({ request, env }) {
     email: x.email,
     product_interest: x.product_interest,
     quantity: x.quantity,
+    hose_length: x.hose_length,
     application: x.application,
     ship_to_zip: x.ship_to_zip,
     wants_callback: x.wants_callback,
