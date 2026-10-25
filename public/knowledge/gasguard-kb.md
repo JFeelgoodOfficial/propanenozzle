@@ -38,11 +38,11 @@ The operator pushes the nozzle over the vehicle's K15 fill valve until the locki
 
  | Hose set | ARK 19.3 pull-away and UL-listed LPG 16 S hose
 
- | Weight | TBD (not published)
+ | Weight | Not yet published by ELAFLEX; confirm with your quote
 
- | Pressure rating | TBD (not published for the nozzle; the LPG 16 S hose is rated 25 bar)
+ | Pressure rating | Not yet published for the nozzle; confirm with your quote (the LPG 16 S hose is rated 25 bar)
 
- | Inlet thread | ¾" NPT per distributor listings; other sizes TBD
+ | Inlet thread | ¾" NPT per distributor listings; other sizes not yet published
 
 ## Who it is for
 
@@ -60,7 +60,7 @@ If you still fill forklift cylinders, RVs or older ACME vehicles, you need an AC
 
  | Latch | Latched (hold-open) or unlatched. Both versions are UL approved, so the latch is a workflow choice: latched for attended fleet fueling where the operator stays with the nozzle; check your authority having jurisdiction for self-service sites.
 
- | Inlet | Distributor listings show ¾" NPT. Tell us the thread on your hose kit; we confirm the inlet on the quote. (Other inlet sizes: TBD, not yet published.)
+ | Inlet | Distributor listings show ¾" NPT. Tell us the thread on your hose kit; we confirm the inlet on the quote. (Other inlet sizes are not yet published.)
 
  | Hose kit | We can quote a matching ELAFLEX hose kit: LPG 16 S hose, ARK 19.3 pull-away and whip, built for the GG40. See autogas hose kits.
 
@@ -150,7 +150,7 @@ Summary: GasGuard codes follow a pattern: nozzle style, then options, then inlet
 
  | L | Safety hold-open latch | Latched and unlatched versions are both UL approved, unlike the GG20 where the latch sits outside the listing
 
- | ¾" NPT | Inlet thread | As listed by US distributors (GG40SL). Other inlet sizes: TBD, not yet published
+ | ¾" NPT | Inlet thread | As listed by US distributors (GG40SL). Other inlet sizes not yet published
 
 Example: a US distributor lists "Euro K15 Quick Connect Nozzle, UL listed, ¾" NPT, with latch" under SKU GG40SL.
 
@@ -168,7 +168,7 @@ ELAFLEX describes the GG40 as low maintenance and simple to repair, with an 18-m
 
  | Latch | Latched (hold-open) or unlatched. Both versions are UL approved, so the latch is a workflow choice: latched for attended fleet fueling where the operator stays with the nozzle; check your authority having jurisdiction for self-service sites.
 
- | Inlet | Distributor listings show ¾" NPT. Tell us the thread on your hose kit; we confirm the inlet on the quote. (Other inlet sizes: TBD, not yet published.)
+ | Inlet | Distributor listings show ¾" NPT. Tell us the thread on your hose kit; we confirm the inlet on the quote. (Other inlet sizes are not yet published.)
 
  | Hose kit | We can quote a matching ELAFLEX hose kit: LPG 16 S hose, ARK 19.3 pull-away and whip, built for the GG40. See autogas hose kits.
 
@@ -225,7 +225,7 @@ Mount the ARK 19.3 between the whip and the delivery hose, with its lanyard anch
 
 ## Reed-switch dispensers
 
-Some dispensers start the pump from a reed switch in the nozzle boot that senses a magnet in the nozzle. Whether the GG40 offers a magnet option is TBD (not published); ask when you order if your boot works that way.
+Some dispensers start the pump from a reed switch in the nozzle boot that senses a magnet in the nozzle. ELAFLEX has not yet published whether the GG40 offers a magnet option; tell us when you order if your boot works that way and we'll confirm.
 
 GG40 figures on this page come from the ELAFLEX PACIFIC GG40 brochure (2025) and distributor listings. ELAFLEX has not published every number for the GG40 yet; where a figure is missing we say so instead of guessing. Confirm the current data sheet with your quote.
 
@@ -252,7 +252,7 @@ Summary: A GG40 fits any autogas dispenser whose hose kit ends in the nozzle's i
 
  | Pull-away | An ARK 19.3 or equivalent break-away between whip and delivery hose; the GG40 ships as part of ELAFLEX's set with it.
 
- | Boot and pump start | NB-GG boot fits. If the boot starts the pump with a reed switch, ask whether your GG40 needs a magnet option (TBD, not published).
+ | Boot and pump start | NB-GG boot fits. If the boot starts the pump with a reed switch, ask us whether your GG40 needs a magnet option (not yet published; we confirm on the quote).
 
 ## Parafour
 
@@ -401,7 +401,7 @@ If a nozzle leaks, sticks or won't lock onto a valve, take it out of service and
 
 ## Inspection interval and seal kit
 
-TBD: ELAFLEX has not published a GG40 inspection schedule or seal-kit part number in the documents we cite. For its ACME nozzles ELAFLEX recommends a full inspection every 6 to 12 months and a seal kit every 24 months; treat that as a starting point for your site routine until GG40-specific guidance is available.
+ELAFLEX has not yet published a GG40 inspection schedule or seal-kit part number in the documents we cite. For its ACME nozzles ELAFLEX recommends a full inspection every 6 to 12 months and a seal kit every 24 months; treat that as a starting point for your site routine until GG40-specific guidance is available.
 
 GG40 figures on this page come from the ELAFLEX PACIFIC GG40 brochure (2025) and distributor listings. ELAFLEX has not published every number for the GG40 yet; where a figure is missing we say so instead of guessing. Confirm the current data sheet with your quote.
 
