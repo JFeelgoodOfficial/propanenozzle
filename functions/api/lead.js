@@ -1,10 +1,12 @@
 // POST /api/lead : quote form submissions -> Firestore "leads"
 import { addDoc, notify, json } from "../_lib/firestore.js";
+import { sameOrigin } from "../_lib/guard.js";
 
 const FIELDS = ["name", "company", "email", "phone", "product", "configuration", "hose_length", "quantity", "application", "message",
   "utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid", "page"];
 
 export async function onRequestPost({ request, env }) {
+  if (!sameOrigin(request)) return json({ ok: false, error: "forbidden" }, 403);
   let data = {};
   const ct = request.headers.get("content-type") || "";
   try {
@@ -13,6 +15,8 @@ export async function onRequestPost({ request, env }) {
   } catch { return json({ ok: false, error: "bad_request" }, 400); }
 
   if (data.website) return json({ ok: true }); // honeypot: pretend success, store nothing
+  // The page sends how long the form was open. Under 3 seconds, or no value at all, is a script: pretend success, store nothing.
+  if (!(Number(data.elapsed) >= 3000)) return json({ ok: true });
 
   const lead = {};
   for (const k of FIELDS) if (data[k] != null) lead[k] = String(data[k]).trim().slice(0, 2000);

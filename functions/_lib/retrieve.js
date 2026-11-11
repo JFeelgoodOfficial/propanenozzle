@@ -4,7 +4,8 @@ import { KB } from "./kb.js";
 
 const STOP = new Set(("a an and are as at be but by can do does for from has have how i if in is it its me my of on or " +
   "so than that the their them then there these they this to was we what when where which who why will with you your " +
-  "about any get need want use using would could should just like also not no yes come comes").split(" "));
+  "about any get need want use using would could should just like also not no yes come comes " +
+  "difference different between versus vs compare compared").split(" "));
 // Crude stemmer, applied to both questions and KB: leaking/leaks -> leak, rate/rated/ratings -> rat.
 const stem = (w) => (w.length > 3 && !/\d/.test(w) ? w.replace(/(ings|ing|ed|es|s)$/, "").replace(/(.{3,})e$/, "$1") : w);
 // Hyphenated words count whole and as parts, so "self service" matches "self-service" and "p4-150" still matches exactly.

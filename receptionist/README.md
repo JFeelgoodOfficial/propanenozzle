@@ -9,8 +9,8 @@ Research figures (checked 2026-10-07; verify on retellai.com/pricing before you 
 - $10 of free credit to start.
 
 ## Steps
-1. Create a Retell account. Buy a local number in your area code ($2/mo).
-2. **Knowledge base:** create one and upload `public/knowledge/gasguard-kb.md` from this site, after running scripts/configure.py. Whenever you change `build/content.py`, run the build again and re-upload the file.
+1. Create a Retell account. Buy a local number in your area code ($2/mo). Then put it on the site: `python3 scripts/configure.py --phone "(xxx) xxx-xxxx"`. Until you do, the site shows no phone number.
+2. **Knowledge base:** create one and upload `public/knowledge/gasguard-kb.md` from this site, after running `scripts/configure.py --phone`, so the knowledge base carries the number. Whenever you change `build/content.py`, run the build again and re-upload the file.
 3. **Agent:** create a single-prompt agent, paste `agent-prompt.md` (transfer name and hours are already filled in) and attach the knowledge base.
 4. **Transfer:** add a "transfer call" tool that points to your cell number. Retell's research figures listed transfer fees as unconfirmed, so check them on retellai.com/pricing.
 5. **Post-call analysis:** add these custom fields. The names must match exactly, because the webhook reads them:

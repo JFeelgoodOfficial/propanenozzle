@@ -1,24 +1,32 @@
 # Propane Nozzle site: setup and deployment
 
-Products: the ELAFLEX GasGuard **GG40** K15 quick-connect nozzle and matching autogas hose kits are sold; the **GG20** ACME nozzle is kept as reference only (`/gg20/` and its guides). GG40 figures ELAFLEX hasn't published are marked `TBD` in `build/content.py`; `build/build.py` refuses to build while any remain unless you set `ALLOW_TBD=1`.
+Products: the ELAFLEX GasGuard **GG40** K15 quick-connect nozzle and matching autogas hose kits are sold; the **GG20** ACME nozzle is kept as reference only (`/gg20/` and its guides). ELAFLEX hoses, pull-aways, boots, guards and ZVG 2 nozzles are covered as reference from ELAFLEX catalogue pages. GG40 figures ELAFLEX hasn't published are worded "not yet published"; `build/build.py` refuses to build while any `TBD` remains unless you set `ALLOW_TBD=1`.
 
 This folder is the whole business front end:
 
-- **`public/`**: the website. GG40 product page (`/`), GG20 reference page (`/gg20/`), the guides, a knowledge base file, `llms.txt`, sitemap and robots.txt.
-- **`functions/`**: the server side. `/api/lead` (quote form), `/api/chat` (product Q&A) and `/api/call-webhook` (phone agent). All three save to Firestore.
+- **`site.json`**: brand, domain, email and phone. The only place contact details live.
+- **`build/`**: the source of the site. `content.py` (GG40, hose-kit and GG20 guides) and `content_elaflex.py` (ELAFLEX reference: LPG 16 hoses, ARK 19 pull-away, boots, sleeves and guards, ZVG 2 nozzles, document library) hold every guide, the chat's knowledge and the phone agent's knowledge. `templates/` holds the two product pages, the chat widget and the stylesheets. `build.py` turns all of it into `public/`.
+- **`public/`**: the generated website. Don't edit `index.html`, `gg20/index.html`, `guides/`, `assets/site.css` or `assets/chat.js` by hand; edit the source under `build/` and run `python3 build/build.py`. Images, fonts, `docs/` PDFs, `_headers` and `assets/theme.js` are plain files.
+- **`functions/`**: the server side. `/api/lead` (quote form), `/api/chat` (product Q&A) and `/api/call-webhook` (phone agent). All three save to Firestore. Lead and chat requests must come from the site itself (same-origin check), and the form drops submissions sent within 3 seconds of page load.
 - **`receptionist/`**: setup steps and the prompt for the Retell AI phone agent.
-- **`build/content.py`**: the single source for every guide, the chat's knowledge and the phone agent's knowledge. Edit it, then run `python3 build/build.py`.
-- **`scripts/`**: `configure.py` fills in your business details everywhere; `export-leads.mjs` dumps leads to CSV.
+- **`scripts/`**: `configure.py` updates `site.json` and rebuilds; `export-leads.mjs` dumps leads to CSV; `test-retrieval.mjs` checks the chat finds the right section for 58 common questions.
 
 ## 1. Fill in your details
 
 ```
-python3 scripts/configure.py --brand "Your Company" --domain yourdomain.com \
-  --phone "(512) 555-0100" --email sales@yourdomain.com \
-  --transfer-name "Your Name" --hours "Mon-Fri 8am-5pm Central"
+python3 scripts/configure.py --brand "Your Company" --domain yourdomain.com --email sales@yourdomain.com
+python3 scripts/configure.py --phone "(512) 555-0100"     # once you have a number
 ```
 
-Product photos (`public/gg40.webp`, `public/img/gg40-*.webp`, `public/img/ark19-pull-away.webp`) are cropped from the ELAFLEX PACIFIC GG40 brochure, which is also served at `/docs/ELAFLEX_Pacific_GG40.pdf`. The GG20 reference page uses `public/gg20.webp`. To swap a photo, replace the file and update the `width`/`height` on its `<img>`.
+**No phone number yet.** `site.json` ships with the phone empty. While it is empty the site shows no call links or Call buttons, the schema markup has no telephone, and the chat is told never to give a number. Run the second command when the number exists and everything comes back. The build fails if a `555-` placeholder or a `tel:` link appears while no number is set.
+
+Product photos (`public/gg40.webp`, `public/img/gg40-*.webp`, `public/img/ark19-pull-away.webp`) are cropped from the ELAFLEX PACIFIC GG40 brochure. The brochure and three ELAFLEX catalogue PDFs are served from `/docs/`; they are ELAFLEX's copyright, so confirm with ELAFLEX that hosting them is acceptable. The share image is `public/og.jpg`. To swap a photo, replace the file and update the `width`/`height` on its `<img>` in `build/templates/`.
+
+### Adding another ELAFLEX document
+
+1. Put the PDF in `public/docs/`.
+2. Add it to `ELAFLEX_SRC` and `LIBRARY` in `build/content_elaflex.py`, and write a guide `dict(...)` with the figures typed out as tables. Only publish figures you have read in the document; mark numbers taken from a printed chart as approximate.
+3. Run `python3 build/build.py`, then `node scripts/test-retrieval.mjs`.
 
 ## 2. Domain and email
 
@@ -73,7 +81,7 @@ You don't need Cloud Functions, so you never need the paid Blaze plan.
 ## 5. Chat
 
 1. The chat uses `openai/gpt-oss-20b` on Groq's free plan. Set `CHAT_MODEL` to use a different Groq model.
-2. Each question sends only the knowledge-base sections that match it (about 1,500 tokens, picked by `functions/_lib/retrieve.js`), not the whole 10,000-token knowledge base. That keeps requests under the free plan's tokens-per-minute cap. After editing `build/content.py` or `retrieve.js`, run `node scripts/test-retrieval.mjs` to check that 32 common questions still reach the right section.
+2. Each question sends only the knowledge-base sections that match it (about 1,500 tokens, picked by `functions/_lib/retrieve.js`), not the whole 10,000-token knowledge base. That keeps requests under the free plan's tokens-per-minute cap. After editing `build/content.py` or `retrieve.js`, run `node scripts/test-retrieval.mjs` to check that 58 common questions still reach the right section.
 3. The free plan's limits, not money, are the ceiling. Check the current numbers at console.groq.com/docs/rate-limits. When a limit is hit, the chat tells the visitor to try again in a minute or use the phone or quote form.
 4. Add a Cloudflare rate-limiting rule on `/api/chat` if your plan includes one, so bots can't use up the daily allowance.
 5. If `GROQ_API_KEY` isn't set, the chat politely points people to the quote form instead.
@@ -91,6 +99,8 @@ See `receptionist/README.md`. Short version:
 
 1. Submit `https://yourdomain.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 2. Submit one test lead through each channel (form, chat, phone) and confirm all three land in Firestore.
+3. Visit counts: the pages push `dataLayer` events but no analytics script is installed. Cloudflare Web Analytics is free and cookieless; turn it on for the Pages project in the Cloudflare dashboard.
+4. Fonts are self-hosted (IBM Plex, SIL Open Font License, `public/assets/fonts/`); the site makes no third-party requests.
 
 ## Monthly cost, cheapest setup
 

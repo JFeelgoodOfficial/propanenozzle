@@ -1,0 +1,21 @@
+/* Shared by every page: self-hosted fonts, skip link, mobile menu. Inlined into the product pages and appended to site.css by build.py. */
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plex-sans-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/plex-sans-500.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/plex-sans-600.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/plex-sans-700.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/plex-mono-500.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/plex-mono-600.woff2) format("woff2")}
+.skip{position:absolute;left:-999px;top:0;background:var(--surface);color:var(--ink);padding:10px 14px;z-index:50;border-radius:0 0 6px 0}
+.skip:focus{left:0}
+.mnav{display:none;position:relative;margin:0 0 0 12px;background:none;border:0;border-radius:0}
+.mnav summary::after{content:none!important}
+.mnav summary{list-style:none;cursor:pointer;padding:8px 12px;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-weight:600;font-size:.9rem}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav[open] summary{background:var(--chip)}
+.mnav>div{padding:6px;position:absolute;right:0;top:calc(100% + 8px);min-width:220px;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.18);z-index:30}
+nav.site .mnav div a{display:block;margin:0;font-size:1rem;padding:11px 12px;border-radius:6px;color:var(--ink);text-decoration:none;font-weight:500}
+nav.site .mnav div a:hover{background:var(--chip)}
+header.site nav.site{display:flex;align-items:center}
+@media (max-width:820px){.mnav{display:block}header.site .btn{padding:9px 12px;font-size:.9rem;margin-left:10px}.theme-toggle{margin-left:0}}
+/* grid children must be allowed to shrink, or a wide table pushes the whole page sideways on phones */
+.split>*,.config>*,.hero .grid>*{min-width:0}
