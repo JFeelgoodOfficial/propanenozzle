@@ -3,5 +3,7 @@
   "domain": "propanenozzle.com",
   "email": "sales@propanenozzle.com",
   "phone_display": "",
-  "phone_e164": ""
+  "phone_e164": "",
+  "ga4_id": "G-2M0W1FT2GG",
+  "ga4_ad_features": false
 }
