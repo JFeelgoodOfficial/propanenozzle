@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Generated from build/templates by build/build.py. Contact details come from site.json. -->
 <title>ELAFLEX GasGuard GG40 K15 Quick-Connect {{BRAND}} and Hose Kits | {{BRAND}}</title>
+<meta name="content-group" content="gg40_product">
 <meta name="description" content="ELAFLEX GasGuard GG40 push-on nozzle for K15 quick-connect propane fill valves: up to 17 GPM, under 1 cm³ released, UL approved latched or unlatched. Matching autogas hose kits. US quotes.">
 <link rel="canonical" href="https://{{DOMAIN}}/">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -27,6 +28,7 @@
 <meta name="theme-color" content="#14213a" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <script src="/assets/theme.js?v={{V}}" defer></script>
+<script src="/assets/analytics.js?v={{V}}" defer></script>
 <link rel="preload" href="/assets/fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -541,7 +543,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </main>
 
 <footer><div class="wrap">
-  <span>© 2026 {{BRAND}}</span>
+  <span>© 2026 {{BRAND}} · <a href="/privacy.html">Privacy</a></span>
   <span>{{BRAND}} is an independent reseller, not affiliated with or endorsed by ELAFLEX. ELAFLEX and GasGuard are trademarks of their respective owners. Product photos from ELAFLEX PACIFIC documentation. Specifications per ELAFLEX documentation, subject to change.</span>
 </div></footer>
 
@@ -552,47 +554,47 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <script>
 (function(){
-  window.dataLayer = window.dataLayer || [];
   var T0 = Date.now(); // the server drops submissions that arrive faster than a person can type
-  function track(ev, extra){ try{ window.dataLayer.push(Object.assign({event:ev},extra||{})); }catch(e){} }
+  function track(ev, extra){ if(window.pnTrack) window.pnTrack(ev, extra); } // defined in /assets/analytics.js
 
-  // click tracking
-  document.addEventListener('click', function(e){
-    var a = e.target.closest('[data-track]'); if(a) track('lead_click',{lead_type:a.getAttribute('data-track')});
-  });
+  // contact, quote-button and section-view tracking live in /assets/analytics.js
 
-  // UTM capture
-  try{
-    var p = new URLSearchParams(location.search);
-    ['utm_source','utm_medium','utm_campaign','utm_term','gclid'].forEach(function(k){
-      var el = document.querySelector('input[name="'+k+'"]'); if(el && p.get(k)) el.value = p.get(k);
-    });
-  }catch(e){}
+  // UTM tags, landing page and referrer are added to the form by window.pnAttribution (analytics.js)
 
   // quote form
   var f = document.getElementById('qform'), thanks = document.getElementById('thanks');
   // hose-length field only matters when a kit is requested
   function syncHose(){ var kit = f.product.value !== 'GG40 nozzle only'; f.hose_length.disabled = !kit; if(!kit) f.hose_length.value = 'No hose kit'; else if(f.hose_length.value === 'No hose kit') f.hose_length.selectedIndex = 0; }
   f.product.addEventListener('change', syncHose); syncHose();
+  // funnel: first touch of any field, then each choice that shapes the quote
+  var started = false;
+  f.addEventListener('focusin', function(){ if(!started){ started = true; track('form_start',{form_id:'quote_gg40'}); } });
+  ['product','configuration','hose_length','application'].forEach(function(n){
+    if(f[n]) f[n].addEventListener('change', function(){ track('quote_option',{form_id:'quote_gg40', field:n, value:f[n].value}); });
+  });
   f.addEventListener('submit', function(e){
     e.preventDefault();
     if(f.website.value) return; // honeypot
     if(!f.name.value.trim() || !/^\S+@\S+\.\S+$/.test(f.email.value)){
+      track('form_error',{form_id:'quote_gg40', field: !f.name.value.trim() ? 'name' : 'email'});
       (!f.name.value.trim() ? f.name : f.email).focus(); return;
     }
     f.hose_length.disabled = false;
+    if(window.pnAttribution) window.pnAttribution(f);
     var data = new FormData(f), endpoint = f.getAttribute('data-endpoint'); data.append('elapsed', Date.now() - T0);
-    track('generate_lead',{product:f.product.value, config:f.configuration.value, quantity:f.quantity.value, application:f.application.value});
+    var lead = {form_id:'quote_gg40', product:f.product.value, configuration:f.configuration.value, hose_length:f.hose_length.value,
+      quantity:Number(f.quantity.value)||1, application:f.application.value, has_phone: f.phone.value.trim() ? 'yes' : 'no'};
     function done(){ thanks.style.display='block'; f.querySelector('button[type=submit]').disabled = true; }
     function mail(){
       var body = ['Name: '+f.name.value,'Company: '+f.company.value,'Email: '+f.email.value,'Phone: '+f.phone.value,
         'Product: '+f.product.value,'Nozzle: '+f.configuration.value,'Hose kit: '+f.hose_length.value,'Quantity: '+f.quantity.value,'Application: '+f.application.value,'','Notes: '+f.message.value].join('\n');
+      track('generate_lead', Object.assign({method:'email_fallback'}, lead)); // the server didn't take it; the visitor's mail app opens instead
       location.href = 'mailto:{{EMAIL}}?subject='+encodeURIComponent('GG40 quote request: '+f.product.value)+'&body='+encodeURIComponent(body);
       done();
     }
     if(endpoint){
       fetch(endpoint,{method:'POST',body:data,headers:{'Accept':'application/json'}})
-        .then(function(r){ if(r.ok) done(); else mail(); }).catch(mail);
+        .then(function(r){ if(r.ok){ track('generate_lead', Object.assign({method:'quote_form'}, lead)); done(); } else mail(); }).catch(mail);
     } else { mail(); }
   });
 })();

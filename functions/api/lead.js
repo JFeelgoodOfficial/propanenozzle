@@ -3,7 +3,9 @@ import { addDoc, notify, json } from "../_lib/firestore.js";
 import { sameOrigin } from "../_lib/guard.js";
 
 const FIELDS = ["name", "company", "email", "phone", "product", "configuration", "hose_length", "quantity", "application", "message",
-  "utm_source", "utm_medium", "utm_campaign", "utm_term", "gclid", "page"];
+  "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gclid", "page",
+  // first-touch attribution and the GA4 client id, filled by /assets/analytics.js, so a lead can be matched to its GA session
+  "landing_page", "referrer", "first_seen", "ga_client_id", "pages_viewed"];
 
 export async function onRequestPost({ request, env }) {
   if (!sameOrigin(request)) return json({ ok: false, error: "forbidden" }, 403);
@@ -28,7 +30,7 @@ export async function onRequestPost({ request, env }) {
 
   try {
     const id = await addDoc(env, "leads", lead);
-    await notify(env, `New quote request: ${lead.name} (${lead.company || "no company"}) ${lead.email} · ${lead.product || ""} ${lead.configuration} x${lead.quantity}${lead.hose_length ? " · hose: " + lead.hose_length : ""} · ${lead.application}`);
+    await notify(env, `New quote request: ${lead.name} (${lead.company || "no company"}) ${lead.email} · ${lead.product || ""} ${lead.configuration} x${lead.quantity}${lead.hose_length ? " · hose: " + lead.hose_length : ""} · ${lead.application} · came from: ${lead.utm_source || lead.referrer || "direct"} → ${lead.landing_page || lead.page || "?"}`);
     return json({ ok: true, id });
   } catch (e) {
     console.error(e);

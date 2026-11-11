@@ -29,28 +29,32 @@
   panel.innerHTML = '<div class="gc-head"><div><strong>GG40 questions</strong><small>Answers from ELAFLEX documentation</small></div><button class="gc-x" aria-label="Close">×</button></div><div class="gc-log" aria-live="polite"></div><form class="gc-form"><input maxlength="500" placeholder="e.g. Does my 2021 bus take a GG40?" aria-label="Your question" required><button type="submit">Send</button></form><div class="gc-foot">Automated answers can be wrong. For safety-critical decisions, check the ELAFLEX manual or call us.</div>';
   document.body.appendChild(btn); document.body.appendChild(panel);
   var log = panel.querySelector(".gc-log"), form = panel.querySelector("form"), input = form.querySelector("input");
-  var history = [], busy = false;
+  var history = [], busy = false, asked = 0;
 
   say("a", "Hi. Ask anything about the ELAFLEX GasGuard GG40 K15 nozzle and hose kits: latched or unlatched, specs, the NFPA 58 K15 rule, fitting, or ordering. GG20 questions welcome too; we keep its guides as reference.");
   var sug = el("div", "gc-sug");
   ["GG40 vs GG20?", "Does my vehicle have a K15 valve?", "What's in a hose kit?", "How do I order?"].forEach(function (q) {
-    var b = el("button", "", q); b.type = "button"; b.onclick = function () { sug.remove(); ask(q); }; sug.appendChild(b);
+    var b = el("button", "", q); b.type = "button"; b.onclick = function () { sug.remove(); lastSuggestion = q; ask(q); }; sug.appendChild(b);
   });
   log.appendChild(sug);
 
-  btn.onclick = function () { var o = panel.classList.toggle("open"); btn.setAttribute("aria-expanded", o); if (o) input.focus(); track("chat_open"); };
+  btn.onclick = function () { var o = panel.classList.toggle("open"); btn.setAttribute("aria-expanded", o); if (o) { input.focus(); track("chat_open"); } };
   panel.querySelector(".gc-x").onclick = function () { panel.classList.remove("open"); btn.setAttribute("aria-expanded", "false"); };
+  log.addEventListener("click", function (e) { var a = e.target.closest("a"); if (a) track("chat_link_click", { link_url: a.getAttribute("href") }); });
   form.onsubmit = function (e) { e.preventDefault(); var q = input.value.trim(); if (q) { input.value = ""; ask(q); } };
 
   function ask(q) {
     if (busy) return; busy = true;
-    say("u", q); history.push({ role: "user", content: q });
+    say("u", q); history.push({ role: "user", content: q }); asked++;
+    // The question text is not sent to Google; only that a question was asked, whether it was a suggested one, and its number.
+    track("chat_question", { question_number: asked, suggested: q === lastSuggestion ? "yes" : "no" });
+    if (/[^\s@]+@[^\s@]+\.[^\s@]+/.test(q)) track("generate_lead", { method: "chat" }); // the server stores the email as a chat lead
     var pending = say("a", "…");
     fetch("/api/chat", { method: "POST", headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ messages: history.slice(-8), page: location.pathname }) })
       .then(function (r) { if (!r.ok) throw 0; return r.json(); })
-      .then(function (d) { render(pending, d.reply); history.push({ role: "assistant", content: d.reply }); track("chat_answer"); })
-      .catch(function () { render(pending, "I can't answer right now. Email sales@propanenozzle.com or use the [quote form](/#quote)."); })
+      .then(function (d) { render(pending, d.reply); history.push({ role: "assistant", content: d.reply }); track("chat_answer", { question_number: asked }); })
+      .catch(function () { track("chat_error", { question_number: asked }); render(pending, "I can't answer right now. Email sales@propanenozzle.com or use the [quote form](/#quote)."); })
       .finally(function () { busy = false; });
   }
   function say(who, text) { var m = el("div", "gc-m gc-" + who); render(m, text); log.appendChild(m); log.scrollTop = log.scrollHeight; return m; }
@@ -64,5 +68,6 @@
     node.innerHTML = safe; log.scrollTop = log.scrollHeight;
   }
   function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text) n.textContent = text; return n; }
-  function track(ev) { try { (window.dataLayer = window.dataLayer || []).push({ event: ev }); } catch (e) {} }
+  var lastSuggestion = "";
+  function track(ev, p) { if (window.pnTrack) window.pnTrack(ev, p); } // defined in /assets/analytics.js
 })();

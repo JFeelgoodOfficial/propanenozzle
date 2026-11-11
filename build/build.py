@@ -17,18 +17,20 @@ SITE = json.load(open(os.path.join(HERE, "..", "site.json"), encoding="utf-8"))
 D = SITE["domain"]; B = SITE["brand"]; EM = SITE["email"]
 PD = SITE.get("phone_display", "").strip(); P164 = SITE.get("phone_e164", "").strip()
 if bool(PD) != bool(P164): sys.exit("site.json: set both phone_display and phone_e164, or leave both empty")
+GA4 = SITE.get("ga4_id", "").strip(); GA4_ADS = "true" if SITE.get("ga4_ad_features") else "false"
+if GA4 and not re.fullmatch(r"G-[A-Z0-9]{6,12}", GA4): sys.exit(f"site.json: ga4_id {GA4!r} doesn't look like a GA4 measurement id (G-XXXXXXXXXX)")
 
 def tpl(name): return open(os.path.join(TPL, name), encoding="utf-8").read()
 SHARED_CSS = tpl("shared.css")
 SITE_CSS = tpl("site.css").rstrip() + "\n" + SHARED_CSS
 THEME_JS = open(os.path.join(ROOT, "assets/theme.js"), encoding="utf-8").read()
-V = hashlib.sha1((SITE_CSS + tpl("chat.js") + THEME_JS + json.dumps(SITE)).encode()).hexdigest()[:8]  # cache-buster for /assets
+V = hashlib.sha1((SITE_CSS + tpl("chat.js") + tpl("analytics.js") + THEME_JS + json.dumps(SITE)).encode()).hexdigest()[:8]  # cache-buster for /assets
 
 def render(t):
     """{{#phone}}..{{/phone}} is kept only when a phone number is set, {{^phone}}..{{/phone}} only when it isn't."""
     t = re.sub(r"\{\{#phone\}\}(.*?)\{\{/phone\}\}", lambda m: m.group(1) if PD else "", t, flags=re.S)
     t = re.sub(r"\{\{\^phone\}\}(.*?)\{\{/phone\}\}", lambda m: "" if PD else m.group(1), t, flags=re.S)
-    for k, v in {"BRAND": B, "DOMAIN": D, "EMAIL": EM, "PHONE": PD, "PHONE164": P164, "V": V, "SHARED_CSS": SHARED_CSS}.items():
+    for k, v in {"BRAND": B, "DOMAIN": D, "EMAIL": EM, "PHONE": PD, "PHONE164": P164, "V": V, "SHARED_CSS": SHARED_CSS, "GA4": GA4, "GA4_ADS": GA4_ADS}.items():
         t = t.replace("{{" + k + "}}", v)
     return t
 
@@ -48,6 +50,7 @@ def group_of(a):
     p = product(a)
     return "gg40" if p in SOLD else "ref" if p in ("ref", "family") else "gg20"
 def updated(a): return a.get("updated", UPDATED)
+GROUP_NAME = {"gg40": "gg40_guides", "ref": "elaflex_reference", "gg20": "gg20_guides"}  # GA4 content groups
 LATEST = max(updated(a) for a in ARTICLES)
 
 def strip(h):
@@ -67,6 +70,7 @@ HEAD = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} | {B}</title>
 <meta name="description" content="{desc}">
+<meta name="content-group" content="{group}">
 <link rel="canonical" href="https://{D}{path}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{title}">
@@ -85,6 +89,7 @@ HEAD = """<!doctype html>
 <meta name="theme-color" content="#14213a" media="(prefers-color-scheme: dark)">
 <script>try{{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}}catch(e){{}}</script>
 <script src="/assets/theme.js?v={V}" defer></script>
+<script src="/assets/analytics.js?v={V}" defer></script>
 <link rel="preload" href="/assets/fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css?v={V}">
 <script type="application/ld+json">{ld}</script>
@@ -98,7 +103,7 @@ HEAD = """<!doctype html>
 """
 FOOT = """
 <footer><div class="wrap">
-  <span>© 2026 BRAND · {{#phone}}<a href="tel:{{PHONE164}}">{{PHONE}}</a> · {{/phone}}<a href="mailto:EMAIL">EMAIL</a></span>
+  <span>© 2026 BRAND · <a href="/privacy.html">Privacy</a> · {{#phone}}<a href="tel:{{PHONE164}}">{{PHONE}}</a> · {{/phone}}<a href="mailto:EMAIL">EMAIL</a></span>
   <span>BRAND is an independent reseller, not affiliated with or endorsed by ELAFLEX. ELAFLEX and GasGuard are trademarks of their respective owners. Specifications per ELAFLEX documentation, subject to change.</span>
 </div></footer>
 <script src="/assets/chat.js?v={{V}}" defer></script>
@@ -130,7 +135,7 @@ def page(a, idx):
     if a["faqs"]:
         graph.append({"@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":t}} for q,t in a["faqs"]]})
     ld = json.dumps({"@context":"https://schema.org","@graph":graph}, ensure_ascii=False)
-    out = HEAD.format(title=html.escape(a["title"]), desc=html.escape(a["desc"]), D=D, B=B, V=V, path=path, ld=ld)
+    out = HEAD.format(title=html.escape(a["title"]), desc=html.escape(a["desc"]), D=D, B=B, V=V, path=path, ld=ld, group=GROUP_NAME[group_of(a)])
     out += f"""<main class="wrap article" id="main">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">{B}</a> / <a href="/guides/">Guides</a> / {html.escape(a['nav'])}</nav>
 <h1>{html.escape(a['title'])}</h1>
@@ -153,7 +158,7 @@ def page(a, idx):
 def hub():
     ld = json.dumps({"@context":"https://schema.org","@type":"CollectionPage","name":"GasGuard GG40 and GG20 guides","url":f"https://{D}/guides/",
         "hasPart":[{"@type":"TechArticle","headline":a["title"],"url":f"https://{D}/guides/{a['slug']}.html"} for a in ARTICLES]}, ensure_ascii=False)
-    out = HEAD.format(title="GasGuard GG40 and GG20 Manual and Guides", desc="GasGuard GG40 K15 nozzle and autogas hose-kit guides, ELAFLEX reference on LPG 16 hoses, the ARK 19 pull-away, nozzle boots and guards, and the complete GG20 reference.", D=D, B=B, V=V, path="/guides/", ld=ld)
+    out = HEAD.format(title="GasGuard GG40 and GG20 Manual and Guides", desc="GasGuard GG40 K15 nozzle and autogas hose-kit guides, ELAFLEX reference on LPG 16 hoses, the ARK 19 pull-away, nozzle boots and guards, and the complete GG20 reference.", D=D, B=B, V=V, path="/guides/", ld=ld, group="guides_hub")
     out += f'<main class="wrap article" id="main"><nav class="crumbs"><a href="/">{B}</a> / Guides</nav><h1>GasGuard manual and guides</h1><p class="lede">Everything we have published about the ELAFLEX GasGuard GG40, the hose kits that go with it, the ELAFLEX hoses, pull-aways and boots behind those kits, and the GG20 it replaces on K15 vehicles. Each guide cites the manufacturer document it comes from; the PDFs are in the <a href="/guides/elaflex-documents.html">document library</a>.</p>'
     for key, heading, blurb in GROUPS:
         out += f'<h2 id="{key}">{html.escape(heading)}</h2><p class="meta">{html.escape(blurb)}</p><div class="grid">'
@@ -175,13 +180,32 @@ def kb():
     return "\n".join(parts)
 
 def notfound():
-    out = HEAD.format(title="Page not found", desc="That page doesn't exist. Find the GasGuard GG40, hose kits and ELAFLEX reference guides here.", D=D, B=B, V=V, path="/404.html", ld="{}")
+    out = HEAD.format(title="Page not found", desc="That page doesn't exist. Find the GasGuard GG40, hose kits and ELAFLEX reference guides here.", D=D, B=B, V=V, path="/404.html", ld="{}", group="not_found")
     out = out.replace('<link rel="canonical" href="https://' + D + '/404.html">', '<meta name="robots" content="noindex">')
     out += ('<main class="wrap article" id="main"><h1>Page not found</h1><p class="lede">That address doesn\'t match a page on this site. These do:</p>'
             '<div class="grid"><a class="gcard" href="/"><span class="eyebrow">Product</span><strong>GasGuard GG40 K15 nozzle and hose kits</strong><small>Specifications and quote form</small></a>'
             '<a class="gcard" href="/guides/"><span class="eyebrow">Guides</span><strong>All guides</strong><small>GG40, hose kits, ELAFLEX reference, GG20</small></a>'
             '<a class="gcard" href="/guides/elaflex-documents.html"><span class="eyebrow">Documents</span><strong>ELAFLEX document library</strong><small>Catalogue pages and brochures</small></a>'
             '<a class="gcard" href="/#quote"><span class="eyebrow">Quote</span><strong>Request a quote</strong><small>Price and lead time in writing</small></a></div></main>')
+    return out + FOOT
+
+def privacy():
+    out = HEAD.format(title="Privacy", desc=f"What {B} collects when you use this site, the quote form or the chat, and how to opt out.", D=D, B=B, V=V, path="/privacy.html", ld="{}", group="privacy")
+    ga = (f"""<h2>Google Analytics</h2>
+<p>We use Google Analytics 4 to count visits and see which pages and buttons lead to quote requests. It sets first-party cookies (<code>_ga</code> and <code>_ga_*</code>) and sends Google your browser and device type, approximate location derived from your IP address, the pages you view, the site that sent you, and events such as opening the chat, starting the quote form or clicking an email link. We don't send Google your name, email, phone number, the contents of the quote form or the text of chat questions.</p>
+<p>Google signals and ad personalisation are {'on' if GA4_ADS == 'true' else 'switched off'}. Google's own policy is at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener" target="_blank">How Google uses information from sites that use its services</a>. To opt out on every site, install Google's <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener" target="_blank">Analytics opt-out browser add-on</a>, or block cookies for this site.</p>
+""" if GA4 else "<h2>Analytics</h2><p>This site does not currently run an analytics service.</p>\n")
+    out += f"""<main class="wrap article" id="main"><nav class="crumbs"><a href="/">{B}</a> / Privacy</nav><h1>Privacy</h1>
+<p class="meta">Updated {LATEST}</p>
+<p>{B} is an independent reseller of ELAFLEX GasGuard nozzles and hose kits. This page lists what the site collects and why.</p>
+<h2>Quote form</h2>
+<p>When you send the quote form we store what you typed (name, company, email, phone, product choices and notes) together with how you found the site: the first page you landed on, the referring site, any campaign tags in the link you followed, a Google Ads click id if there was one, the Google Analytics client id, and the number of pages you viewed. We use it to answer your request and to learn which pages and campaigns bring enquiries. It is stored in Google Cloud Firestore and is not sold or shared for marketing.</p>
+<h2>Chat</h2>
+<p>Questions typed into the chat are sent to Groq, Inc., which runs the language model that answers them, along with the relevant excerpts from our guides. If you type an email address into the chat, we store that message as an enquiry so we can reply. Don't type anything into the chat you wouldn't put in an email.</p>
+{ga}<h2>This browser</h2>
+<p>The site keeps two small items in your browser's local storage: your light or dark theme choice, and the first page and campaign tags of your first visit (used only to attribute a quote request). Clear site data in your browser to remove them.</p>
+<h2>Contact</h2>
+<p>To ask what we hold about you or to have it deleted, email <a href="mailto:{EM}">{EM}</a>.</p></main>"""
     return out + FOOT
 
 def main():
@@ -192,6 +216,8 @@ def main():
         outputs[os.path.join(ROOT, p.lstrip("/"))] = h
     outputs[os.path.join(ROOT, "guides/index.html")] = hub()
     outputs[os.path.join(ROOT, "404.html")] = notfound()
+    outputs[os.path.join(ROOT, "privacy.html")] = privacy(); paths.append(("/privacy.html", LATEST))
+    outputs[os.path.join(ROOT, "assets/analytics.js")] = render(tpl("analytics.js"))
     outputs[os.path.join(ROOT, "index.html")] = render(tpl("index.html"))
     outputs[os.path.join(ROOT, "gg20/index.html")] = render(tpl("gg20.html"))
     outputs[os.path.join(ROOT, "assets/chat.js")] = render(tpl("chat.js"))
@@ -212,11 +238,11 @@ def main():
         rel = os.path.relpath(f, os.path.join(ROOT, ".."))
         if re.search(r"\{\{[#^/]?[A-Za-z_0-9]+\}\}", c): sys.exit(f"unfilled template token in {rel}")
         if "555-" in c or "5556667777" in c: sys.exit(f"placeholder phone number in {rel}")
-        if not PD and "tel:" in c: sys.exit(f"call link in {rel} but no phone number is set in site.json")
+        if not PD and ('href="tel:' in c or '"telephone"' in c): sys.exit(f"call link in {rel} but no phone number is set in site.json")
     for f, c in outputs.items():
         os.makedirs(os.path.dirname(f), exist_ok=True)
         open(f, "w", encoding="utf-8").write(c)
-    print(f"built {len(ARTICLES)} guides, kb {len(k)} chars (~{len(k)//4} tokens), phone {'set' if PD else 'hidden (none in site.json)'}" + (f"; TBD placeholders in {len(tbd)} pages" if tbd else ""))
+    print(f"built {len(ARTICLES)} guides, kb {len(k)} chars (~{len(k)//4} tokens), phone {'set' if PD else 'hidden (none in site.json)'}, GA4 {GA4 or 'off'}" + (f"; TBD placeholders in {len(tbd)} pages" if tbd else ""))
 
 if __name__ == "__main__":
     main()

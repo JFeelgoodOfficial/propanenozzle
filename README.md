@@ -99,8 +99,52 @@ See `receptionist/README.md`. Short version:
 
 1. Submit `https://yourdomain.com/sitemap.xml` in Google Search Console and Bing Webmaster Tools.
 2. Submit one test lead through each channel (form, chat, phone) and confirm all three land in Firestore.
-3. Visit counts: the pages push `dataLayer` events but no analytics script is installed. Cloudflare Web Analytics is free and cookieless; turn it on for the Pages project in the Cloudflare dashboard.
-4. Fonts are self-hosted (IBM Plex, SIL Open Font License, `public/assets/fonts/`); the site makes no third-party requests.
+3. Set up Google Analytics as described in section 8.
+4. Fonts are self-hosted (IBM Plex, SIL Open Font License, `public/assets/fonts/`). The only third-party script is Google's `gtag.js`, and only while `ga4_id` is set.
+
+## 8. Google Analytics 4 and lead tracking
+
+`site.json` holds `ga4_id` (now `G-2M0W1FT2GG`) and `ga4_ad_features` (`false`: Google signals and ad personalisation off). `build/templates/analytics.js` becomes `/assets/analytics.js`, which every page loads. Set `ga4_id` to `""` and rebuild to switch analytics off; `/privacy.html` changes to match.
+
+### What gets recorded
+
+Every page view carries a **content group**: `gg40_product`, `gg40_guides`, `elaflex_reference`, `gg20_reference`, `gg20_guides`, `guides_hub`, `privacy` or `not_found`. GA's enhanced measurement adds page views, scrolls, outbound clicks and PDF downloads on its own.
+
+| Event | When | Parameters |
+|---|---|---|
+| `generate_lead` | Quote form accepted by the server; quote form fell back to the visitor's mail app; an email address typed into the chat | `method` (`quote_form`, `email_fallback`, `chat`), `form_id`, `product`, `configuration`, `hose_length`, `quantity`, `application`, `has_phone` |
+| `form_start` | First click or tab into the quote form | `form_id` |
+| `quote_option` | A product, nozzle, hose or application choice changes | `form_id`, `field`, `value` |
+| `form_error` | Submit with name or email missing | `form_id`, `field` |
+| `quote_cta_click` | Any link to the quote form | `link_location`, `link_text` |
+| `contact_click` | Email or phone link | `method`, `link_location` |
+| `cta_click` | Other tagged buttons (`data-track`) | `cta`, `link_location` |
+| `section_view` | A home-page section is 35% on screen, once per view | `section` |
+| `chat_open`, `chat_question`, `chat_answer`, `chat_error`, `chat_link_click` | Chat use. The question text is never sent to Google | `question_number`, `suggested`, `link_url` |
+| `gg20_configure` | Part-number builder on the GG20 page | `part_number` |
+
+### Lead attribution in Firestore
+
+The first time a browser visits, `analytics.js` stores the landing page, the outside referrer, any `utm_*` tags and `gclid` in localStorage. A later campaign link replaces them. The quote form sends these with the lead, plus `ga_client_id` (from the `_ga` cookie) and `pages_viewed`. Every lead in the `leads` collection therefore says how that person first arrived. The `ga_client_id` matches the lead to its GA visitor (GA4 shows it in the User explorer report). The Slack/Discord notification ends with `came from: <source> → <landing page>`.
+
+### One-time setup in Google Analytics
+
+Do these once in the GA4 property. Menu names here are from memory of the GA4 interface, so they may have moved.
+
+1. **Key event:** Admin → Data display → Events, then mark `generate_lead` as a key event. It appears after its first occurrence; submit one test lead to make it show.
+2. **Custom dimensions:** Admin → Data display → Custom definitions, then create event-scoped dimensions for `method`, `form_id`, `product`, `application`, `link_location`, `section` and `cta`. Parameters without a dimension are collected but don't appear in standard reports.
+3. **Data retention:** Admin → Data collection and modification → Data retention, set to 14 months. The default is 2 months, which limits explorations.
+4. **Internal traffic:** define your own IP address as internal and activate the filter, so your testing doesn't count as leads.
+5. **Search Console:** link the property so search queries show beside landing pages.
+6. **Funnel:** in Explore, build a funnel exploration with the steps `page_view` (content group `gg40_product`) → `section_view` (section `quote`) → `form_start` → `generate_lead`.
+
+### Tracking more
+
+To track a new button, call `window.pnTrack('event_name', {...})` or give the link a `data-track="name"` attribute. Send event names in snake_case, under 40 characters, with no personal data in the parameters.
+
+### Privacy
+
+`/privacy.html` is generated from `site.json`. Google's Analytics terms require a privacy notice that discloses Analytics. The page covers what is collected, Groq handling chat questions, Firestore storage and the opt-out. It is a plain description of what the code does, not legal advice. If you turn on `ga4_ad_features` or add Google Ads remarketing, revisit it, and check state laws such as California's on opting out of "sharing" before you do.
 
 ## Monthly cost, cheapest setup
 

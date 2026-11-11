@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Generated from build/templates by build/build.py. Contact details come from site.json. -->
 <title>ELAFLEX GasGuard GG20 Reference | 1¾" ACME Long-Reach Nozzle | Propane Nozzle</title>
+<meta name="content-group" content="gg20_reference">
 <meta name="description" content="Reference page for the ELAFLEX GasGuard GG20 long-reach 1¾&quot; ACME LPG nozzle: versions, specs, part numbers and guides. Propane Nozzle no longer sells the GG20; we sell the K15 GasGuard GG40.">
 <link rel="canonical" href="https://propanenozzle.com/gg20/">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -26,7 +27,8 @@
 <meta name="theme-color" content="#d6ebf8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14213a" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="/assets/theme.js?v=0e591e70" defer></script>
+<script src="/assets/theme.js?v=ffd536fe" defer></script>
+<script src="/assets/analytics.js?v=ffd536fe" defer></script>
 <link rel="preload" href="/assets/fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -518,7 +520,7 @@ header.site nav.site{display:flex;align-items:center}
 </main>
 
 <footer><div class="wrap">
-  <span>© 2026 Propane Nozzle</span>
+  <span>© 2026 Propane Nozzle · <a href="/privacy.html">Privacy</a></span>
   <span>Propane Nozzle is an independent reseller, not affiliated with or endorsed by ELAFLEX. ELAFLEX and GasGuard are trademarks of their respective owners. Specifications per ELAFLEX documentation, subject to change.</span>
 </div></footer>
 
@@ -529,22 +531,11 @@ header.site nav.site{display:flex;align-items:center}
 
 <script>
 (function(){
-  window.dataLayer = window.dataLayer || [];
   var T0 = Date.now(); // the server drops submissions that arrive faster than a person can type
-  function track(ev, extra){ try{ window.dataLayer.push(Object.assign({event:ev},extra||{})); }catch(e){} }
+  function track(ev, extra){ if(window.pnTrack) window.pnTrack(ev, extra); } // defined in /assets/analytics.js
 
-  // click tracking
-  document.addEventListener('click', function(e){
-    var a = e.target.closest('[data-track]'); if(a) track('lead_click',{lead_type:a.getAttribute('data-track')});
-  });
+  // contact, quote-button and section-view tracking live in /assets/analytics.js
 
-  // UTM capture
-  try{
-    var p = new URLSearchParams(location.search);
-    ['utm_source','utm_medium','utm_campaign','utm_term','gclid'].forEach(function(k){
-      var el = document.querySelector('input[name="'+k+'"]'); if(el && p.get(k)) el.value = p.get(k);
-    });
-  }catch(e){}
 
   // configurator
   var cfg = document.getElementById('cfg'), pn = document.getElementById('pn'), list = document.getElementById('pnlist'),
@@ -563,7 +554,7 @@ header.site nav.site{display:flex;align-items:center}
     warn.style.display = o.indexOf('L') > -1 ? 'block' : 'none';
     if(cfgField) cfgField.value = code;
   }
-  cfg.addEventListener('change', function(){ update(); track('configure',{config:pn.textContent}); });
+  cfg.addEventListener('change', function(){ update(); track('gg20_configure',{part_number:pn.textContent}); });
   update();
 
   // quote form
@@ -590,6 +581,6 @@ header.site nav.site{display:flex;align-items:center}
   });
 })();
 </script>
-<script src="/assets/chat.js?v=0e591e70" defer></script>
+<script src="/assets/chat.js?v=ffd536fe" defer></script>
 </body>
 </html>
