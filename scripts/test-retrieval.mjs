@@ -35,6 +35,17 @@ const CASES = {
   "will a gg20 work with a p4-200": "GG20 on the Parafour P4-200",
   "p4-075": "P4-075",
   "does it work with my parafour dispenser": "Parafour",
+  // ELAFLEX reference: hoses, pull-away, boots, guards, ZVG 2
+  "what is the bend radius of LPG 16 hose": "80 mm",
+  "LPG 16 S hose temperature range": "-30 °C to +70 °C",
+  "what force does the ARK 19 pull-away separate at": "200 N up to 500 N",
+  "ARK 19.3 thread": "¾\" NPT female",
+  "what is the NB-GG nozzle boot": "NB-GG",
+  "what is the KS 16 anti kink sleeve": "KS 16",
+  "what does the magnet in the nozzle guard do": "reed",
+  "what is a scuffguard": "EA 866",
+  "is the ZVG 2 EURO UL UL listed": "MH17142",
+  "how much does a ZVG 2 K weigh": "1.55 kg",
   // GG40 and hose kits
   "what is the GG40": "K15 quick connect",
   "GG40 vs GG20": "GG40 vs GG20",

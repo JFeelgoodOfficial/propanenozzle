@@ -1,0 +1,18 @@
+# Cloudflare Pages response headers. Assets carry a ?v= hash from build/build.py, so they can be cached for a year.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/img/*
+  Cache-Control: public, max-age=2592000
+
+/docs/*
+  Cache-Control: public, max-age=2592000
+
+/knowledge/*
+  X-Robots-Tag: noindex

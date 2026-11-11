@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- SETUP: run scripts/configure.py to fill in brand, domain, phone and email across the whole site -->
+<!-- Generated from build/templates by build/build.py. Contact details come from site.json. -->
 <title>ELAFLEX GasGuard GG40 K15 Quick-Connect Propane Nozzle and Hose Kits | Propane Nozzle</title>
 <meta name="description" content="ELAFLEX GasGuard GG40 push-on nozzle for K15 quick-connect propane fill valves: up to 17 GPM, under 1 cm³ released, UL approved latched or unlatched. Matching autogas hose kits. US quotes.">
 <link rel="canonical" href="https://propanenozzle.com/">
@@ -13,11 +13,12 @@
 <meta property="og:description" content="The K15 quick-connect nozzle for autogas vehicles built since 2020. Up to 17 GPM, under 1 cm³ released, UL approved. Hose kits available. Request a quote.">
 <meta property="og:url" content="https://propanenozzle.com/">
 <meta property="og:site_name" content="Propane Nozzle">
-<meta property="og:image" content="https://propanenozzle.com/gg40.webp">
+<meta property="og:image" content="https://propanenozzle.com/og.jpg">
 <meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="470">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="ELAFLEX GasGuard GG40 K15 quick-connect propane nozzle">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://propanenozzle.com/og.jpg">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -25,10 +26,9 @@
 <meta name="theme-color" content="#d6ebf8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#14213a" media="(prefers-color-scheme: dark)">
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
-<script src="/assets/theme.js" defer></script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="/assets/theme.js?v=0e591e70" defer></script>
+<link rel="preload" href="/assets/fonts/plex-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/plex-sans-600.woff2" as="font" type="font/woff2" crossorigin>
 
 <script type="application/ld+json">
 {
@@ -39,7 +39,6 @@
       "@id": "https://propanenozzle.com/#org",
       "name": "Propane Nozzle",
       "url": "https://propanenozzle.com/",
-      "telephone": "+15556667777",
       "email": "sales@propanenozzle.com"
     },
     {
@@ -91,7 +90,7 @@
         {"@type": "Question", "name": "Does the GG40 fit my existing nozzle boot?",
          "acceptedAnswer": {"@type": "Answer", "text": "Yes. ELAFLEX states the GG40 is compatible with the existing NB-GG nozzle boot used for its ACME GasGuard nozzles."}},
         {"@type": "Question", "name": "Where can I buy a GasGuard GG40 in the US?",
-         "acceptedAnswer": {"@type": "Answer", "text": "Propane Nozzle quotes the GG40 and matching hose kits for US delivery. Call 555-666-7777 or email sales@propanenozzle.com."}}
+         "acceptedAnswer": {"@type": "Answer", "text": "Propane Nozzle quotes the GG40 and matching hose kits for US delivery. Email sales@propanenozzle.com or use the quote form."}}
       ]
     }
   ]
@@ -246,12 +245,34 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .mbar{position:fixed;left:0;right:0;bottom:0;display:none;gap:8px;padding:10px 12px;background:var(--surface);border-top:1px solid var(--line);z-index:30}
 .mbar a{flex:1;justify-content:center;padding:12px}
 @media (max-width:720px){.mbar{display:flex}}
+/* Shared by every page: self-hosted fonts, skip link, mobile menu. Inlined into the product pages and appended to site.css by build.py. */
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plex-sans-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/plex-sans-500.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/plex-sans-600.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/plex-sans-700.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/plex-mono-500.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/plex-mono-600.woff2) format("woff2")}
+.skip{position:absolute;left:-999px;top:0;background:var(--surface);color:var(--ink);padding:10px 14px;z-index:50;border-radius:0 0 6px 0}
+.skip:focus{left:0}
+.mnav{display:none;position:relative;margin:0 0 0 12px;background:none;border:0;border-radius:0}
+.mnav summary::after{content:none!important}
+.mnav summary{list-style:none;cursor:pointer;padding:8px 12px;border:1px solid var(--line);border-radius:6px;color:var(--ink);font-weight:600;font-size:.9rem}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav[open] summary{background:var(--chip)}
+.mnav>div{padding:6px;position:absolute;right:0;top:calc(100% + 8px);min-width:220px;background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.18);z-index:30}
+nav.site .mnav div a{display:block;margin:0;font-size:1rem;padding:11px 12px;border-radius:6px;color:var(--ink);text-decoration:none;font-weight:500}
+nav.site .mnav div a:hover{background:var(--chip)}
+header.site nav.site{display:flex;align-items:center}
+@media (max-width:820px){.mnav{display:block}header.site .btn{padding:9px 12px;font-size:.9rem;margin-left:10px}.theme-toggle{margin-left:0}}
+/* grid children must be allowed to shrink, or a wide table pushes the whole page sideways on phones */
+.split>*,.config>*,.hero .grid>*{min-width:0}
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="topbar"><div class="wrap">
   <span>Genuine ELAFLEX GasGuard nozzles and hose kits · US quotes</span>
-  <span><a href="tel:+15556667777" data-track="phone">555-666-7777</a> &nbsp;·&nbsp; <a href="mailto:sales@propanenozzle.com" data-track="email">sales@propanenozzle.com</a></span>
+  <span><a href="mailto:sales@propanenozzle.com" data-track="email">sales@propanenozzle.com</a></span>
 </div></div>
 
 <header class="site"><div class="wrap">
@@ -262,12 +283,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <a href="#hosekits">Hose kits</a>
     <a href="/guides/">Guides</a>
     <a href="#faq">FAQ</a>
+    <details class="mnav"><summary>Menu</summary><div><a href="#k15">K15 rule</a><a href="#specs">Specs</a><a href="#hosekits">Hose kits</a><a href="/guides/">Guides</a><a href="/guides/elaflex-documents.html">ELAFLEX documents</a><a href="/gg20/">GG20 reference</a><a href="#faq">FAQ</a></div></details>
     <button type="button" class="theme-toggle" data-theme-toggle aria-label="Theme: Auto (follows your device)."></button>
     <a class="btn btn-primary" href="#quote">Get a quote</a>
   </nav>
 </div></header>
 
-<main>
+<main id="main">
 <section class="hero">
   <div class="wrap grid">
     <div>
@@ -276,7 +298,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <p class="lede">NFPA 58 put the push-on K15 fill valve on every new autogas vehicle from January 2020. The GG40 is ELAFLEX's nozzle for it: push on, lock, fill at up to 17 GPM, and release less than 1 cm³ when you pull off. UL approved latched or unlatched, with matching hose kits quoted alongside.</p>
       <div class="cta">
         <a class="btn btn-primary" href="#quote" data-track="cta-hero-quote">Request GG40 pricing</a>
-        <a class="btn btn-ghost" href="tel:+15556667777" data-track="phone">Call 555-666-7777</a>
+        <a class="btn btn-ghost" href="#hosekits" data-track="cta-hero-kits">See hose kits</a>
       </div>
       <div class="facts">
         <div><b>K15</b><small>quick connect, push-on</small></div>
@@ -386,7 +408,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="table-wrap">
         <table>
           <tbody>
-            <tr><th>Hose</th><td>ELAFLEX LPG 16 S, DN 16 (¾"), EN 1762, marked 25 bar and −40 °C</td></tr>
+            <tr><th>Hose</th><td>ELAFLEX LPG 16 S: 16 mm (5/8") bore, EN 1762, 25 bar working pressure, 80 mm bend radius</td></tr>
             <tr><th>Listings</th><td>ELAFLEX LPG hose assemblies for the US and Canada certified to UL 21 and CSA 8.1-2015</td></tr>
             <tr><th>Pull-away</th><td>ARK 19.3: separates at 200 to 500 N pull, seals both sides, reconnects by hand</td></tr>
             <tr><th>Typical kit</th><td>18" × ¾" whip + ¾" × 12' delivery hose; other lengths to order</td></tr>
@@ -394,7 +416,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           </tbody>
         </table>
       </div>
-      <p style="margin-top:12px"><a href="/guides/autogas-hose-kits.html">Hose kit guide →</a> &nbsp;·&nbsp; <a href="/guides/gg40-dispenser-compatibility.html">Will it fit my dispenser? →</a></p>
+      <p style="margin-top:12px"><a href="/guides/autogas-hose-kits.html">Hose kit guide →</a> &nbsp;·&nbsp; <a href="/guides/elaflex-lpg-16-autogas-hoses.html">Hose specifications →</a> &nbsp;·&nbsp; <a href="/guides/gg40-dispenser-compatibility.html">Will it fit my dispenser? →</a></p>
     </div>
     <div class="uses" style="grid-template-columns:1fr">
       <figure class="figure" style="margin:0;background:var(--surface);border-color:var(--line)">
@@ -422,7 +444,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <details><summary>Will it fit my dispenser?</summary><div>If the hose kit ends in the GG40's inlet thread (¾" NPT on distributor-listed nozzles) and the boot is an NB-GG or similar, yes. Parafour's P4 dispensers take the same ¾" hose connection. See <a href="/guides/gg40-dispenser-compatibility.html">dispenser compatibility</a>.</div></details>
     <details><summary>Can I use an adapter to fill ACME vehicles with a GG40?</summary><div>Adapters exist, but NFPA guidance and the trade press treat them as a stopgap, and ELAFLEX advises against fill-point adapters. Fit the nozzle that matches the valve.</div></details>
     <details><summary>What warranty does it have?</summary><div>18 months, manufacturer's, per ELAFLEX.</div></details>
-    <details><summary>Where can I buy a GasGuard GG40 in the US?</summary><div>From Propane Nozzle, with US delivery. Call <a href="tel:+15556667777" data-track="phone">555-666-7777</a>, email <a href="mailto:sales@propanenozzle.com" data-track="email">sales@propanenozzle.com</a>, or use the <a href="#quote">quote form</a>.</div></details>
+    <details><summary>Where can I buy a GasGuard GG40 in the US?</summary><div>From Propane Nozzle, with US delivery. Email <a href="mailto:sales@propanenozzle.com" data-track="email">sales@propanenozzle.com</a>, or use the <a href="#quote">quote form</a>.</div></details>
   </div>
 </section>
 
@@ -442,15 +464,33 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
+<section id="reference" style="padding-top:24px">
+  <div class="wrap">
+    <div class="eyebrow">ELAFLEX reference</div>
+    <h2>Hoses, pull-aways, boots and nozzle guards</h2>
+    <p style="max-width:760px;color:var(--muted)">The ELAFLEX catalogue pages behind the hanging hardware, rewritten as plain web pages with the tables intact. Reference only: we quote the GG40 and GG40 hose kits.</p>
+    <div class="docs">
+      <a href="/guides/elaflex-lpg-16-autogas-hoses.html">LPG 16 and LPG 16 S hoses<small>Sizes, pressures, bend radius, markings, pressure drop</small></a>
+      <a href="/guides/elaflex-ark-19-safety-break-pull-away.html">ARK 19 pull-away<small>Separation force, part numbers, hose couplings</small></a>
+      <a href="/guides/lpg-dispenser-kit-boots-sleeves-and-nozzle-guards.html">Boots, sleeves and guards<small>NB-GG, KS 16, CS 16, BS 19, magnet, splashguard, scuffguard</small></a>
+      <a href="/guides/elaflex-zvg-2-lpg-nozzles.html">ZVG 2 nozzles<small>ACME, DISH, EURO, EURO UL and K: part numbers and spares</small></a>
+      <a href="/guides/gasguard-family-gg1-gg20-gg30-gg40.html">GasGuard range<small>GG1, GG20, GG30, GG40 side by side</small></a>
+      <a href="/guides/elaflex-documents.html">ELAFLEX document library<small>Every catalogue page and brochure we cite, with PDFs</small></a>
+    </div>
+  </div>
+</section>
+
 <section id="docs" style="padding-top:24px">
   <div class="wrap">
     <div class="eyebrow">Manufacturer documents</div>
-    <h2>GG40 data sheets and manuals</h2>
+    <h2>GG40 brochure and ELAFLEX catalogue pages</h2>
     <div class="docs">
       <a href="/docs/ELAFLEX_Pacific_GG40.pdf" rel="noopener" target="_blank">GasGuard GG40 brochure<small>Features and technical information (PDF, ELAFLEX PACIFIC, 2025)</small></a>
-      <a href="https://elaflexus.com/downloads/lpg-refueling/lpg-hose-assemblies/ELAFLEX_US_Information_1.19.pdf" rel="noopener" target="_blank">LPG-UL hose assemblies<small>Information 1.19, UL 21 / CSA 8.1 (PDF, ELAFLEX US)</small></a>
-      <a href="https://elaflex.de/dokumente/download/Manual/Manual_ARK19_ARK19SS.pdf" rel="noopener" target="_blank">ARK 19 safety break manual<small>Pull-away installation and operation (PDF, ELAFLEX)</small></a>
+      <a href="/docs/ELAFLEX_CatPage116_LPG16_Autogas_Hoses.pdf" rel="noopener" target="_blank">LPG 16 S / LPG 16 autogas hoses<small>Catalogue page 116 (PDF, ELAFLEX)</small></a>
+      <a href="/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf" rel="noopener" target="_blank">ZVG 2 nozzle and ARK 19 safety break<small>Catalogue pages 561 to 564 (PDF, ELAFLEX)</small></a>
+      <a href="/docs/ELAFLEX_CatPage567-574_GasGuard_ZVG2_EURO_UL_K.pdf" rel="noopener" target="_blank">GasGuard, ZVG 2 EURO UL and ZVG 2 K<small>Catalogue pages 567 to 574, rev. 11.2022 (PDF, ELAFLEX)</small></a>
     </div>
+    <p style="margin-top:14px"><a href="/guides/elaflex-documents.html">Full document library →</a></p>
   </div>
 </section>
 
@@ -462,7 +502,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <p>Tell us latched or unlatched, how many, and whether you need hose kits. We'll reply with pricing and availability for the GG40 nozzles and ELAFLEX hose kits you need.</p>
       <p>Every nozzle we quote is a genuine ELAFLEX GasGuard with manufacturer documentation. You get price and lead time in writing before you order.</p>
       <p class="contact-lines">
-        <a href="tel:+15556667777" data-track="phone">555-666-7777</a><br>
         <a href="mailto:sales@propanenozzle.com" data-track="email">sales@propanenozzle.com</a>
       </p>
     </div>
@@ -513,7 +552,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_term"><input type="hidden" name="gclid"><input type="hidden" name="page" value="elaflex-gasguard-gg40">
       <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">Send quote request</button>
       <p class="formnote">We use your details only to answer this request.</p>
-      <div class="thanks" id="thanks">Request received. We'll reply by email, usually within one business day. Need it sooner? Call 555-666-7777.</div>
+      <div class="thanks" id="thanks">Request received. We'll reply by email, usually within one business day.</div>
     </form>
   </div>
 </section>
@@ -525,13 +564,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </div></footer>
 
 <div class="mbar">
-  <a class="btn btn-ghost" href="tel:+15556667777" data-track="phone" style="color:var(--ink)">Call</a>
+  <a class="btn btn-ghost" href="mailto:sales@propanenozzle.com" data-track="email" style="color:var(--ink)">Email us</a>
   <a class="btn btn-primary" href="#quote" data-track="cta-mobile-quote">Get a quote</a>
 </div>
 
 <script>
 (function(){
   window.dataLayer = window.dataLayer || [];
+  var T0 = Date.now(); // the server drops submissions that arrive faster than a person can type
   function track(ev, extra){ try{ window.dataLayer.push(Object.assign({event:ev},extra||{})); }catch(e){} }
 
   // click tracking
@@ -559,7 +599,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       (!f.name.value.trim() ? f.name : f.email).focus(); return;
     }
     f.hose_length.disabled = false;
-    var data = new FormData(f), endpoint = f.getAttribute('data-endpoint');
+    var data = new FormData(f), endpoint = f.getAttribute('data-endpoint'); data.append('elapsed', Date.now() - T0);
     track('generate_lead',{product:f.product.value, config:f.configuration.value, quantity:f.quantity.value, application:f.application.value});
     function done(){ thanks.style.display='block'; f.querySelector('button[type=submit]').disabled = true; }
     function mail(){
@@ -575,6 +615,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   });
 })();
 </script>
-<script src="/assets/chat.js" defer></script>
+<script src="/assets/chat.js?v=0e591e70" defer></script>
 </body>
 </html>

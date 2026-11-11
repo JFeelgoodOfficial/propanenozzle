@@ -1,7 +1,7 @@
 # ELAFLEX GasGuard knowledge base: GG40 (K15 quick connect) and GG20 (1¾" ACME)
-Seller: Propane Nozzle (independent reseller, not affiliated with ELAFLEX). Updated 2026-10-16.
+Seller: Propane Nozzle (independent reseller, not affiliated with ELAFLEX). Updated 2026-11-11.
 What we sell: the GasGuard GG40 nozzle (latched or unlatched) and matching autogas hose kits (LPG 16 S hose, ARK 19.3 pull-away, whip). We no longer sell the GG20; GG20 guides are reference only.
-Quotes: https://propanenozzle.com/#quote · Phone 555-666-7777 · Email sales@propanenozzle.com
+Quotes: https://propanenozzle.com/#quote · Email sales@propanenozzle.com · No phone line yet: do not give out a phone number
 
 
 # ELAFLEX GasGuard GG40: the K15 Quick-Connect Propane Nozzle
@@ -203,7 +203,7 @@ LP-gas dispensing equipment is installed by competent personnel under NFPA 58 as
 
  | ARK 19.3 pull-away | Reusable break-away coupling mounted between the short connection hose (whip) and the long delivery hose. ELAFLEX's ARK 19 separates when the hose is pulled with 200 to 500 N, independent of internal pressure, closes both sides, and reconnects by hand. Its lanyard fixes to the dispenser.
 
- | LPG 16 S hose | DN 16 (¾") LPG hose, EN 1762, 25 bar, −40 °C; ELAFLEX's US and Canadian LPG hose assemblies are certified to UL 21 and CSA 8.1.
+ | LPG 16 S hose | 16 mm (5/8") bore LPG hose to EN 1762, 25 bar working pressure, rated −30 °C to +70 °C in ELAFLEX's catalogue; ELAFLEX's US and Canadian LPG hose assemblies are certified to UL 21 and CSA 8.1. See LPG 16 hoses.
 
  | NB-GG nozzle boot | Enclosed holster. The GG40 fits the existing NB-GG boot, so a dispenser already fitted for a GasGuard ACME nozzle keeps its boot.
 
@@ -333,7 +333,9 @@ ELAFLEX calls this set its hanging hardware and sells it as a complete solution 
 
 ## Hose specification
 
- | Hose | ELAFLEX LPG 16 S: DN 16 (¾"), EN 1762, marked 25 bar and −40 °C
+ | Hose | ELAFLEX LPG 16 S: 16 mm (5/8") bore, 26 mm outside diameter, EN 1762, marked PN 25 (25 bar). Catalogue rating −30 °C to +70 °C; the pricked-cover LPG 16 type is the one rated to −40 °C. Full table: LPG 16 hoses
+
+ | Bend radius and weight | 80 mm minimum bend radius; about 0.5 kg per metre
 
  | Listings | ELAFLEX's LPG-UL hose assemblies are certified by Underwriters Laboratories to UL 21 and CSA 8.1-2015; the hose carries UL Classified and CSA marks
 
@@ -343,7 +345,7 @@ ELAFLEX calls this set its hanging hardware and sells it as a complete solution 
 
  | Fittings | Ferrule-type (non-reusable) couplings, male NPT ends
 
- | Sizes available in the LPG-UL range | ½", ¾", 1", 1¼", 1½", 2"; autogas kits use ¾"
+ | Sizes available in the LPG-UL range | ½", ¾", 1", 1¼", 1½", 2"; autogas kits use ¾" NPT ends on the 16 mm hose
 
 ## Lengths and threads
 
@@ -352,6 +354,20 @@ Distributor autogas kits for US dispensers are typically an 18" × ¾" whip plus
 ## Pull-away
 
 ELAFLEX's ARK 19 separates when the hose is pulled with 200 to 500 N regardless of internal pressure, closes valves on both sides, and can be reconnected by hand. The anchor point must withstand more than the maximum separation force. The 19.3 is the current version ELAFLEX pairs with the GG40.
+
+## What to measure before you ask for a quote
+
+- Delivery hose length. From where the pull-away will hang to the farthest fill valve you need to reach, with slack for a bend no tighter than the hose's 80 mm radius. ELAFLEX's drawing shows 3 to 5 m delivery hoses.
+
+- Whip length. From the dispenser outlet to the pull-away. ELAFLEX's drawing shows 0.3 to 1.0 m.
+
+- Threads. The dispenser outlet thread, and ¾" NPT at the nozzle for a GG40. The ARK 19.3 is ¾" NPT female on both sides.
+
+- Lanyard anchor. Where the pull-away lanyard fastens; the standard cable is about 300 mm.
+
+- Boot. Whether the dispenser has an NB-GG boot and whether it starts the pump with a reed switch.
+
+Part-by-part reference: LPG 16 hoses, ARK 19 pull-away, boots, sleeves and guards.
 
 ## Replacing an ACME kit
 
@@ -368,7 +384,7 @@ A: ELAFLEX's LPG hose assemblies for the US and Canada are certified to UL 21 an
 ## Q: What hose length do I need?
 A: Most US autogas kits use an 18" whip and a 12' delivery hose in ¾". Tell us your dispenser model and where the pull-away anchors and we'll confirm.
 
-Sources: GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>; 'LPG-UL' Hose Assemblies for LPGas, Information 1.19 (ELAFLEX US) <https://elaflexus.com/downloads/lpg-refueling/lpg-hose-assemblies/ELAFLEX_US_Information_1.19.pdf>; ARK 19 / ARK 19 SS safety break manual (ELAFLEX) <https://elaflex.de/dokumente/download/Manual/Manual_ARK19_ARK19SS.pdf>; Hose & Nozzle Kit, Autogas, for Parafour dispensers, HK-0021 (Chimney Cricket listing) <https://chimneycricket.com/products/hose-nozzle-kit-autogas-for-parafour-dispensers-includes-pull-away-w-lanyard-18-x-3-4-lp-whip-3-4-x-12-lp-delivery-hose-gg20l-nozzle-parafour-hk-0021-ha0021>
+Sources: GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>; 'LPG-UL' Hose Assemblies for LPGas, Information 1.19 (ELAFLEX US) <https://elaflexus.com/downloads/lpg-refueling/lpg-hose-assemblies/ELAFLEX_US_Information_1.19.pdf>; ELAFLEX catalogue page 116: LPG 16 S / LPG 16 autogas hoses (hose marking example dated 4Q-21) <https://propanenozzle.com/docs/ELAFLEX_CatPage116_LPG16_Autogas_Hoses.pdf>; ELAFLEX catalogue pages 563-564: safety break ARK 19, LPG 16 hose and couplings, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; ARK 19 / ARK 19 SS safety break manual (ELAFLEX) <https://elaflex.de/dokumente/download/Manual/Manual_ARK19_ARK19SS.pdf>; Hose & Nozzle Kit, Autogas, for Parafour dispensers, HK-0021 (Chimney Cricket listing) <https://chimneycricket.com/products/hose-nozzle-kit-autogas-for-parafour-dispensers-includes-pull-away-w-lanyard-18-x-3-4-lp-whip-3-4-x-12-lp-delivery-hose-gg20l-nozzle-parafour-hk-0021-ha0021>
 
 
 # GG40 Maintenance, Repair and Warranty
@@ -1217,7 +1233,7 @@ Sources: P4-200 Dual Hose Dispenser (Parafour) <https://parafour.com/p4-200-dual
 
 # GasGuard Family Compared: GG1, GG20, GG30, GG40 and ZVG 2
 URL: https://propanenozzle.com/guides/gasguard-family-gg1-gg20-gg30-gg40.html
-Reference only (not sold).
+Reference only (not sold on its own).
 
 Summary: Pick the nozzle by the fill valve. 1¾" ACME: GG1 (125 mm reach) for normal fill points, GG20 (160 mm) for recessed ones like forklift cylinders and RVs. Bayonet (EN 12806): GG30. K15 / Euro quick connect used on new US vehicles: GG40, or the ZVG 2 EURO UL. The ACME nozzles share nose piece options (single, hybrid, dual) and ratings.
 
@@ -1229,9 +1245,11 @@ Summary: Pick the nozzle by the fill valve. 1¾" ACME: GG1 (125 mm reach) for no
 
  | GG30 | Bayonet, EN 12806 | 150 mm | 60 L/min | 2.2 cm³ | ≈1.9 kg
 
- | GG40 | K15 quick connect (US/Canada), push-on | Up to 17 GPM (≈ 64 L/min) | < 1 cm³ released; low-effort lever; latched and unlatched both UL approved; EN 13760, UN R 67, ISO 19825 | Latch | ¾" NPT (per distributor listings)
+ | GG40 | K15 quick connect (US/Canada), push-on; EN 13760, UN R 67, ISO 19825 | n/a | Up to 17 GPM (≈ 64 L/min) | < 1 cm³ | Not yet published
 
- | ZVG 2 EURO UL | Euro push-on, ISO 19825 | n/a | Up to 50 L/min | <1 cm³ | ≈1.41 kg
+ | ZVG 2 EURO UL | Euro push-in, ISO 19825 | n/a | Up to 50 L/min | < 1 cm³ | ≈1.41 kg
+
+ | ZVG 2 K | Push-in with brass and PA coupling slider | n/a | Up to 50 L/min | < 1 cm³ | ≈1.55 kg
 
 ## GG1 or GG20?
 
@@ -1239,12 +1257,20 @@ Same function, same nose pieces, same ratings. The GG20 adds 35 mm to the connec
 
 ## Where the others fit
 
-The GG30 serves bayonet fill points and has a 4-slot front and redesigned nose piece; ELAFLEX states it reduces released gas on closure by 23% versus its predecessor. The GG40 is ELAFLEX's nozzle for the US and Canadian K15 quick-connect systems: up to 17 GPM, under 1 cm³ released on disconnect, lighter lever than the ACME nozzles, UL approved latched or unlatched, and it fits the same NB-GG boot. It is the nozzle Propane Nozzle sells; see the GG40 overview. The ZVG 2 EURO UL is ELAFLEX's push-on nozzle; latched versions are covered by UL 125 and UL 567.
+The GG30 serves bayonet fill points and has a 4-slot front and redesigned nose piece; ELAFLEX states it reduces released gas on closure by 23% versus its predecessor. The GG40 is ELAFLEX's nozzle for the US and Canadian K15 quick-connect systems: up to 17 GPM, under 1 cm³ released on disconnect, lighter lever than the ACME nozzles, UL approved latched or unlatched, and it fits the same NB-GG boot. It is the nozzle Propane Nozzle sells; see the GG40 overview. The ZVG 2 EURO UL is ELAFLEX's UL-listed push-in nozzle; latched versions are covered by UL 125 and UL 567. See ZVG 2 nozzles.
+
+## Shared ratings and options
+
+The GG1, GG20 and GG30 are all rated 25 bar (362 psi) working pressure, burst above 100 bar (1450 psi), −40 °C to +110 °C, with a 300 µm strainer as standard. The GG1 and GG20 are listed by Underwriters Laboratories to UL 125. Each takes the same factory options: hold-open latch (L), magnet in the nozzle guard for reed-switch dispensers (J) and an orange soft PVC splashguard. See boots, sleeves and nozzle guards.
+
+## Pressure drop compared
+
+ELAFLEX's chart, from propane tests at the National Measurement Institute in Sydney, ranks the nozzles at 40 L/min as follows (read from the printed curves, approximate): GG1E and GG20 about 1.3 bar; ZVG 2 EURO UL about 1.8 bar; the hybrid and dual nose piece nozzles (GG1EH, GG20H, GG1DN, GG20DN) and the GG30 about 2.0 bar; ZVG 2 K about 3.0 bar. The GG40 is newer than the chart and is not on it.
 
 ## Q: What is the difference between GasGuard GG1 and GG20?
 A: Connector reach: 125 mm on the GG1 versus 160 mm on the GG20. Everything else, including flow and nose piece options, is the same.
 
-Sources: ELAFLEX catalogue pages 567-574, rev. 11.2022 <https://elaflex.it/dokumente/download/Catalogue/CatPage567_574.pdf>; GasGuard product range (ELAFLEX PACIFIC) <https://elaflex.com.au/products-catalogue/gasguard>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>
+Sources: ELAFLEX catalogue pages 567-574: GasGuard GG1, GG20, GG30, ZVG 2 EURO UL and ZVG 2 K, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage567-574_GasGuard_ZVG2_EURO_UL_K.pdf>; ELAFLEX catalogue pages 561-562: LPG nozzle ZVG 2 and spare parts, rev. 7.2025 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>; GasGuard product range (ELAFLEX PACIFIC) <https://elaflex.com.au/products-catalogue/gasguard>; GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>
 
 
 # Replacing a GasGuard LG20 with a GG20
@@ -1337,3 +1363,447 @@ K15 / Euro connector
 Push-to-connect LPG filler adopted under NFPA 58 for new vehicles. Served by the GG40 or ZVG 2, not the GG20.
 
 Sources: GasGuard Information 2.15: GG20 nozzle range (ELAFLEX, Oct 2015) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_2.15.pdf>; GasGuard Information 6.15: part number breakdown (ELAFLEX) <https://elaflex.com.au/dokumente/subsidiaries/au/Information/GasGuard_Information_6.15.pdf>; South Coast AQMD Rule 1177, LPG transfer and dispensing <https://www.aqmd.gov/docs/default-source/rule-book/reg-xi/rule-1177.pdf?sfvrsn=4>; The ins and outs of autogas dispensers (Butane-Propane News) <https://bpnews.com/equipment/ins-outs-autogas-dispensers>
+
+
+# ELAFLEX LPG 16 S and LPG 16 Autogas Hoses: Specifications, Markings and Pressure Drop
+URL: https://propanenozzle.com/guides/elaflex-lpg-16-autogas-hoses.html
+Reference only (not sold on its own).
+
+Summary: LPG 16 S and LPG 16 are ELAFLEX's dispenser hoses for propane, butane and their mixtures, built to EN 1762. Both have a 16 mm (5/8") bore and a 26 mm outside diameter, weigh about 0.5 kg per metre, and are rated 25 bar working pressure, 40 bar test pressure, burst above 100 bar, with an 80 mm bend radius. LPG 16 S is the standard type, rated -30 °C to +70 °C with very low permeation. LPG 16 has a pricked cover and is rated -40 °C to +70 °C, which makes it the cold-region type.
+
+## Dimensions and ratings
+
+ | | | LPG 16 S | LPG 16
+
+ | Inside diameter | 16 mm (5/8")
+
+ | Outside diameter | ≈ 26 mm
+
+ | Weight | ≈ 0.5 kg/m
+
+ | Working pressure | 25 bar (PN 25)
+
+ | Test pressure | 40 bar
+
+ | Burst pressure | Above 100 bar
+
+ | Vacuum | 0.5 bar
+
+ | Bend radius | 80 mm
+
+ | Coil length | ≈ 40 m, 80 m maximum
+
+ | Temperature range | -30 °C to +70 °C | -40 °C to +70 °C
+
+ | Cover | Smooth | Pricked
+
+ | Colours | Black, or orange
+
+ | Standard and approvals | Meets EN 1762. DVGW approved (No. DG-4621 AU 0049) and AS 1869 approved.
+
+ | Media | Propane, butane and their mixtures
+
+The 5/8" figure is the hose bore. Autogas hose assemblies are usually described by their end thread, which is why a kit built on this hose with ¾" NPT fittings is sold as a ¾" kit.
+
+## Which type
+
+LPG 16 S
+ELAFLEX calls it the new standard dispensing hose for autogas, suitable for most applications. The lining is plasticiser-free and highly flexible, with very low permeation and what ELAFLEX describes as optimal purity of the medium (it refers to its Information 3.16 for detail). This is the hose ELAFLEX pairs with the GasGuard GG40.
+
+LPG 16
+Also plasticiser-free and highly flexible. ELAFLEX singles out the black version as highly cold flexible and therefore suited to cold regions. It has a pricked cover.
+
+## Construction
+
+ | Lining | NBR, black, seamlessly extruded, electrically dissipative, low permeation, plasticiser-free
+
+ | Reinforcement | Low-stretch textile braids with crossed tinned copper strands that can be electrically connected
+
+ | Cover | CR (chloroprene), black or orange, smooth, abrasion resistant, highly ageing resistant. Type LPG 16 is pricked.
+
+## Reading the hose marking
+
+Both hoses carry a continuous, abrasion-resistant embossed marking. ELAFLEX's examples:
+
+ | LPG 16 S | ELAFLEX · LPG 16 S · EN 1762 D · AS 1869 · Ω · PN 25 · M · MADE IN GERMANY · 4Q-21
+
+ | LPG 16 | ELAFLEX · LPG 16 · EN 1762 D · -40 °C · Ω · PN 25 · M · MADE IN GERMANY · 4Q-21
+
+The marking names the hose type, the standard (EN 1762, type D), the pressure rating (PN 25 is 25 bar) and ends with a quarter-and-year stamp, 4Q-21 in the example. The -40 °C mark appears on LPG 16 only.
+
+## Pressure drop
+
+ELAFLEX plots pressure drop for 5 m hose assemblies in DN 13 to DN 19, measured with Isopar. Values below are read from the printed chart and are approximate.
+
+ | | Hose | Pressure drop at 50 L/min, 5 m assembly
+
+ | LPG 13 | About 2 bar
+
+ | LPG 16 S and LPG 16 | About 0.7 bar (the two share one curve)
+
+ | LPG 19 | About 0.15 bar
+
+The step from a 13 mm to a 16 mm bore cuts the loss by roughly two thirds at the same flow, which is the argument for a 16 mm hose on a dispenser filling at autogas rates.
+
+## Where the hose sits in the dispenser kit
+
+The same catalogue page draws the complete kit for an LPG dispenser: the nozzle, a colour sleeve and an anti-kink sleeve at the nozzle end of the hose, the delivery hose, an ARK 19 safety break, a short connection hose with a reusable or non-reusable coupling, and a nozzle boot on the dispenser. Each part has its own guide: ARK 19 pull-away and boots, sleeves and nozzle guards. For the kit we quote with the GG40, see autogas hose kits.
+
+## US hose assemblies
+
+Catalogue page 116 describes the hose as ELAFLEX sells it internationally. For the US and Canada ELAFLEX US publishes a separate sheet, Information 1.19, covering its UL 21 / CSA 8.1 hose assemblies; figures from that sheet are quoted on the hose kit guide. Where the two differ, the UL sheet governs a US installation.
+
+Converted from the ELAFLEX catalogue page linked under Sources. Tables keep ELAFLEX's figures and units; where a number is read off a printed chart we say so. Catalogue data describes ELAFLEX's international range and is subject to change without notice. Propane Nozzle is an independent reseller and quotes the GG40 and GG40 hose kits; this page is reference.
+
+## Q: What size is ELAFLEX LPG 16 hose?
+A: 16 mm (5/8") inside diameter and about 26 mm outside diameter, weighing about 0.5 kg per metre, per ELAFLEX catalogue page 116.
+
+## Q: What is the pressure rating of LPG 16 S hose?
+A: 25 bar working pressure (PN 25), 40 bar test pressure and burst pressure above 100 bar, per ELAFLEX catalogue page 116.
+
+## Q: What is the difference between LPG 16 and LPG 16 S?
+A: LPG 16 S is the standard type with very low permeation, rated -30 °C to +70 °C, with a smooth cover. LPG 16 has a pricked cover and is rated -40 °C to +70 °C; ELAFLEX recommends the black version for cold regions.
+
+## Q: What is the minimum bend radius of LPG 16 hose?
+A: 80 mm for both LPG 16 S and LPG 16, per ELAFLEX catalogue page 116.
+
+## Q: What do the markings on an ELAFLEX LPG hose mean?
+A: Hose type, EN 1762 type D, PN 25 (25 bar), country of manufacture and a quarter-and-year stamp such as 4Q-21. LPG 16 also carries -40 °C.
+
+Sources: ELAFLEX catalogue page 116: LPG 16 S / LPG 16 autogas hoses (hose marking example dated 4Q-21) <https://propanenozzle.com/docs/ELAFLEX_CatPage116_LPG16_Autogas_Hoses.pdf>; ELAFLEX catalogue pages 563-564: safety break ARK 19, LPG 16 hose and couplings, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; 'LPG-UL' Hose Assemblies for LPGas, Information 1.19 (ELAFLEX US) <https://elaflexus.com/downloads/lpg-refueling/lpg-hose-assemblies/ELAFLEX_US_Information_1.19.pdf>
+
+
+# ELAFLEX ARK 19 Safety Break (Pull-Away): Specifications, Part Numbers and Hose Couplings
+URL: https://propanenozzle.com/guides/elaflex-ark-19-safety-break-pull-away.html
+Reference only (not sold on its own).
+
+Summary: The ARK 19 is ELAFLEX's DN 19 safety break for LPG dispenser hoses, called a pull-away or break-away in the US. It sits between a short connection hose and the long delivery hose, separates at an axial pull of 200 to 500 N in line with EN 14678-1, closes both halves automatically, and can be pushed back together under pressure without tools. It is rated 25 bar working pressure for propane and butane up to 50 L/min, -25 °C to +70 °C, and weighs about 1.05 kg. The ARK 19.3 is the version with ¾" NPT female threads.
+
+## What it does
+
+If a vehicle drives off with the nozzle still connected, the hose pulls on the coupling until it parts. Both halves have self-closing check valves, so the dispenser side and the hose side each seal as they separate; ELAFLEX states the escape of gas is minimal. The coupling is not sacrificial: it can be reassembled under pressure, by hand, without tools.
+
+## Specification
+
+ | Size | DN 19, for LPG hoses
+
+ | Media and flow | Propane and butane, up to 50 L/min
+
+ | Working pressure | 25 bar maximum
+
+ | Test pressure | 40 bar
+
+ | Burst pressure | Above 100 bar
+
+ | Temperature range | -25 °C to +70 °C
+
+ | Separation force | Axial pull of 200 N up to 500 N, corresponding to EN 14678-1
+
+ | Standards | Self-closing check valves on both ends according to EN 14678-1 and German safety rules (TRG 404)
+
+ | Certificate | TÜV.ST. BCD.007-06
+
+ | Body | Bronze, or stainless steel on the ARK 19 … SS, with pressurised parts of brass
+
+ | Internals | Stainless steel balls, acetal resin poppet assembly, NBR seals
+
+ | Break sleeve | BS 19, polyurethane
+
+ | Lanyard | Stainless steel, for fastening at the stanchion or pump; cable length ≈ 300 mm, other lengths on request
+
+ | Weight | ≈ 1.05 kg
+
+ | Size | ≈ 98 mm long in bronze, ≈ 111 mm in stainless with M 30 thread; 56 mm diameter (68 mm maximum)
+
+## Part numbers
+
+ | | Part number | Thread | Body
+
+ | ARK 19.3 | ¾" NPT female | Bronze
+
+ | (ARK 19.4) | G ¾ BSP female | Bronze
+
+ | ARK 19.M30 | M 30 × 1.5 L male (L = left-hand thread) | Bronze
+
+ | ARK 19.3 SS | ¾" NPT female | Stainless steel
+
+ | ARK 19.M30 SS | M 30 × 1.5 L male (left-hand thread) | Stainless steel
+
+The ¾" NPT version, ARK 19.3, is the one ELAFLEX names in its GG40 brochure as the pull-away for the US and Canadian hanging-hardware set. ELAFLEX prints ARK 19.4 in brackets in the catalogue.
+
+## Where it goes
+
+ELAFLEX's rule is that the ARK is assembled between a short connection hose and the long LPG hose. The catalogue drawing shows a connection hose of 0.3 to 1.0 m on the dispenser side and a delivery hose of 3 to 5 m on the nozzle side, with the BS 19 break sleeve over the coupling. The lanyard fastens to the stanchion or pump so that the pull lands on the coupling instead of the dispenser pipework.
+
+## Pressure drop
+
+ELAFLEX's chart, measured with Isopar, puts the ARK 19 at roughly 0.4 bar at 50 L/min (read from the printed curve). The same chart shows the ZVG 2 nozzle at about 1 bar at 30 L/min and about 3 bar near 48 L/min, so the coupling is a small part of the total loss.
+
+## Flow rating and the GG40
+
+The catalogue page (revision 11.2022) rates the ARK 19 for up to 50 L/min. ELAFLEX's 2025 GG40 brochure pairs the ARK 19.3 with the GG40, which it rates at up to 17 GPM, about 64 L/min. The two documents do not reconcile those figures. If your dispenser is sized near the top of the GG40's range, ask for the current ARK 19.3 data sheet with your quote.
+
+## Hose couplings on the same page
+
+Page 563 also lists the brass ferrule-type couplings ELAFLEX fits to LPG 16 hose. They are suitable for self-assembly, rated up to 25 bar and meet EN 14424.
+
+ | | Part number | Thread | Type | Weight
+
+ | V 16-¾" NPT | ¾" NPT male | Type V: hose tail and ferrule of brass | ≈ 0.16 kg
+
+ | V 16-1" | G 1 BSP male | Type V | ≈ 0.17 kg
+
+ | M 16-30 LPG | M 30 × 1.5 L female (left-hand thread) | Type M: hose tail, union nut and ferrule of brass, captive polyurethane seal | ≈ 0.17 kg
+
+## After a drive-off
+
+The catalogue says the ARK can be reassembled under pressure without tools; it does not give an inspection procedure. Before reconnecting, a qualified LP-gas technician should check both halves, the hose, the nozzle and the dispenser connection for damage, and follow ELAFLEX's ARK 19 manual and your site procedure.
+
+Converted from the ELAFLEX catalogue page linked under Sources. Tables keep ELAFLEX's figures and units; where a number is read off a printed chart we say so. Catalogue data describes ELAFLEX's international range and is subject to change without notice. Propane Nozzle is an independent reseller and quotes the GG40 and GG40 hose kits; this page is reference.
+
+## Q: At what force does the ELAFLEX ARK 19 separate?
+A: At an axial pull of 200 N up to 500 N, corresponding to EN 14678-1, per ELAFLEX catalogue page 563.
+
+## Q: What is the ARK 19.3?
+A: The ARK 19 safety break with ¾" NPT female threads and a bronze body. ARK 19.3 SS is the stainless steel version. ELAFLEX names the ARK 19.3 as the pull-away for its GG40 hanging-hardware set.
+
+## Q: Can an ARK 19 be reused after a drive-off?
+A: Yes. ELAFLEX states it can be reassembled under pressure without tools. Have a qualified technician inspect the coupling, hose and nozzle before reconnecting.
+
+## Q: Where is the pull-away installed on an LPG dispenser hose?
+A: Between a short connection hose on the dispenser side and the long delivery hose, with the lanyard fastened to the stanchion or pump.
+
+## Q: What is the pressure rating of the ARK 19?
+A: 25 bar maximum working pressure, 40 bar test pressure and burst above 100 bar, for propane and butane up to 50 L/min.
+
+Sources: ELAFLEX catalogue pages 563-564: safety break ARK 19, LPG 16 hose and couplings, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>; ARK 19 / ARK 19 SS safety break manual (ELAFLEX) <https://elaflex.de/dokumente/download/Manual/Manual_ARK19_ARK19SS.pdf>
+
+
+# LPG Dispenser Kit Parts: NB-GG Nozzle Boot, Sleeves and Nozzle Guards
+URL: https://propanenozzle.com/guides/lpg-dispenser-kit-boots-sleeves-and-nozzle-guards.html
+Reference only (not sold on its own).
+
+Summary: ELAFLEX draws the same kit around every LPG nozzle: a nozzle boot on the dispenser (NB-GG for GasGuard nozzles, NB-ZVG for ZVG nozzles), a KS 16 anti-kink sleeve and a CS 16 colour sleeve at the nozzle end of the hose, and a BS 19 break sleeve over the ARK 19 safety break. Three nozzle options are described as guards: a magnet built into the nozzle guard for reed-switch dispensers, a soft PVC splashguard on the GasGuard ACME and bayonet nozzles, and the EA 866 scuffguard on ZVG 2 nozzles. The GG40 fits the existing NB-GG boot.
+
+## The kit, part by part
+
+ | | Part | ELAFLEX name | What it is for | Catalogue reference
+
+ | Nozzle boot | NB-GG | Holster on the dispenser for GasGuard nozzles | Pages 116, 568
+
+ | Nozzle boot | NB-ZVG | Holster for ZVG 2 and ZVG 1 nozzles, and nozzles of other manufacturers | Pages 116, 564
+
+ | Anti-kink sleeve | KS 16 | Supports the hose where it leaves the nozzle | Page 211
+
+ | Colour sleeve | CS 16 orange | Coloured sleeve at the nozzle end of the hose | Page 211
+
+ | Break sleeve | BS 19 | Polyurethane sleeve over the ARK 19 safety break | Page 563
+
+ | Safety break | ARK 19 | Pull-away, reconnectable under pressure | Page 563
+
+ | Hose couplings | Type V, Type M | Reusable or non-reusable hose ends | Pages 203, 205, 563
+
+ | Hose | LPG 16 S / LPG 16 | Dispenser hose | Page 116
+
+Pages 211, 203 and 205 are in sections of the ELAFLEX catalogue we have not converted, so dimensions and order codes for the sleeves and the boots are not given here. Ask for them with a quote if you need them.
+
+## Nozzle boots
+
+A boot is the enclosed holster the nozzle hangs in between fills. ELAFLEX makes two for LPG: the NB-GG for GasGuard nozzles and the NB-ZVG for the ZVG 2 and ZVG 1, which ELAFLEX says also takes nozzles of other manufacturers. In its GG40 brochure ELAFLEX states the GG40 is compatible with the existing NB-GG boot, so a dispenser already set up for a GasGuard ACME nozzle keeps its boot when it moves to K15.
+
+## Guards: three different things
+
+ELAFLEX uses the word guard for three unrelated options. All three are factory options on the nozzle, ordered by a suffix on the part number.
+
+ | | Option | Nozzles | Code | What ELAFLEX says it does
+
+ | Magnet in the nozzle guard | GasGuard GG1, GG20, GG30 | J | Contactless activation of dispensers with reed-switch technology. The magnet is built into the lever guard.
+
+ | Magnet in the nozzle guard | ZVG 2, ZVG 2 EURO UL, ZVG 2 K | M | Contactless activation of the pump by reed contacts
+
+ | Splashguard | GasGuard GG1, GG20, GG30 | G | Soft PVC, orange. Protects the user's hands against any gas release after the nozzle valve has shut.
+
+ | Scuffguard | ZVG 2 (ACME, DISH, EURO), ZVG 2 EURO UL, ZVG 2 K | EA 866 plus colour | Black or orange cover with fuel grade identification 'LPG' to EN 16942 and a large printing space. Materials PU / PA, weather and deformation resistant.
+
+ELAFLEX prints the splashguard code G on the GG30 page; the GG1 and GG20 pages list the same splashguard without repeating the letter there. On the ZVG 2 the scuffguard is EA 866 … AD for ACME and DISH and EA 866 … EK for EURO; on the ZVG 2 EURO UL and ZVG 2 K it is EA 866 E. ELAFLEX points to its Information 4.17 for scuffguard detail.
+
+## Reed-switch dispensers and the GG40
+
+Some dispensers start the pump when a reed switch in the boot senses a magnet in the nozzle. The catalogue lists a magnet option for every GasGuard ACME and bayonet nozzle and for the ZVG 2 range. ELAFLEX has not yet published whether the GG40 has one. If your boot works that way, say so when you ask for a quote and we will confirm it before you order.
+
+## Other GasGuard options on the same pages
+
+- Hold-open latch (L): assists the user in holding the lever during refuelling. On the GG30 the latch is red anodised aluminium.
+
+- Special connector: a hard anodised alloy connector with a brass, non-guided ACME thread insert, on the GG1 and GG20.
+
+Converted from the ELAFLEX catalogue page linked under Sources. Tables keep ELAFLEX's figures and units; where a number is read off a printed chart we say so. Catalogue data describes ELAFLEX's international range and is subject to change without notice. Propane Nozzle is an independent reseller and quotes the GG40 and GG40 hose kits; this page is reference.
+
+## Q: What is the ELAFLEX NB-GG?
+A: The nozzle boot for GasGuard nozzles: the holster the nozzle hangs in on the dispenser. ELAFLEX states the GG40 is compatible with the existing NB-GG boot.
+
+## Q: What is the difference between the NB-GG and NB-ZVG nozzle boots?
+A: NB-GG is for GasGuard nozzles. NB-ZVG is for the ZVG 2 and ZVG 1, and ELAFLEX says it also takes nozzles of other manufacturers.
+
+## Q: What is the KS 16?
+A: ELAFLEX's anti-kink sleeve for 16 mm LPG dispenser hose, fitted where the hose leaves the nozzle. It is listed on catalogue page 211.
+
+## Q: What does the magnet in the nozzle guard do?
+A: It lets a reed switch in the dispenser sense the nozzle and start the pump without contact. The option code is J on GasGuard ACME and bayonet nozzles and M on ZVG 2 nozzles.
+
+## Q: What is a GasGuard splashguard?
+A: An orange soft PVC guard that protects the user's hands against any gas release after the nozzle valve has shut. It is an option on the GG1, GG20 and GG30.
+
+## Q: What is the EA 866 scuffguard?
+A: A black or orange PU / PA cover for ZVG 2 nozzles that carries the LPG fuel grade identification to EN 16942 and a printing space.
+
+Sources: ELAFLEX catalogue page 116: LPG 16 S / LPG 16 autogas hoses (hose marking example dated 4Q-21) <https://propanenozzle.com/docs/ELAFLEX_CatPage116_LPG16_Autogas_Hoses.pdf>; ELAFLEX catalogue pages 563-564: safety break ARK 19, LPG 16 hose and couplings, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; ELAFLEX catalogue pages 567-574: GasGuard GG1, GG20, GG30, ZVG 2 EURO UL and ZVG 2 K, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage567-574_GasGuard_ZVG2_EURO_UL_K.pdf>; ELAFLEX catalogue pages 561-562: LPG nozzle ZVG 2 and spare parts, rev. 7.2025 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>
+
+
+# ELAFLEX ZVG 2 LPG Nozzles: ACME, DISH, EURO, EURO UL and K Compared
+URL: https://propanenozzle.com/guides/elaflex-zvg-2-lpg-nozzles.html
+Reference only (not sold on its own).
+
+Summary: The ZVG 2 is ELAFLEX's modular LPG vehicle nozzle: one body with interchangeable couplings. ACME (1¾" thread), DISH (Italian claw) and EURO (push-in, EN 13760) versions flow up to 50 L/min at 25 bar. The ZVG 2 EURO UL is the UL-listed push-in nozzle to ISO 19825, weighing about 1.41 kg and releasing under 1 cm³; latched versions are covered by UL 125 and UL 567. The ZVG 2 K is a second push-in version at about 1.55 kg. Propane Nozzle does not sell the ZVG 2; for K15 vehicles we sell the GasGuard GG40.
+
+## The five versions
+
+ | | Version | Coupling | Gas release | Weight | Temperature
+
+ | ZVG 2 ACME | 1¾" ACME threaded coupling, for vehicle connections to EN 12806 | ≈ 1.7 cm³ | ≈ 1.5 kg | -25 °C to +70 °C; LT type to -40 °C
+
+ | ZVG 2 DISH | 'Italian' claw coupling to EN 12806; one-handed operation possible | < 1 cm³ | ≈ 1.2 kg | -25 °C to +70 °C; LT type to -40 °C
+
+ | ZVG 2 EURO | Push-in coupling to EN 13760; one-handed operation possible | < 1 cm³ | ≈ 1.4 kg | -25 °C to +70 °C; LT type to -40 °C
+
+ | ZVG 2 EURO UL | Push-in coupling to ISO 19825; UL listed | < 1 cm³ | ≈ 1.41 kg | -40 °C to +70 °C
+
+ | ZVG 2 K | Push-in coupling with a brass and PA coupling slider | < 1 cm³ | ≈ 1.55 kg | -40 °C to +70 °C
+
+All five share the same ratings: liquefied petroleum gas (propane, butane and mixtures) up to 50 L/min, 25 bar working pressure, 40 bar test pressure, burst above 100 bar.
+
+ELAFLEX groups the EURO UL and the K together as push-in couplings and gives both the mark "Meets EN 13760 / UN R 67 / ISO 19825". The catalogue page does not say which vehicle receptacle the K coupling is cut for, so confirm that with ELAFLEX before assuming it matches a given fill valve. For bayonet couplings ELAFLEX recommends the GasGuard GG30 instead.
+
+## Safety features
+
+The nozzle only lets gas flow when it is correctly coupled, and it will not open when coupled misaligned or tilted. On uncoupling the discharge volume is minimal and directed away from the user.
+
+## Construction
+
+ELAFLEX describes the design as modular: the nozzle body, with valve body and operating mechanism, is identical for all coupling types. Body aluminium with a comfigrip PVC cover; easy-rotating swivel EA 820 in stainless steel and brass; coupling nut stainless steel (aluminium on the DISH); inner parts stainless steel, acetal resin and PA; lever and latch PA; seals NBR and PU. The EURO UL and K use low-temperature seals (NBR-LT, PU-LT) and the EA 820 LT swivel as standard.
+
+## Part numbers
+
+ | | Hose inlet | ACME | DISH | EURO | EURO UL | K
+
+ | G 1 BSP female | ZVG2 ACME.1 | ZVG2 DISH.1 | ZVG2 EURO.1 | | 
+
+ | ¾" NPT female | ZVG2 ACME.3 | ZVG2 DISH.3 | ZVG2 EURO.3 | ZVG2 EURO UL.3 | ZVG2 K.3
+
+ | M 30 × 1.5 L male (left-hand) | ZVG2 ACME.M30 | ZVG2 DISH.M30 | ZVG2 EURO.M30 | | 
+
+## Options
+
+ | | Suffix | Option | Notes
+
+ | … M | Magnet integrated in the guard | For contactless activation of the dispenser by reed contacts
+
+ | … D | Without hold-open latch | 'Deadman' type, required at some dispensers (ZVG 2 ACME, DISH, EURO)
+
+ | … LT | Low-temperature type to -40 °C | ZVG 2 ACME, DISH, EURO; fitted with LT seals
+
+ | … EA 866 + colour | Scuffguard with fuel grade identification 'LPG' to EN 16942 | Black or orange. See boots, sleeves and guards
+
+The ZVG 2 EURO UL and ZVG 2 K come with a hold-open latch as standard. ELAFLEX states that ZVG 2 EURO UL latched nozzles are covered by UL 125 and UL 567.
+
+## Approvals
+
+- ZVG 2 ACME, DISH, EURO: TÜV-approved according to EN 13760 / ISO 19825, certificate 1321 Z 0040/8/01; fulfils the requirements of VdTÜV sheet 513; ATEX II 1 G Ex h IIA, certificate TPS 19 ATEX 103415 0003 U.
+
+- ZVG 2 EURO UL: Underwriters Laboratories listed, file reference MH17142.
+
+## Pressure drop
+
+ELAFLEX's GasGuard chart, from testing with propane at the National Measurement Institute in Sydney, plots the nozzles together. Values are read from the printed curves and are approximate.
+
+ | | Nozzle | At 40 L/min | At 50 L/min
+
+ | ZVG 2 K | About 3.0 bar | About 4.6 bar
+
+ | GG1DN / GG20DN and GG1EH / GG20H / GG30 | About 2.0 bar | About 3.3 bar
+
+ | ZVG 2 EURO UL | About 1.8 bar | About 2.8 bar
+
+ | GG1E / GG20 | About 1.3 bar | About 2.0 bar
+
+ELAFLEX notes the tests used common adapters without a check valve and that the variety of vehicle connections in the market can give different values. The GG40 is newer than this chart and is not on it.
+
+## Spare parts
+
+Catalogue pages 562 and 574 are exploded drawings with a part number against every component. Two points from them that matter when ordering: the nozzle body is not available as a spare part, and the swivel is ordered by inlet thread (EA 820.3 for ¾" NPT female, EA 820.M30 for M 30 × 1.5 L male, EA 820.1 for G 1 BSP female, each with an LT version). Use the drawing in the PDF for anything else; we have not transcribed the full list.
+
+## ZVG 2 or GasGuard GG40
+
+Both are push-on nozzles from the same manufacturer, and both publish a gas release under 1 cm³. The catalogue rates the ZVG 2 range at up to 50 L/min; ELAFLEX's GG40 brochure gives up to 17 GPM, about 64 L/min, and says the GG40 was designed for the US and Canadian K15 systems with latched and unlatched versions both UL approved. Propane Nozzle sells the GG40; see the GG40 overview.
+
+Converted from the ELAFLEX catalogue page linked under Sources. Tables keep ELAFLEX's figures and units; where a number is read off a printed chart we say so. Catalogue data describes ELAFLEX's international range and is subject to change without notice. Propane Nozzle is an independent reseller and quotes the GG40 and GG40 hose kits; this page is reference.
+
+## Q: What is the ELAFLEX ZVG 2?
+A: A modular LPG vehicle refuelling nozzle: one body with ACME, DISH (Italian claw), EURO push-in, EURO UL or K couplings, rated up to 50 L/min at 25 bar working pressure.
+
+## Q: Is the ZVG 2 EURO UL UL listed?
+A: Yes. ELAFLEX's catalogue shows it as Underwriters Laboratories listed, file reference MH17142, and states latched ZVG 2 EURO UL nozzles are covered by UL 125 and UL 567.
+
+## Q: How much does a ZVG 2 weigh?
+A: About 1.5 kg (ACME), 1.2 kg (DISH), 1.4 kg (EURO), 1.41 kg (EURO UL) and 1.55 kg (K), per ELAFLEX's catalogue.
+
+## Q: What does the D suffix mean on a ZVG 2?
+A: Without hold-open latch: a 'deadman' type that ELAFLEX says is required at some dispensers.
+
+## Q: Does Propane Nozzle sell the ZVG 2?
+A: No. We keep this page as reference. For K15 quick-connect vehicles we sell the GasGuard GG40 and matching hose kits.
+
+Sources: ELAFLEX catalogue pages 561-562: LPG nozzle ZVG 2 and spare parts, rev. 7.2025 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; ELAFLEX catalogue pages 567-574: GasGuard GG1, GG20, GG30, ZVG 2 EURO UL and ZVG 2 K, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage567-574_GasGuard_ZVG2_EURO_UL_K.pdf>; GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>
+
+
+# ELAFLEX Document Library: LPG Hoses, Pull-Aways, GasGuard and ZVG 2 Catalogue Pages
+URL: https://propanenozzle.com/guides/elaflex-documents.html
+Reference only (not sold on its own).
+
+Summary: Four ELAFLEX documents are hosted here as PDFs with a web version of each: the GG40 brochure, catalogue page 116 (LPG 16 hoses), pages 561 to 564 (ZVG 2 nozzle and ARK 19 safety break) and pages 567 to 574 (GasGuard nozzles, ZVG 2 EURO UL and ZVG 2 K). Further ELAFLEX manuals are linked on ELAFLEX's own sites.
+
+These are the manufacturer documents the guides on this site are built from. The first four are hosted here as PDFs; each also has a web version with the tables typed out, which is easier to read on a phone and to search.
+
+ | | Document | What it covers | Easier to read
+
+ | GasGuard GG40 brochurePDF on this site | ELAFLEX PACIFIC, 2025. Features and technical information for the K15 quick-connect nozzle; the hanging-hardware set with ARK 19.3 and LPG 16 S hose. | Web version
+
+ | Catalogue page 116: LPG 16 S / LPG 16 autogas hosesPDF on this site | ELAFLEX. Hose dimensions, pressures, bend radius, construction, markings, pressure-drop chart and the complete dispenser kit drawing. | Web version
+
+ | Catalogue pages 561-564: LPG nozzle ZVG 2 and safety break ARK 19PDF on this site | ELAFLEX, rev. 7.2025 (page 561) and 11.2022 (page 563). ZVG 2 ACME, DISH and EURO part numbers, spare-parts drawing, ARK 19 specification and part numbers, hose couplings, pressure-drop chart. | Web version
+
+ | Catalogue pages 567-574: GasGuard nozzles, ZVG 2 EURO UL and ZVG 2 KPDF on this site | ELAFLEX, rev. 11.2022. GG1, GG20 and GG30 specifications and options, the UL-listed ZVG 2 EURO UL and the ZVG 2 K, pressure-drop chart, accessory drawings. | Web version
+
+ | GasGuard Information 2.15: GG20 nozzle rangePDF on ELAFLEX's site | ELAFLEX, October 2015. The GG20, GG20H and GG20DN. | Web version
+
+ | GasGuard Information 6.15: part number breakdownPDF on ELAFLEX's site | ELAFLEX. How GasGuard order codes are built. | Web version
+
+ | Installation and Operating Manual, GG1 and GG20 seriesPDF on ELAFLEX's site | ELAFLEX PACIFIC, 5/2016. Installation, thread sealing, operation. | Web version
+
+ | GG20 Repair and Maintenance ManualPDF on ELAFLEX's site | ELAFLEX PACIFIC / L.G. Equipment. Seal kits, strip-down, testing. | Web version
+
+ | ELAFLEX US Information 1.19: LPG-UL hose assembliesPDF on ELAFLEX's site | ELAFLEX US. The UL 21 / CSA 8.1 hose assemblies for the US and Canada. | Web version
+
+ | ARK 19 / ARK 19 SS safety break manualPDF on ELAFLEX's site | ELAFLEX. Installation and operation of the pull-away. | Web version
+
+## How the web versions were made
+
+Each web version copies the figures from the ELAFLEX page: dimensions, pressures, part numbers and option codes. Text is rewritten in plain English and the German column is dropped. Numbers taken from a printed curve are marked as approximate. Drawings are not reproduced; open the PDF for those.
+
+## Documents we cite but have not read into this library
+
+ELAFLEX refers to several sheets from the pages above: Information 3.16 (LPG 16 S hose), Information 4.03 (hose couplings), Information 4.17 (scuffguards), Information 3.09 (ZVG 2 order numbers), and catalogue pages 203, 205 and 211 (couplings and sleeves). Ask ELAFLEX or request them with a quote.
+
+ELAFLEX and GasGuard are trademarks of their owners. The PDFs are ELAFLEX publications, copyright ELAFLEX, reproduced for reference; specifications are subject to change without notice. Propane Nozzle is an independent reseller.
+
+Sources: GasGuard GG40 brochure (ELAFLEX PACIFIC, 2025) <https://propanenozzle.com/docs/ELAFLEX_Pacific_GG40.pdf>; ELAFLEX catalogue page 116: LPG 16 S / LPG 16 autogas hoses (hose marking example dated 4Q-21) <https://propanenozzle.com/docs/ELAFLEX_CatPage116_LPG16_Autogas_Hoses.pdf>; ELAFLEX catalogue pages 561-562: LPG nozzle ZVG 2 and spare parts, rev. 7.2025 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; ELAFLEX catalogue pages 563-564: safety break ARK 19, LPG 16 hose and couplings, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage561-564_ZVG2_ARK19.pdf>; ELAFLEX catalogue pages 567-574: GasGuard GG1, GG20, GG30, ZVG 2 EURO UL and ZVG 2 K, rev. 11.2022 <https://propanenozzle.com/docs/ELAFLEX_CatPage567-574_GasGuard_ZVG2_EURO_UL_K.pdf>

@@ -1,6 +1,6 @@
 # Propane Nozzle: ELAFLEX GasGuard GG40 K15 propane nozzle and hose kits
 
-> Independent US reseller of the ELAFLEX GasGuard GG40 quick-connect (K15) propane nozzle and matching autogas hose kits. Also hosts the complete GG20 1¾" ACME nozzle reference (no longer sold). Sourced from ELAFLEX documentation.
+> Independent US reseller of the ELAFLEX GasGuard GG40 quick-connect (K15) propane nozzle and matching autogas hose kits. Also hosts ELAFLEX reference material on LPG 16 hoses, the ARK 19 pull-away, nozzle boots and guards and the ZVG 2 nozzles, and the complete GG20 1¾" ACME nozzle reference (no longer sold). Sourced from ELAFLEX documentation.
 
 ## Products
 - [GG40 nozzle and hose kits: product page and quote](https://propanenozzle.com/)
@@ -17,6 +17,14 @@
 - [Autogas Hose Kits for the GG40: Hose, Pull-Away and Whip](https://propanenozzle.com/guides/autogas-hose-kits.html): What is in an autogas hose kit for the GasGuard GG40: ELAFLEX LPG 16 S hose, ARK 19.3 pull-away, whip, lengths and threads, and the UL and CSA listings behind them.
 - [GG40 Maintenance, Repair and Warranty](https://propanenozzle.com/guides/gg40-maintenance-and-warranty.html): What ELAFLEX publishes about keeping a GasGuard GG40 in service: low maintenance, simple repair, the 18-month warranty, boot storage and when to call the manufacturer.
 
+## ELAFLEX reference: hoses, pull-aways, boots, guards, ZVG 2
+- [GasGuard Family Compared: GG1, GG20, GG30, GG40 and ZVG 2](https://propanenozzle.com/guides/gasguard-family-gg1-gg20-gg30-gg40.html): Which ELAFLEX LPG nozzle fits which fill point: GG1 and GG20 (1¾" ACME), GG30 (bayonet), GG40 (K15 quick connect) and ZVG 2 EURO UL, with key specs.
+- [ELAFLEX LPG 16 S and LPG 16 Autogas Hoses: Specifications, Markings and Pressure Drop](https://propanenozzle.com/guides/elaflex-lpg-16-autogas-hoses.html): ELAFLEX catalogue page 116 as a web page: LPG 16 S and LPG 16 dispenser hose dimensions, 25 bar working pressure, 80 mm bend radius, temperature range, construction, hose markings and pressure drop.
+- [ELAFLEX ARK 19 Safety Break (Pull-Away): Specifications, Part Numbers and Hose Couplings](https://propanenozzle.com/guides/elaflex-ark-19-safety-break-pull-away.html): ELAFLEX catalogue page 563 as a web page: the ARK 19 LPG safety break. 200 to 500 N separation, EN 14678-1, 25 bar, part numbers ARK 19.3, 19.M30 and SS versions, BS 19 break sleeve, hose couplings.
+- [LPG Dispenser Kit Parts: NB-GG Nozzle Boot, Sleeves and Nozzle Guards](https://propanenozzle.com/guides/lpg-dispenser-kit-boots-sleeves-and-nozzle-guards.html): The small parts in ELAFLEX's LPG dispenser kit: NB-GG and NB-ZVG nozzle boots, KS 16 anti-kink sleeve, CS 16 colour sleeve, BS 19 break sleeve, and the guard options: magnet, splashguard and scuffguard.
+- [ELAFLEX ZVG 2 LPG Nozzles: ACME, DISH, EURO, EURO UL and K Compared](https://propanenozzle.com/guides/elaflex-zvg-2-lpg-nozzles.html): ELAFLEX catalogue pages 561 and 573 as a web page: ZVG 2 ACME, DISH and EURO, the UL-listed ZVG 2 EURO UL and the ZVG 2 K. Ratings, weights, gas release, part numbers, options and pressure drop.
+- [ELAFLEX Document Library: LPG Hoses, Pull-Aways, GasGuard and ZVG 2 Catalogue Pages](https://propanenozzle.com/guides/elaflex-documents.html): ELAFLEX catalogue pages and brochures for LPG dispenser hoses, the ARK 19 safety break, GasGuard and ZVG 2 nozzles, as PDFs and as plain web pages.
+
 ## GG20 reference guides
 - [GG20 vs GG20H vs GG20DN: Which GasGuard Nozzle to Buy](https://propanenozzle.com/guides/gg20-vs-gg20h-vs-gg20dn.html): How the three GasGuard GG20 nozzles differ: single, hybrid and dual nose pieces, flow, lever force, release volume and who each one is for.
 - [GasGuard GG20 Specifications: Complete Technical Data](https://propanenozzle.com/guides/gg20-specifications.html): Every published spec for the ELAFLEX GasGuard GG20: reach, flow, pressure, temperature, materials, seals, weight, strainer and standards, in metric and US units.
@@ -32,6 +40,5 @@
 - [GG20 on the Parafour P4-100 Single Hose Autogas Dispenser](https://propanenozzle.com/guides/gg20-parafour-p4-100.html): The Parafour P4-100 single-hose autogas dispenser is built for the GasGuard GG20. Which GG20 to order, inlet size, magnet option and what ships with the dispenser.
 - [GG20 on the Parafour P4-150 Dual Product Dispenser](https://propanenozzle.com/guides/gg20-parafour-p4-150.html): The Parafour P4-150 runs a GasGuard GG20 on its autogas hose and a cylinder fill nozzle on the second hose. Which GG20 to order and what to check.
 - [GG20 on the Parafour P4-200 Dual Hose Autogas Dispenser](https://propanenozzle.com/guides/gg20-parafour-p4-200.html): The Parafour P4-200 dual-hose autogas dispenser is built for the GasGuard GG20 on both hoses. Which GG20 to order for each lane, inlet size and magnet option.
-- [GasGuard Family Compared: GG1, GG20, GG30, GG40 and ZVG 2](https://propanenozzle.com/guides/gasguard-family-gg1-gg20-gg30-gg40.html): Which ELAFLEX LPG nozzle fits which fill point: GG1 and GG20 (1¾" ACME), GG30 (bayonet), GG40 (K15 quick connect) and ZVG 2 EURO UL, with key specs.
 - [Replacing a GasGuard LG20 with a GG20](https://propanenozzle.com/guides/lg20-to-gg20-replacement.html): The GasGuard GG20 range supersedes the LG20. What to check before ordering the replacement: nose piece, inlet size, latch and magnet.
 - [LPG Nozzle Glossary: Terms Used in GG20 Documentation](https://propanenozzle.com/guides/gg20-glossary.html): Plain definitions of the terms in GasGuard GG20 specs and manuals: ACME, nose piece, release volume, reach, swivel, reed switch, safety break, AHJ, UL 125, K15.
